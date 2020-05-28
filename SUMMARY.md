@@ -71,6 +71,7 @@
 * [No.2](undefined-1/no.2/README.md)
   * [데브옵스가 뭔데요?](undefined-1/no.2/undefined.md)
 * [No.1](undefined-1/no.1/README.md)
+  * [software-properties-common](undefined-1/no.1/software-properties-common.md)
   * [PHP란?](undefined-1/no.1/php.md)
   * [유저랜드\(User Land\)](undefined-1/no.1/user-land.md)
   * [NAT\(Network Address Translation\)](undefined-1/no.1/nat-network-address-translation.md)
