@@ -26,13 +26,13 @@ description: 'VM, 리눅스, 도커, 아파치 톰캣 설치 및 실습'
 
 전문가 모드를 열어주시면 
 
-![&#xC804;&#xBB38;&#xAC00;&#xBAA8;&#xB4DC; ](../../../.gitbook/assets/image%20%2847%29.png)
+![&#xC804;&#xBB38;&#xAC00;&#xBAA8;&#xB4DC; ](../../../.gitbook/assets/image%20%2848%29.png)
 
 ## apt로 docker install 
 
 바탕화면에 우클릭하면 터미널로 갈 수 있습니다. 
 
-![&#xD130;&#xBBF8;&#xB110; &#xC5F4;&#xAE30; ](../../../.gitbook/assets/image%20%2874%29.png)
+![&#xD130;&#xBBF8;&#xB110; &#xC5F4;&#xAE30; ](../../../.gitbook/assets/image%20%2877%29.png)
 
 ### 우분투 패키지로 도커 설치 
 
@@ -91,7 +91,7 @@ sudo docker image
 
 ## Docker Work Flow 
 
-![&#xB3C4;&#xCEE4;&#xC758; &#xD750;&#xB984;&#xB3C4;](../../../.gitbook/assets/image%20%28175%29.png)
+![&#xB3C4;&#xCEE4;&#xC758; &#xD750;&#xB984;&#xB3C4;](../../../.gitbook/assets/image%20%28185%29.png)
 
 ### 설치중 발생한 오류와 해결책  \(동인한 원인이라도 해결책이 다르거나 다양하다는점 명심하세요. \)
 

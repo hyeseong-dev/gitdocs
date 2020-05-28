@@ -38,7 +38,7 @@ test1234
 
 #### 웹 브라우저에서 확인
 
-![127.0.0.1&#xC5D0; &#xBD99;&#xC740;&#xAC78; &#xD655;&#xC778; &#xD560;&#xC218; &#xC788;&#xC74C;](../../.gitbook/assets/image%20%2829%29.png)
+![127.0.0.1&#xC5D0; &#xBD99;&#xC740;&#xAC78; &#xD655;&#xC778; &#xD560;&#xC218; &#xC788;&#xC74C;](../../.gitbook/assets/image%20%2830%29.png)
 
 ## Juypyter Lab 환경 구축
 
@@ -74,11 +74,11 @@ docker run --rm -p 8080:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/wo
 
  그럼 아래와 같은 token 번호요청 페이지가 나타나요. 
 
-![jupyter &#xD1A0;&#xD070; &#xC785;&#xB825;&#xCC3D;](../../.gitbook/assets/image%20%28139%29.png)
+![jupyter &#xD1A0;&#xD070; &#xC785;&#xB825;&#xCC3D;](../../.gitbook/assets/image%20%28148%29.png)
 
 #### 토큰 확인 방법 
 
-![token &#xBC88;&#xD638;&#xB97C; &#xD655;&#xC778; &#xD558;&#xC138;&#xC694;. ](../../.gitbook/assets/image%20%2872%29.png)
+![token &#xBC88;&#xD638;&#xB97C; &#xD655;&#xC778; &#xD558;&#xC138;&#xC694;. ](../../.gitbook/assets/image%20%2875%29.png)
 
 ####  주피터 접속 화면 
 
@@ -86,7 +86,7 @@ docker run --rm -p 8080:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/wo
 
 파이썬3를 클릭해서 실행해볼게요. 
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](../../.gitbook/assets/image%20%2893%29.png)
 
 403 접근제한 오류가 나타나요. 
 
@@ -98,7 +98,7 @@ docker run --rm -p 8080:8888 -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/wo
 
 위 명령어를 입력해주세요. 
 
-![chmod 777 &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xBA85;](../../.gitbook/assets/image%20%2845%29.png)
+![chmod 777 &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xBA85;](../../.gitbook/assets/image%20%2846%29.png)
 
   
 chomd 777에 관한 부분은 리눅스에의 권한 설정에 대한 부분을 학습해야 해요.   
@@ -107,7 +107,7 @@ chomd 777에 관한 부분은 리눅스에의 권한 설정에 대한 부분을 
 
 ![&#xAD6C;&#xCD95; &#xC644;&#xB8CC;](../../.gitbook/assets/image%20%2821%29.png)
 
-![](../../.gitbook/assets/image%20%28156%29.png)
+![](../../.gitbook/assets/image%20%28165%29.png)
 
  참고로 pandas, numpy, seaborn 모듈은 이미 설치되어있지만 keras, tensorflow는 설치되어있지 않네요. 
 

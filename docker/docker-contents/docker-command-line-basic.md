@@ -6,7 +6,7 @@ description: 기본 명령어
 
 ###  Docker workflow 
 
-![&#xB3C4;&#xCEE4; &#xBA85;&#xB839; &#xC21C;&#xC11C;&#xB3C4;](../../.gitbook/assets/image%20%2882%29.png)
+![&#xB3C4;&#xCEE4; &#xBA85;&#xB839; &#xC21C;&#xC11C;&#xB3C4;](../../.gitbook/assets/image%20%2887%29.png)
 
  docker workflow를 알아볼게요.  
 
@@ -88,7 +88,7 @@ sudo docker ps -a # 모든 컨테이너의 정보를 확인
 **프로세스가 실행중이지 않은경우** :   
 -a 옵션은 all의 약자라는걸 직관적으로 알수 있어요. 
 
-![ps &#xBA85;&#xB839;&#xC5B4; -a&#xC635;&#xC158; &#xC720;&#xBB34;](../../.gitbook/assets/image%20%2895%29.png)
+![ps &#xBA85;&#xB839;&#xC5B4; -a&#xC635;&#xC158; &#xC720;&#xBB34;](../../.gitbook/assets/image%20%28102%29.png)
 
  실행중인 프로세스의 경우는 정보가 출력되지만 실행중이지 않은 경우  위 사진 처럼 파란색 부분에 컬럼명 빼고는 정보가 출력되지 않아요. 이런경우 그냥 모든 컨테이너를 확인하고 싶으니 빨간색처럼 나오게 하기 위해서 옵션 -a를 넣어줘요. 
 
@@ -96,7 +96,7 @@ sudo docker ps -a # 모든 컨테이너의 정보를 확인
 
 **프로세스\(컨테이너\)가 실행중인 경우 :** 
 
-![](../../.gitbook/assets/image%20%2886%29.png)
+![](../../.gitbook/assets/image%20%2891%29.png)
 
 nginx container가 실행중인 경우 UP으로 나타난걸 알수 있어요. 
 
@@ -106,13 +106,13 @@ nginx container가 실행중인 경우 UP으로 나타난걸 알수 있어요.
 
  웹브라우저 주소창에 127.0.0.1을 실행해보면 아래와 같이 잘 실행된걸 볼 수 있어요. 
 
-![](../../.gitbook/assets/image%20%2887%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 
 
 
 #### ngnix container 추가 생성하기 : 
 
-![&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC0DD;&#xC131;&#xC2DC; &#xC774;&#xB984;&#xACFC; &#xD3EC;&#xD2B8; &#xC8FC;&#xC18C;&#xB294; &#xB458;&#xB2E4; &#xAE30;&#xC874;&#xACFC; &#xB2EC;&#xB77C;&#xC57C;&#xD568;](../../.gitbook/assets/image%20%28129%29.png)
+![&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC0DD;&#xC131;&#xC2DC; &#xC774;&#xB984;&#xACFC; &#xD3EC;&#xD2B8; &#xC8FC;&#xC18C;&#xB294; &#xB458;&#xB2E4; &#xAE30;&#xC874;&#xACFC; &#xB2EC;&#xB77C;&#xC57C;&#xD568;](../../.gitbook/assets/image%20%28138%29.png)
 
 맨 위 docker run -d -p 80:80 --name **nx** nginx 의 경우 nx라는 이름을 이미 쓰고 있어서 오류가 떳어요.   
 그래서 다음 코드에는 run -d -p 80:80 --name **nx2** nginx 라고 이름을 nx2라고 바꾸었지만 오류가 떳조?   
@@ -123,7 +123,7 @@ nginx container가 실행중인 경우 UP으로 나타난걸 알수 있어요.
 위의 run 명령문을 왜 보여주냐고요? **메모리가 어떻게 낭비되는지 보여주려고 그렇습니다.**   
 아래를 봐주세요. 
 
-![&#xBA54;&#xBAA8;&#xB9AC;&#xAC00; &#xB0AD;&#xBE44;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28148%29.png)
+![&#xBA54;&#xBAA8;&#xB9AC;&#xAC00; &#xB0AD;&#xBE44;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28157%29.png)
 
  일반적인 경우에 메모리를 굳이 낭비하면서 3개의 컨테이너를 사용해서 실행 시킬 필요가 없겠지요?
 
@@ -136,7 +136,7 @@ docker stop <container ID 또는 name>
 sudo docker ps -a # 모든 컨테이너 확인 
 ```
 
-![&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC815;&#xBCF4;](../../.gitbook/assets/image%20%28104%29.png)
+![&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xC815;&#xBCF4;](../../.gitbook/assets/image%20%28112%29.png)
 
 #### 5. 컨테이너 중지 
 
@@ -164,7 +164,7 @@ docker rmi -f 이미지
 
  레이어에 대해 배워 볼게요. 
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
  왼쪽 오른쪽 구분이 되어있어요. 
 

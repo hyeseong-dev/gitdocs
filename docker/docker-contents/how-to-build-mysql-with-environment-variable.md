@@ -10,13 +10,13 @@ Mysql 서비스를 구축해볼게요.
 
 ## MySQL 설치 명령
 
-![Dockerhub - Mysql](../../.gitbook/assets/image%20%28147%29.png)
+![Dockerhub - Mysql](../../.gitbook/assets/image%20%28156%29.png)
 
  Mysql은 아이디와 패스워드를 전달 받아야 사용할 수 있느 서비스입니다. 페이지를 아래로 내려 보세요.   
 아래 사진을 확대해서 보세요.   
 
 
-![MySQL &#xC778;&#xC2A4;&#xD134;&#xC2A4; &#xC2E4;&#xD589;&#xBC29;&#xBC95;](../../.gitbook/assets/image%20%2828%29.png)
+![MySQL &#xC778;&#xC2A4;&#xD134;&#xC2A4; &#xC2E4;&#xD589;&#xBC29;&#xBC95;](../../.gitbook/assets/image%20%2829%29.png)
 
 ```text
 $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
@@ -54,13 +54,13 @@ $ printenv env_name
 실행시 아래와 같아요.   
 
 
-![printenv &#xBA85;&#xB839;&#xC5B4; &#xC2E4;&#xD589;&#xACB0;&#xACFC;](../../.gitbook/assets/image%20%28130%29.png)
+![printenv &#xBA85;&#xB839;&#xC5B4; &#xC2E4;&#xD589;&#xACB0;&#xACFC;](../../.gitbook/assets/image%20%28139%29.png)
 
 네 번째 명령문은 특정 환경변수를 보고 싶을때 사용해요.
 
 > printenv env\_name
 
-![&#xD2B9;&#xC815; &#xD658;&#xACBD;&#xBCC0;&#xC218; &#xCD9C;&#xB825;](../../.gitbook/assets/image%20%28155%29.png)
+![&#xD2B9;&#xC815; &#xD658;&#xACBD;&#xBCC0;&#xC218; &#xCD9C;&#xB825;](../../.gitbook/assets/image%20%28164%29.png)
 
 ## echo 명령어로 특정 환경수 출
 
@@ -81,7 +81,7 @@ $ docker run --name ms -e MYSQL_ROOT_PASSWORD='!qhdkscjf@' -d --rm mysql
 
  다시 돌아와서 run명령어를 이용해서 pull + create + start까지 한방에 했는데요. 그 결과는 ps -a 명령어로 확인가능해요. 
 
-![mysql &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xCEE8;&#xD14C;&#xC774;&#xB108;&#xB85C; &#xB9CC;&#xB4E0; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28167%29.png)
+![mysql &#xC774;&#xBBF8;&#xC9C0;&#xB97C; &#xCEE8;&#xD14C;&#xC774;&#xB108;&#xB85C; &#xB9CC;&#xB4E0; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28177%29.png)
 
 3306포트에 붙어있는걸 확인했어요. 
 
@@ -94,7 +94,7 @@ $ docker exec -it ms mysql -u root -p
 Enter password: 
 ```
 
-![mysql&#xC774; &#xC2E4;&#xD589;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%2892%29.png)
+![mysql&#xC774; &#xC2E4;&#xD589;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%2898%29.png)
 
 
 
@@ -102,7 +102,7 @@ Enter password:
 
 > show databases
 
-![](../../.gitbook/assets/image%20%28177%29.png)
+![](../../.gitbook/assets/image%20%28187%29.png)
 
 
 

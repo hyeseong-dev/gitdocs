@@ -15,7 +15,7 @@ firefox 127.0.0.1:80
 docker exec -it tc /bin/bash
 ```
 
-![](../../.gitbook/assets/image%20%28146%29.png)
+![](../../.gitbook/assets/image%20%28155%29.png)
 
 -it 옵션은 **input terminal**의 약자에요.    
 **노란부분은 터미널 id에요.**
@@ -35,7 +35,7 @@ sudo docker logs tc # stdout(standout), stderr(standout error)
 echo 하나,둘,셋 > test.txt
 ```
 
-![echo &#xBA85;&#xB839;&#xBB38;&#xC73C;&#xB85C; &#xD30C;&#xC77C;&#xC0DD;&#xC131; &#xBC0F; &#xC791;&#xC131;](../../.gitbook/assets/image%20%2896%29.png)
+![echo &#xBA85;&#xB839;&#xBB38;&#xC73C;&#xB85C; &#xD30C;&#xC77C;&#xC0DD;&#xC131; &#xBC0F; &#xC791;&#xC131;](../../.gitbook/assets/image%20%28103%29.png)
 
 #### 
 
@@ -51,11 +51,11 @@ sudo docker cp <from container>:<path> <path>
 sudo docker cp <from container>:<path> <to container>:<path>
 ```
 
-![cp &#xBA85;&#xB839;&#xC774;&#xD6C4; docker&#xC758; &#xD574;&#xB2F9; &#xCEE8;&#xD14C;&#xC774;&#xB108;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;](../../.gitbook/assets/image%20%28110%29.png)
+![cp &#xBA85;&#xB839;&#xC774;&#xD6C4; docker&#xC758; &#xD574;&#xB2F9; &#xCEE8;&#xD14C;&#xC774;&#xB108;&#xC5D0;&#xC11C; &#xC2E4;&#xD589;](../../.gitbook/assets/image%20%28118%29.png)
 
 ####  파일 이름 바꿔서 복사-&gt;생성
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 > docker cp **A:/B ./C \# 방법1은 상대경로  
 > or docker cp A:/B A:/C 방법2는 절대경로 방법**
@@ -68,7 +68,7 @@ sudo docker cp <from container>:<path> <to container>:<path>
 
 #### **프로세스 확인** 
 
-![&#xBC29;&#xBC95;1, &#xBC29;&#xBC95;2](../../.gitbook/assets/image%20%2825%29.png)
+![&#xBC29;&#xBC95;1, &#xBC29;&#xBC95;2](../../.gitbook/assets/image%20%2826%29.png)
 
 방법1은 ps 명령문으로 실행  
 방법2는 옵션 -a -q 를 추가해줘요. 
@@ -77,7 +77,7 @@ sudo docker cp <from container>:<path> <to container>:<path>
 
 실행중인 프로세스\(컨테이너\) 전체 stop
 
-![&#xC774;&#xC911; &#xBA85;&#xB839;&#xBB38; &#xC791;&#xC131;](../../.gitbook/assets/image%20%2879%29.png)
+![&#xC774;&#xC911; &#xBA85;&#xB839;&#xBB38; &#xC791;&#xC131;](../../.gitbook/assets/image%20%2884%29.png)
 
  docker stop이라는 문장안에 $\(docker ps -a -q\) 명령문을 추가작성함.
 
@@ -87,7 +87,7 @@ sudo docker cp <from container>:<path> <to container>:<path>
 
 #### 컨테이너 모두 지우기 
 
-![](../../.gitbook/assets/image%20%2852%29.png)
+![](../../.gitbook/assets/image%20%2854%29.png)
 
 docker **rm**이라는 문장안에 $\(docker ps -a -q\) 명령문을 추가작성함.
 

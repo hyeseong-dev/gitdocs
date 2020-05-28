@@ -4,7 +4,7 @@ description: 도커 레지스트리와 프라이빗 레지스트리(회원가입
 
 # Way To Find Images - Docker registry
 
-![&#xB3C4;&#xCEE4; taxonomy\(&#xBD84;&#xB958;&#xCCB4;&#xACC4;\) ](../../.gitbook/assets/image%20%28109%29.png)
+![&#xB3C4;&#xCEE4; taxonomy\(&#xBD84;&#xB958;&#xCCB4;&#xACC4;\) ](../../.gitbook/assets/image%20%28117%29.png)
 
  이미지 출처: [https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-Publishing-your-Windows-Container-images-into-a-Docker-Registry](https://github.com/dotnet-architecture/eShopModernizing/wiki/03.-Publishing-your-Windows-Container-images-into-a-Docker-Registry)
 
@@ -41,13 +41,13 @@ description: 도커 레지스트리와 프라이빗 레지스트리(회원가입
 
 >
 
-![&#xB3C4;&#xCEE4;&#xD5C8;&#xBE0C;](../../.gitbook/assets/image%20%2841%29.png)
+![&#xB3C4;&#xCEE4;&#xD5C8;&#xBE0C;](../../.gitbook/assets/image%20%2842%29.png)
 
-![&#xCC3E;&#xAE38; &#xC6D0;&#xD558;&#xB294; &#xC774;&#xBBF8;&#xC9C0; &#xAC80;&#xC0C9;](../../.gitbook/assets/image%20%2837%29.png)
+![&#xCC3E;&#xAE38; &#xC6D0;&#xD558;&#xB294; &#xC774;&#xBBF8;&#xC9C0; &#xAC80;&#xC0C9;](../../.gitbook/assets/image%20%2838%29.png)
 
 
 
-![&#xC77C;&#xBC18; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC62C;&#xB9B0; &#xC774;&#xBBF8;&#xC9C0; ](../../.gitbook/assets/image%20%28119%29.png)
+![&#xC77C;&#xBC18; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC62C;&#xB9B0; &#xC774;&#xBBF8;&#xC9C0; ](../../.gitbook/assets/image%20%28128%29.png)
 
  빈그림의 파일이 있거나, 결정적으로 경로가 있는 파일명은 일반 사용자가 올렸어요.  그리고 사용자의 아이디에 해당되기도해요.   
 그 외에 OFFICIAL IMAGE라고 붙은 것들은 도커 허브 운영진들이 업로드 한거에요. 
@@ -59,7 +59,7 @@ description: 도커 레지스트리와 프라이빗 레지스트리(회원가입
 1.  도커 허브 가입해주세요. 
 2. billing 페이지로 이동해주세요. 
 
-![billing &#xD398;&#xC774;&#xC9C0; &#xC774;&#xB3D9;](../../.gitbook/assets/image%20%2866%29.png)
+![billing &#xD398;&#xC774;&#xC9C0; &#xC774;&#xB3D9;](../../.gitbook/assets/image%20%2868%29.png)
 
 ![billing &#xD654;&#xBA74; ](../../.gitbook/assets/image%20%289%29.png)
 
@@ -67,7 +67,7 @@ description: 도커 레지스트리와 프라이빗 레지스트리(회원가입
   
 
 
-![](../../.gitbook/assets/image%20%28123%29.png)
+![](../../.gitbook/assets/image%20%28132%29.png)
 
  유료로 사용하면 무료로 1개만 사용하는 레포지토리를 pro로 바꾸면 더많은 레포지토리를 사용할 수 있어요.
 

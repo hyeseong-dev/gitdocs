@@ -135,7 +135,7 @@ exmaple 이미지 같은 경우는 80번 포트로 구동된다고 앞에서 말
 
 > 본인 서버IP:80
 
-![](../../.gitbook/assets/image%20%2878%29.png)
+![](../../.gitbook/assets/image%20%2883%29.png)
 
  아래와 같이 성공적으로 접속되요.
 

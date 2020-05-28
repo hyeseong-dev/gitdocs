@@ -24,7 +24,7 @@
 
  기본적으로 우분투 18.04 버전에는 파이썬 3까 설치 되어 있어요. 
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../.gitbook/assets/image%20%2828%29.png)
 
 ###  파이썬 3 파이프 설치
 
@@ -59,19 +59,19 @@
 > 'sha1: asdgjlajkldfjklajsdfklsjad;fjksdfjsdklfjdsklfjdsklfjsdklgh123u812'\(본인꺼 넣으세요\)  
 > exit\(\)
 
-![](../../../.gitbook/assets/image%20%2851%29.png)
+![](../../../.gitbook/assets/image%20%2852%29.png)
 
 > jupyter notebook --generate-config
 
 주피터 노트북 환경설정 파일을 만드는게 위 명령어에요. 비밀번호 설정하려면 환경설정파일에서 하거든요. 
 
-![](../../../.gitbook/assets/image%20%28161%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 #### vi 에디터에서 환경설정 파일 수정 
 
 > sudo jupyter noteboook --generate-conifg
 
-![](../../../.gitbook/assets/image%20%28161%29.png)
+![](../../../.gitbook/assets/image%20%28170%29.png)
 
 위 명령어로 환경 설정 파일을 생성하게 되요. 그리고 생성된 환경설정파일의 경로를 아래줄에 출력해서 보여줘요. 
 
@@ -81,7 +81,7 @@
 
 \(참고로 윈도우, 리눅스, 관라자 계정, 일반사용자 계정에 따라 디렉토리의 위치들이 제가 알려드리는것과 달라질수 있어요.\)
 
-![](../../../.gitbook/assets/image%20%28117%29.png)
+![](../../../.gitbook/assets/image%20%28126%29.png)
 
  밑에서 두번째 줄은 아까 본인이 주피터노트북의 비밀전호인거 기억하시요?   
 그대로 복사 붙여넣기 해주세요.   
@@ -98,7 +98,7 @@ vi 에디터 사용법은\(현재 보이는 애플리케이션\)
 
  아래 스샷, 밑에서 3번째줄 확인하면 본인 해당 IP주소가 8888 번 포트에 열린게 확인되요. 
 
-![](../../../.gitbook/assets/image%20%28181%29.png)
+![](../../../.gitbook/assets/image%20%28191%29.png)
 
 ###  AWS 방황벽 설정 - 8888번 포트 열어놓기 
 
@@ -106,25 +106,25 @@ vi 에디터 사용법은\(현재 보이는 애플리케이션\)
 
 
 
-![](../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../.gitbook/assets/image%20%28106%29.png)
 
 보안그룹의 인바운드로 가볼게요. 
 
  아래와 같이 화면이 바뀔거에요. 
 
-![&#xC778;&#xBC14;&#xC6B4;&#xB4DC; &#xADDC;&#xCE59;](../../../.gitbook/assets/image%20%2857%29.png)
+![&#xC778;&#xBC14;&#xC6B4;&#xB4DC; &#xADDC;&#xCE59;](../../../.gitbook/assets/image%20%2859%29.png)
 
-![&#xC778;&#xBC14;&#xC6B4;&#xB4DC; &#xADDC;&#xCE59; &#xD3B8;&#xC9D1;](../../../.gitbook/assets/image%20%28135%29.png)
+![&#xC778;&#xBC14;&#xC6B4;&#xB4DC; &#xADDC;&#xCE59; &#xD3B8;&#xC9D1;](../../../.gitbook/assets/image%20%28144%29.png)
 
-![&#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815;TCP - TCP - 8888 - &#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815; - 0.0.0.0/0](../../../.gitbook/assets/image%20%28185%29.png)
+![&#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815;TCP - TCP - 8888 - &#xC0AC;&#xC6A9;&#xC790;&#xC9C0;&#xC815; - 0.0.0.0/0](../../../.gitbook/assets/image%20%28196%29.png)
 
 ### 주피터 접속 
 
 > 대시보드의 IP주소를 복사해주세요.
 
-![&#xBCF8;&#xC778; IP &#xB300;&#xC2DC;&#xBCF4;&#xB4DC;&#xC5D0;&#xC11C; &#xD655;&#xC778; ](../../../.gitbook/assets/image%20%2876%29.png)
+![&#xBCF8;&#xC778; IP &#xB300;&#xC2DC;&#xBCF4;&#xB4DC;&#xC5D0;&#xC11C; &#xD655;&#xC778; ](../../../.gitbook/assets/image%20%2881%29.png)
 
-![&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;. &#xD30C;&#xC774;&#xC36C;3 &#xD130;&#xBBF8;&#xB110;&#xC5D0;&#xC11C; &#xC124;&#xC815;&#xD588;&#xB358;&#xAC70; &#xC785;&#xB825;&#xD558;&#xBA74; &#xB418;&#xC694;. ](../../../.gitbook/assets/image%20%28183%29.png)
+![&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;. &#xD30C;&#xC774;&#xC36C;3 &#xD130;&#xBBF8;&#xB110;&#xC5D0;&#xC11C; &#xC124;&#xC815;&#xD588;&#xB358;&#xAC70; &#xC785;&#xB825;&#xD558;&#xBA74; &#xB418;&#xC694;. ](../../../.gitbook/assets/image%20%28194%29.png)
 
 ####  매번 이렇게 터미널 열고sudo jupyter-notebook --allow-root입력하고 웹브라우저에 IP주소:8888입력 해야하나요?
 

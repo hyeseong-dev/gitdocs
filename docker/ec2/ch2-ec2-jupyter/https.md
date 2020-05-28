@@ -28,13 +28,13 @@ network statistics을 어원으로 하는 netstat인데요.
 \[Netstat명령어파악\]\([https://m.blog.naver.com/PostView.nhn?blogId=ysw1130&logNo=220159168596&proxyReferer=https:%2F%2Fwww.google.com%2F](https://m.blog.naver.com/PostView.nhn?blogId=ysw1130&logNo=220159168596&proxyReferer=https:%2F%2Fwww.google.com%2F)\)  
 
 
-![8888&#xD3EC;&#xD2B8; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xD655;&#xC778;](../../../.gitbook/assets/image%20%28143%29.png)
+![8888&#xD3EC;&#xD2B8; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xD655;&#xC778;](../../../.gitbook/assets/image%20%28152%29.png)
 
 > sudo netstat -nap \| grep 8888
 
 이 번에는 sudo 명령어를 입력해주세요. 참고로 sudo는 \(sbustitue user do\)라는 의미를 가지고 있어요.
 
-![sudo &#xBA85;&#xB839;&#xC5B4; &#xC785;&#xB825;](../../../.gitbook/assets/image%20%28157%29.png)
+![sudo &#xBA85;&#xB839;&#xC5B4; &#xC785;&#xB825;](../../../.gitbook/assets/image%20%28166%29.png)
 
  프로세스 ID가 우측 상단에 18317인거 보이조?   
 
@@ -45,7 +45,7 @@ network statistics을 어원으로 하는 netstat인데요.
 
 > sudo kill -9 18317
 
-![&#xC11C;&#xBC84;&#xC5D0;&#xC11C; &#xC8FC;&#xD53C;&#xD130; &#xAEBC;&#xBC84;&#xB9AC;&#xAE30;](../../../.gitbook/assets/image%20%2891%29.png)
+![&#xC11C;&#xBC84;&#xC5D0;&#xC11C; &#xC8FC;&#xD53C;&#xD130; &#xAEBC;&#xBC84;&#xB9AC;&#xAE30;](../../../.gitbook/assets/image%20%2897%29.png)
 
 ####  주피터 노트북 설정 파일 
 
@@ -53,7 +53,7 @@ config 파일에 HTTPS를 적용 해볼게요.
 /home/ubuntu 경로에 ssl 폴더를 만들고 ssl을 만들어 볼건데요. 다시한번 ssl에 대해 설명하면 \_\_통신 보안을 위한 도구\_\_라고 보면 되요.   
  더 자세한 사항은 \_\_공개키 구조\_\_ 에 대해 별도로 학습해주세요. 
 
-![ssl &#xC778;&#xC99D;&#xC11C; &#xC0DD;&#xC131;](../../../.gitbook/assets/image%20%2834%29.png)
+![ssl &#xC778;&#xC99D;&#xC11C; &#xC0DD;&#xC131;](../../../.gitbook/assets/image%20%2835%29.png)
 
 > pwd \# \(print working directory\)를 넣어주세요.  
 > mkdir ssl   
@@ -90,7 +90,7 @@ writing new private key to 'cert.key'
 
 > ls \# 현재폴더의 파일들을 확인해주세요.
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28179%29.png)
 
 
 
@@ -98,7 +98,7 @@ writing new private key to 'cert.key'
 
 위 명령어는 기본적으로 동일합니다. 그대로 복붙해서 주피터노트북의 설정파일을 실행해볼게요. 
 
-![sudo vi /home/ubuntu/.jupyter/jupyter\_notebook\_config.py](../../../.gitbook/assets/image%20%28127%29.png)
+![sudo vi /home/ubuntu/.jupyter/jupyter\_notebook\_config.py](../../../.gitbook/assets/image%20%28136%29.png)
 
 
 
@@ -108,13 +108,13 @@ writing new private key to 'cert.key'
 
 > c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key'
 
-![](../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../.gitbook/assets/image%20%28161%29.png)
 
 저장하고 vim에서 나와\(:wq\)주세요. 
 
 > sudo jupyter-notebook --allow-root
 
-![&#xC8FC;&#xD53C;&#xD130; &#xC2E4;&#xD589; ](../../../.gitbook/assets/image%20%2833%29.png)
+![&#xC8FC;&#xD53C;&#xD130; &#xC2E4;&#xD589; ](../../../.gitbook/assets/image%20%2834%29.png)
 
 https가 붙은거 보이조?    
 서버가 background에서 잘 작동되도록 해볼게요. 
@@ -133,7 +133,7 @@ ctrl+z를 눌러서 나가 주시고
 
 #### https://xx.xxx.xxx.xxx:8888 
 
-![&#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xC18D;&#xB41C;&#xAC70;&#xC785;&#xB2C8;&#xB2E4;. ](../../../.gitbook/assets/image%20%28136%29.png)
+![&#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xC18D;&#xB41C;&#xAC70;&#xC785;&#xB2C8;&#xB2E4;. ](../../../.gitbook/assets/image%20%28145%29.png)
 
 인증서를 통해 접속된걸 확인할수 있습니다. 다만 우리가 만든 인증서는 공인인증기관 \(**Comodo, Thawte, GeoTrust, DigiCert\)에서 돈주고 한게 아니라서 저렇게 웹브라우저가 위험하다는 느낌표를 보여주는거에요.** 
 

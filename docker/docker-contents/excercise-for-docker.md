@@ -40,7 +40,7 @@ description: 한큐에 실습하고 요약
 
 **8080포트를 지정은 jenkins pull 명령어 사용후 -&gt; inspect명령어로 살펴보면 안에 port 정보가 나와있어요. 이를 바탕으로 넣어주세요.**
 
-![inspect &#xBA85;&#xB839;&#xC5B4;&#xB85C; &#xAC01; &#xC774;&#xBBF8;&#xC9C0; &#xD3EC;&#xD2B8; &#xD655;&#xC778; ](../../.gitbook/assets/image%20%28180%29.png)
+![inspect &#xBA85;&#xB839;&#xC5B4;&#xB85C; &#xAC01; &#xC774;&#xBBF8;&#xC9C0; &#xD3EC;&#xD2B8; &#xD655;&#xC778; ](../../.gitbook/assets/image%20%28190%29.png)
 
 \*\*\*\*
 
@@ -63,7 +63,7 @@ description: 한큐에 실습하고 요약
 아래와 같은 화면이 나와요. 노란색 부분이 초기 비밀번호가 있는 경로인데요.  
  
 
-![&#xCD08;&#xAE30; &#xBE44;&#xBC00;&#xBC88;&#xD638;&#xAC00; &#xC788;&#xB294; path&#xB97C; &#xCD9C;&#xB825;&#xD574;&#xC90C;](../../.gitbook/assets/image%20%28166%29.png)
+![&#xCD08;&#xAE30; &#xBE44;&#xBC00;&#xBC88;&#xD638;&#xAC00; &#xC788;&#xB294; path&#xB97C; &#xCD9C;&#xB825;&#xD574;&#xC90C;](../../.gitbook/assets/image%20%28176%29.png)
 
 즉, initPasswod 디렉토리에서 확인 가능해요. initPasswod 디렉토리의 경로를 알아낸 다음cat 명령어로 확인 할 수 있어요.
 

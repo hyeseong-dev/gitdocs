@@ -64,7 +64,7 @@ docker port wordpress
 
 호스트의 32769번 포트와 연결되었어요. 결국 호스트의 IP와 32769번 포트로 워드프레스 웹 서버에 접근 할 수 있어요. 웹브라우저에서 호스트 IP:32769로 접속 하였는 경우 성공적으로 아래와 같이 나와요. 
 
-![&#xD30C;&#xC774;&#xC5B4; &#xD3ED;&#xC2A4;&#xC5D0;&#xC11C; &#xC811;&#xC18D;&#xD55C; &#xBAA8;&#xC2B5;](../../.gitbook/assets/image%20%28105%29.png)
+![&#xD30C;&#xC774;&#xC5B4; &#xD3ED;&#xC2A4;&#xC5D0;&#xC11C; &#xC811;&#xC18D;&#xD55C; &#xBAA8;&#xC2B5;](../../.gitbook/assets/image%20%28113%29.png)
 
 #### 옵션 
 
@@ -81,7 +81,7 @@ docker ps -a 명령어를 입력하면 되요.
   
 
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
 docker start로 컨테이너를 시작해도 컨테이너 내부에 터미널을 차지하는 foreground로써 동작하는 프로그램이 없으므로 컨테이너는 시작되지 않아요.   
 그럼 반대로 mysql 컨테이너를 **-i -t 옵션으로 실행**하면 어떻게 될까요? 
