@@ -61,8 +61,8 @@
   * [13. 디렉토리와 파일 생성](linux-1/unix/13..md)
   * [14. 디렉토리, 파일 이동과 이름바꾸기](linux-1/unix/14..md)
   * [15. 복사,붙여넣기](linux-1/unix/15..md)
-* [Linux 꼬꼬마 명령어](linux-1/linux.md)
 * [Error](linux-1/error/README.md)
+  * [vi E325 오류](linux-1/error/vi-e325.md)
   * [가상머신 clipboard 활성화](linux-1/error/clipboard.md)
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 
@@ -93,6 +93,7 @@
 
 ## etc
 
+* [Untitled](etc/untitled.md)
 * [아무거나](etc/undefined-1/README.md)
   * [모르는거 어떻게 해결하세요?](etc/undefined-1/undefined-2.md)
   * [크롬 단축키](etc/undefined-1/undefined.md)

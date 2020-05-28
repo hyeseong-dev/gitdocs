@@ -111,7 +111,7 @@ CMD ["apachectl", "-D", "FOREGROUND" ]
 daemon 상태로 만들어 준다는 말이에요.
 ```
 
-#### Dockerfile Build하
+#### Dockerfile Build
 
 > docker build -t example .
 
