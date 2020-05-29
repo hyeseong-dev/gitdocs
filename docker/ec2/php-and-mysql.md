@@ -22,7 +22,7 @@ Dockerfile  html
  우리가 원하는 PHP &lt;-- --&gt; MySQL 연동을 위해선 추가적으로 단하나의 패키지만 더 설치하도록 Dockerfile을 작성해주면 되요. 
 
 그건 바로  **RUN apt-get install -y php5.6-mysql** 입니다.   
-이 php5.6-mysql 패키지를 통해서 
+이 php5.6-mysql 패키지를 통해서 php와 mysql을 서로 연동할수 있게 되는거에요. 
 
 {% tabs %}
 {% tab title="EC2 server" %}
@@ -58,4 +58,6 @@ CMD ["apachectl", "-D", "FOREGROUND" ]
 {% endtabs %}
 
 
+
+example이라는 이름으로 빌드 할텐데요. 기존의 이미지 파일들과 컨테이너는 다 지워주세요. 
 
