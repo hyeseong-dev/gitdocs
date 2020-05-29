@@ -94,3 +94,42 @@ index.php
 <?php phpinfo(); ?>
 ```
 
+### index.php 파일 수정
+
+vi에디터로 index.php파일을 수정하는데에는 한계가 있다면 긴 소스코드를 작성하는데 있어요. 
+
+```text
+vi index.php
+```
+
+vi 에디터로 수정하는거 대신 Jupyter로 간편하게 수정해볼게요. 
+
+/home/ubuntu/example/html 경로로 가시면 되요. 
+
+![](../../.gitbook/assets/image%20%28215%29.png)
+
+php 소스코드를 작성해볼게요.   
+php5.6에서 mysql에 접속하는 기본적인 문법을 다뤄 볼게요.
+
+일반적으로 $conn객체를 만들어 mysql 접속 관련 객체 초기화 할수 있어요.   
+
+{% tabs %}
+{% tab title="index.php" %}
+```text
+<?php 
+    $conn = mysqli_connect(
+    '{3.22.225.2}',
+    'test',
+    'password',
+    'TEST',
+    '9876'
+    );
+    if(mysqli_connect_errno()){
+        echo "Failed to connect to MySQL: ".mysqli_connect.error()
+    }
+?>
+
+```
+{% endtab %}
+{% endtabs %}
+
