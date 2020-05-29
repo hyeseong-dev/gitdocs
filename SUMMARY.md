@@ -27,7 +27,7 @@
   * [실습](docker/deep-dive/undefined/README.md)
     * [Untitled](docker/deep-dive/undefined/untitled.md)
   * [애플리케이션구축](docker/deep-dive/undefined-1.md)
-* [도커실습](docker/ec2/README.md)
+* [Excercise](docker/ec2/README.md)
   * [EC2 서버구축하기](docker/ec2/ch1-ec2.md)
   * [EC2 Jupyter로  서버관리](docker/ec2/ch2-ec2-jupyter/README.md)
     * [주피터에서 HTTPS 적용](docker/ec2/ch2-ec2-jupyter/https.md)
@@ -116,5 +116,5 @@
 
 * [Library](python/library/README.md)
   * [Socket 모듈](python/library/socket.md)
-* [Github](github.md)
+* [Github](python/github.md)
 
