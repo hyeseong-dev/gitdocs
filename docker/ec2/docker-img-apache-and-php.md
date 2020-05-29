@@ -75,13 +75,51 @@ CMD ["apachectl", "-D", "FOREGROUND" ]
 
  이전 버전인 PHP5.6 설치를 위해 먼저 software-properties-common이라는 명령어 6번째 줄의에  입력할게요. 
 
+```text
+RUN apt-get -y software-properties-common
+```
+
 > software-properties-common은 제 블로그글에서 검색해서 관련 내용을 확인해보세요.
 
 
 
 7번째 줄에는 PHP5.6을 설치할수 있도록하는 추가 명령어를 입력할게요. 
 
+```text
+RUN add-apt-repository ppa:ondrej/php
+```
 
+
+
+Vim 에디터를 나와주세요.\( ESC + :wq! \)
+
+ 그리고 아래와 같이 docker build명령어를 입력해볼게요.
+
+```text
+docker build -t example .
+```
+
+ 1~2분 소요가되고 마지막에 아래와 같은 옵션이 나오는걸 확인할 수 있어요.  하지만 아무것도 입력할 수 없는 상태에요.   
+지금 docker image가 실행되고 있는 상태라서 그래요. 
+
+  
+도커 파일을 이용해서 하나의 서버 이미지를 만들때 추가적인 작업을 물어보는 경우가 아래와 같아요. 
+
+일단, Ctrl + Z를 눌러 나가 볼게요.   
+
+
+```text
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration
+questions will narrow this down by presenting a list of cities, representing
+the time zones in which they are located.
+
+  1. Africa      4. Australia  7. Atlantic  10. Pacific  13. Etc
+  2. America     5. Arctic     8. Europe    11. SystemV
+  3. Antarctica  6. Asia       9. Indian    12. US
+Geographic area:
+```
 
 
 
