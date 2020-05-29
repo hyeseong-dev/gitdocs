@@ -121,8 +121,30 @@ the time zones in which they are located.
 Geographic area:
 ```
 
+ TZ\(Time Zone\)을 물어보는 상황이었습니다. 사실   
+이런 질문을 던지는걸 피하기 위해서 **사용자 interaction이 나타나는걸 방지하기 위해서 환경변수를 설정**해주면 해결되요. 
 
+다시 vi Dockerfile 명령어를 입력하고 실행하세요.   
+그리고 4번째 줄에 ENV DEBINAN\_FRONTEND=nointeractive  
+입력하세요. 
 
+```text
+FROM ubuntu:18.04
+MAINTAINER Hyeseong lee <hyeseong43@gmail.com>
+
+ENV DEBINAN_FRONTEND=nointeractive
+
+RUN apt-get update
+RUN apt-get install -y apache2
+RUN apt-get -y software-properties-common
+RUN add-apt-repository ppa:ondrej/php
+EXPOSE 80
+
+CMD ["apachectl", "-D", "FOREGROUND" ]
+```
+
+ 그리고 다시 빌드를 수행하기 위해 아래 명령어를 실해 볼게요.   
+**Docker build -t example .**  
 
 
 ---
