@@ -1,2 +1,2 @@
-# 도커실습
+# DockerPractice
 
