@@ -229,7 +229,7 @@ create user 'test'@'%' identified by 'password';
 
 ```text
 grant all privileges on *.* to 'test'@'%';
-flsuh privileges;
+fluh privileges;
 exit
 docker restart 컨테이너ID 
 ```
