@@ -34,6 +34,7 @@
   * [Docker 설치 및 Dockerfile로 웹 서버 구동](docker/ec2/docker-dockerfile.md)
   * [Docker img로 Apache & PHP 개발환경 구축](docker/ec2/docker-img-apache-and-php.md)
   * [MySQL 컨테이너 생성](docker/ec2/mysql.md)
+  * [PHP컨테이너&MySQL컨테이너 연동](docker/ec2/php-and-mysql.md)
   * [Heidi SQL을 이용해 간편하게 AWS RDS 접속하기](docker/ec2/heidi-sql-aws-rds.md)
   * [AWS VPC를 활용해 RDS에 안전하게 접근하기](docker/ec2/aws-vpc-rds.md)
 
