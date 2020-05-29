@@ -59,5 +59,38 @@ CMD ["apachectl", "-D", "FOREGROUND" ]
 
 
 
-example이라는 이름으로 빌드 할텐데요. 기존의 이미지 파일들과 컨테이너는 다 지워주세요. 
+Dockerfile을 위와 같이 작성하고 Vim에디터를 나와주세요. 
+
+### Docker 이미지 빌드 
+
+```text
+docker build -t example . 
+```
+
+ 도커 이미지가 정상적으로 빌드되었으면,  아래 명령어로 example 이미지 이름을 찾을 수 있게 될거에요. 
+
+```text
+docker images 
+```
+
+####  Run명령어로 컨테이너를 만들고 실행해볼게요. 
+
+아래 명령어로 컨테이너를 구동해 볼게요. 
+
+```text
+Docker run -p 80:80 -v /home/ubuntu/example/html:var/www/html example
+```
+
+
+
+주피터 노트북에서 터미널을 하나 더 새롭게 만들어 주세요.   
+그리고 php문서를 작업해 볼게요.  ls명령어를 실행해보면 이전에 우리가 작없했던 index.php파일이 보일거에요.
+
+```text
+> cd /home/ubuntu/example/html
+> ls 
+index.php
+> cat index.php # 해당 파일의 내용을 출력하게함cat(concatenate)  
+<?php phpinfo(); ?>
+```
 
