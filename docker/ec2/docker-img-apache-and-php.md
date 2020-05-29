@@ -99,6 +99,8 @@ RUN add-apt-repository ppa:ondrej/php
 
 Vim 에디터를 나와주세요.\( ESC + :wq! \)
 
+## Volume 공유를 통한 PHP 소스코드 동작 
+
 ###  Dockerfile build하기 
 
  그리고 아래와 같이 docker build명령어를 입력해볼게요.
@@ -194,14 +196,14 @@ hello-world         latest              bf756fb1ae65        4 months ago        
 
 만약 실행 중인 컨테이너가 있을경우 이미지 삭제가 안되요. 그럴경우 아래 명령어를 이용해주세요. 
 
-![](../../.gitbook/assets/image%20%28201%29.png)
+![](../../.gitbook/assets/image%20%28206%29.png)
 
 ```text
 docker ps -a 
 docker rm -f 컨테이너ID 
 ```
 
-![](../../.gitbook/assets/image%20%28200%29.png)
+![](../../.gitbook/assets/image%20%28204%29.png)
 
 ```text
 docker rmi -f 이미지ID 
@@ -227,30 +229,74 @@ docker run -p 80:80 -v /home/ubuntu/example/html:/var/www/html example
 
 
 
+이제 본인 EC2 서버 IP주소:80 입력하고 실행하면 아래와 같이 실행되요. 
+
+![](../../.gitbook/assets/image%20%28203%29.png)
+
+
+
+터미널을 한개더 생성해 볼게요. 
+
+New 탭버튼 클릭하고 Terminal 눌러주세요. 
+
+![](../../.gitbook/assets/image%20%28201%29.png)
+
+ 아래 명령어로 실행해서 해당 디렉토리로 이동하세요.   
+이곳 html디렉토리에서 html문서나 php 문서 작업하고 저장된 것들이 아파치 컨테이너에서 저장하게동일하게 적용된다는 말이에요. 
+
+```text
+cd /home/ubuntu/example/html 
+```
+
+
+
+일반적으로 웹서버에 올라가는 기본 파일명은 index가 된답니다.  
+vim 에디터로 index.php 파일을 작성할텐데요.   
+우선 &lt;?php phpinfo\(\);?&gt;  이렇게 작성, 저장까지 마무리하고 나와주세요.  
+
+{% tabs %}
+{% tab title="ubuntu" %}
+```text
+vi index.php
+```
+{% endtab %}
+
+{% tab title="index.php" %}
+```
+<?php phpinfo(); ?>
+```
+{% endtab %}
+{% endtabs %}
+
+그리고 아까 켜놓은 php 웹브라우저를 켜보면 **컨테이너 안에 설치가된 php 버전명과 각종 환경 설정이 출력되는걸 확인 할 수 있어요.** 
+
+![](../../.gitbook/assets/image%20%28207%29.png)
+
+
+
+결론: 이번에는 도커파일을 작성해서 아파치 웹서버 및 PHP를 설치해 하나의 웹서버가 완성된 형태로써 나의 서버에 실행된걸 확인할수 있었음. 
+
+![](../../.gitbook/assets/image%20%28200%29.png)
+
+ 구체적으로는 컨테이너 하나에 아파치와 PHP를 설치해서 간편하고 신속하게 도커 RUN 명령어로 이용 가능하다는 말이에요. 
+
+예를 들어서 -p 옵션을 두고 호스트의 81번 포트를 열어서 컨테이너의 80번 포트와 연결할 수 있도록 하고 -v 옵션을 둬서 위에서 실습했던것과 동일하게 경로를 지정하면 
+
+```text
+docker run -p 81:80 -v /home/ubuntu/example/html:/var/www/html example
+```
+
+81번 포트로 웹 서버가 열린걸 확인 할 수 있어요.   
+EC2에서 인바운드 규칙 편집에서 81번 포트를 방화벽으로 열어주게되면 81번 포트로도 마찬가지로 접속 할 수 있게 되는거에요. 
+
+![](../../.gitbook/assets/image%20%28202%29.png)
+
+![](../../.gitbook/assets/image%20%28205%29.png)
+
+즉 다양한 웹 서버를 하나의 서버에서  실행 시킬수 있다는 말이에요.   
+결국 서비스 배포와 관리가 매우 손쉽다는 말이기도 하겠지요?
+
 ---
-
-
-
-## Volume 공유를 통한 PHP 소스코드 동작 
-
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
-```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-{% endcode %}
 
 
 
