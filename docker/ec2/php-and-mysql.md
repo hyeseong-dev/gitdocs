@@ -78,7 +78,7 @@ docker images
 아래 명령어로 컨테이너를 구동해 볼게요. 
 
 ```text
-Docker run -p 80:80 -v /home/ubuntu/example/html:var/www/html example
+docker run -p 80:80 -v /home/ubuntu/example/html:var/www/html example
 ```
 
 
