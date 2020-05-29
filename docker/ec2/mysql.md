@@ -81,7 +81,7 @@ Enter password:
 데이터 베이스를 생성해볼게요. 
 
 ```text
-mysql> create databaset test;
+mysql> create database test;
 Query OK, 1 row affected (0.00 sec)
 ```
 
