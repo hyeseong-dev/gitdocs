@@ -4,6 +4,8 @@
 
 
 
+### 컨테이너 목록 확인 
+
 #### docker ps -a 
 
 ```text
@@ -13,6 +15,8 @@ e8bfedabc155        example             "apachectl -D FOREGR…"   23 hours ago 
 ```
 
 이전 시간에 만들었던 아파치 컨테이너 하나가 있습니다. 
+
+###  컨테이너 전부 삭제 
 
 #### **docker rm -f $\(docker ps -a -q\)**
 
@@ -27,6 +31,8 @@ e8bfedabc155
 시작에 앞서서  불필요한 컨테이너들을 말끔히 정리했습니다. 
 
 
+
+###  Vim 에디터로 파일 수정 
 
 #### Dockerfile 수정 
 
@@ -93,6 +99,8 @@ RUN add-apt-repository ppa:ondrej/php
 
 Vim 에디터를 나와주세요.\( ESC + :wq! \)
 
+###  Dockerfile build하기 
+
  그리고 아래와 같이 docker build명령어를 입력해볼게요.
 
 ```text
@@ -132,7 +140,7 @@ Geographic area:
 FROM ubuntu:18.04
 MAINTAINER Hyeseong lee <hyeseong43@gmail.com>
 
-ENV DEBINAN_FRONTEND=nointeractive
+ENV DEBIAN_FRONTEND=nointeractive
 
 RUN apt-get update
 RUN apt-get install -y apache2
@@ -144,7 +152,79 @@ CMD ["apachectl", "-D", "FOREGROUND" ]
 ```
 
  그리고 다시 빌드를 수행하기 위해 아래 명령어를 실해 볼게요.   
-**Docker build -t example .**  
+**Docker build -t example .  
+그럼 이번엔 build가 성공적으로 된걸 확인 할수 있어요.** 
+
+**혹시나 중간에 오류가 생겼다면 Dockerfile에 오타가 없는지 확인해보세요.\(저 같은 경우 ENV DEBIAN을 DEBINAN으로 써서 ;;;\)**
+
+### 
+
+### 빌드된 Docker 이미지 확인 
+
+ 아래 example이라는 이미지가생성된걸 잘 확인 할수 있어요.   
+그리고 build에 실패했던 이미지들은 none이라는 이미지 이름과 tag를 갖고 있네요. 
+
+```text
+root@ip-172-31-35-20:~/example# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example             latest              59277117bebc        5 minutes ago       256MB
+<none>              <none>              34951bfec79f        42 hours ago        189MB
+ubuntu              18.04               c3c304cb4f22        5 weeks ago         64.2MB
+hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+```
+
+####  none 이미지 삭제 
+
+Image ID 2자리 혹은 3자리를  간단히 입력해도 delete가 되요. 
+
+```text
+root@ip-172-31-35-20:~/example# docker rmi 349
+Deleted: sha256:34951bfec79fe3e083f2fd972dfa2868530bdfd19bbf16e25d913233bc2b59b2
+Deleted: sha256:4db320fd12a70e8b1010505b15b403fcb1ba142c920ef5faea34f016defcd6d0
+Deleted: sha256:ddc319f07cf933e3452134d7f70c131cebb0c00442299af045fc3d100de4ea8c
+Deleted: sha256:ce2340187cfe8c53d589120fe73aa36d78613834e549b947dc5a7bf47c8925c7
+Deleted: sha256:cc2a3e91c2069ed8ce9128f2c389eced064f962c6f33559cf614412c6e65d82b
+Deleted: sha256:038fe5d5367f9e5c9f7c62902f7f70120844b6fa3296b09b046aa49980d82e68
+root@ip-172-31-35-20:~/example# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+example             latest              59277117bebc        8 minutes ago       256MB
+ubuntu              18.04               c3c304cb4f22        5 weeks ago         64.2MB
+hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+```
+
+만약 실행 중인 컨테이너가 있을경우 이미지 삭제가 안되요. 그럴경우 아래 명령어를 이용해주세요. 
+
+![](../../.gitbook/assets/image%20%28201%29.png)
+
+```text
+docker ps -a 
+docker rm -f 컨테이너ID 
+```
+
+![](../../.gitbook/assets/image%20%28200%29.png)
+
+```text
+docker rmi -f 이미지ID 
+```
+
+none이미지와 none 이미지로 만들어진 컨테이너를 정지 삭제 마지막으로 none이미지도 삭제해봤어요.  
+
+###  빌드한 이미지 실행
+
+-p 옵션으로 80번 포트를 열어줄게요.  
+
+이후 -v 옵션으로 마운팅을 진행할건데요. : 콜론을 기준으로 좌항은 host에 해당되는데요. 
+
+/home/ubuntu/example/html 은 호스트의 경로라는 말이에요. example까지는 현재 작업하는 경로네요!  
+
+: 우항 /var/www/html은 컨테이너의 경로이며 php의 소스코드가 놓이는 기본적인 경로를  말해요. 
+
+**즉 -v 옵션에서 호스트의 디렉토리에 어떤 파일A를 놓으면 그 A파일은 복사되서 컨테이너에 있는 아파치 경로에 복사된 파일이 놓이게 되는거에요.** 
+
+```text
+docker run -p 80:80 -v /home/ubuntu/example/html:/var/www/html example 
+```
+
 
 
 ---
