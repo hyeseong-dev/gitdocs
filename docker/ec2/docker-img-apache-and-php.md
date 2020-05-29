@@ -65,12 +65,19 @@ MAINTAINER Hyeseong lee <hyeseong43@gmail.com>
 
 RUN apt-get update
 RUN apt-get install -y apache2
-RUN apt-get -y software-
+RUN apt-get -y software-properties-common
+RUN add-apt-repository ppa:ondrej/php
 EXPOSE 80
 
 CMD ["apachectl", "-D", "FOREGROUND" ]
 ```
 {% endcode %}
+
+ 이전 버전인 PHP5.6 설치를 위해 먼저 software-properties-common이라는 명령어 6번째 줄의에  입력할게요. 
+
+7번째 줄에는 PHP5.6을 설치할수 있도록하는 추가 명령어를 입력할게요. \(
+
+
 
 > software-properties-common은 제 블로그글에서 검색해서 관련 내용을 확인해보세요.
 
