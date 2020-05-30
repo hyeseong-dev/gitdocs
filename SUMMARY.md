@@ -35,6 +35,7 @@
   * [Docker img로 Apache & PHP 개발환경 구축](docker/ec2/docker-img-apache-and-php.md)
   * [MySQL 컨테이너 생성](docker/ec2/mysql.md)
   * [PHP컨테이너&MySQL컨테이너 연동](docker/ec2/php-and-mysql.md)
+  * [AWS의 RDS를 이용 -  DB 구축](docker/ec2/aws-rds-db.md)
   * [Heidi SQL을 이용해 간편하게 AWS RDS 접속하기](docker/ec2/heidi-sql-aws-rds.md)
   * [AWS VPC를 활용해 RDS에 안전하게 접근하기](docker/ec2/aws-vpc-rds.md)
 
@@ -76,6 +77,7 @@
 * [No.2](undefined-1/no.2/README.md)
   * [데브옵스가 뭔데요?](undefined-1/no.2/undefined.md)
 * [No.1](undefined-1/no.1/README.md)
+  * [영속성\(Persistence\) 정의](undefined-1/no.1/persistence.md)
   * [software-properties-common](undefined-1/no.1/software-properties-common.md)
   * [PHP란?](undefined-1/no.1/php.md)
   * [유저랜드\(User Land\)](undefined-1/no.1/user-land.md)
