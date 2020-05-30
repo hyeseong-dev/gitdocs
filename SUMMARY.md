@@ -36,8 +36,7 @@
   * [MySQL 컨테이너 생성](docker/ec2/mysql.md)
   * [PHP컨테이너&MySQL컨테이너 연동](docker/ec2/php-and-mysql.md)
   * [AWS의 RDS를 이용 -  DB 구축](docker/ec2/aws-rds-db.md)
-  * [Heidi SQL을 이용해 간편하게 AWS RDS 접속하기](docker/ec2/heidi-sql-aws-rds.md)
-  * [AWS VPC를 활용해 RDS에 안전하게 접근하기](docker/ec2/aws-vpc-rds.md)
+  * [Github에 Docker Project Uplaod](docker/ec2/github-docker-project-uplaod.md)
 
 ## Linux <a id="linux-1"></a>
 
