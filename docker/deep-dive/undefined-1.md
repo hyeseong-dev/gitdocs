@@ -175,7 +175,7 @@ exec로 mysql 컨테이너에 들어왔을때는 exit를 써도 컨테이너가 
 
 ```text
 docker exec wordpress curl mysql:3306 --silent
-rl&mysql_native_password Got packets out of orderr
+rl&mysql_native_password Got packets out of order
 ```
 
 --link 옵션을 쓸때 유의할 점은 --link에 입력된 컨테이너가 실행중이지 않거나 존재하지 않는다면 --link
