@@ -124,7 +124,7 @@ $ tar xzvf docker-17.04.0-ce.tgz
 * index.php가 실행되도록 git clone 명령어를 진행할게요. 
 * 젠킨스 컨테이너를 나와주세요.\(exit\)
 * 다시 젠킨스 웹사이트로 가서 Build Now 버튼을 누르면 성공적으로 되는걸 확인 할수 있어요. 
-* 실제 EC2IP:8080포트로 접속하면 PHP와 MySQL이 연동된걸 확인 할 수 있어요. 
+* 실제 EC2IP 접속하면 PHP와 MySQL이 연동된걸 확인 할 수 있어요. 
 
 ```text
 $ mv docker/docker /usr/local/bin
