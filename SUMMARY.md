@@ -45,6 +45,7 @@
 ## Linux <a id="linux-1"></a>
 
 * [Linux Command](linux-1/linux-command/README.md)
+  * [기본명령어 & 네트워크명령어](linux-1/linux-command/and.md)
   * [Find 명령어](linux-1/linux-command/find.md)
   * [usermod](linux-1/linux-command/usermod.md)
   * [ln](linux-1/linux-command/ln.md)
