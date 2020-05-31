@@ -160,6 +160,8 @@ docker run -p 80:80 -v /home/Docker-Practice/Project:/var/www/html hyeseong43/do
 ##  결론 
 
 1. github에 commit, push 과정만으로 이미지가 자동 빌드되게 만들 수 있음. 
+2. 
+![](../../.gitbook/assets/image%20%28218%29.png)
 
 
 
