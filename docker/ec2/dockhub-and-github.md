@@ -155,7 +155,12 @@ docker pull hyeseong43/docker-practice
 docker run -p 80:80 -v /home/Docker-Practice/Project:/var/www/html hyeseong43/docker-practice
 ```
 
-  
+
+
+##  결론 
+
+1. github에 commit, push 과정만으로 이미지가 자동 빌드되게 만들 수 있음. 
+
 
 
 
