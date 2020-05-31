@@ -40,6 +40,7 @@
   * [Github에 Docker Project Uplaod](docker/ec2/github-docker-project-uplaod.md)
   * [Dockhub & Github 연동](docker/ec2/dockhub-and-github.md)
   * [Building Docker Project w/t Jekins](docker/ec2/building-docker-project-w-t-jekins.md)
+  * [Builing Server Program w/t Jekins 2](docker/ec2/builing-server-program-w-t-jekins-2.md)
 
 ## Linux <a id="linux-1"></a>
 
