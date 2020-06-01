@@ -20,5 +20,5 @@ if __name__== '__main__':
 
 
 
-
+첫줄은 Flask class를 import한거에요. Flask의 인스턴스가 WSGI 어플리케이션이 될거에요. 
 
