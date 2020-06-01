@@ -102,6 +102,8 @@
 * [시작하기](flask/undefined.md)
 * [Quick Start](flask/other/README.md)
   * [App & Route](flask/other/app-and-route.md)
+* [Flask Terms](flask/flask-terms.md)
+* [Template](flask/template.md)
 
 ## Internet <a id="webpage-webserver-search-engine"></a>
 
