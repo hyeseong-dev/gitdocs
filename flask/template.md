@@ -48,5 +48,36 @@ if __name__=="__main__":
 
 ###  route에서 URI 함수란?
 
-* url\_for\(\)함수는 나중에 
+*  * Flask 클래스에는 test\_request\_context\(\)란 메소드가 있어요. 클라이언트가 서버에게 url접속\(즉, HTTP request\)을 테스트하는 용도로 쓰이고, 호출시에는 테스트할 수 있는 객체가 생성되요.
+  * 위에서 생성된 객체를 url\_for\(\) 함수를 이용하여 요청 테스트를 해볼게요.
+  * url\_for\(\) 함수는 현재는 가볍게 보세요. 
+
+```text
+from flask import Flask, url_for
+
+app = Flask(__name__) #Flask 객체 인스턴스 생성
+
+
+@app.route('/')
+def hello():
+   return "<h1>Hello World</h1>"
+
+@app.route('/flask/')
+def flask():
+   return "<h3>Hello flask</h3>"
+
+@app.route('/user/<userName>')
+def get_userName(userName):
+   return "Hello "+ userName
+
+@app.route('/userid/<int:userId>')
+def get_userId(userId):
+   return "user ID : {}".format(userId)
+
+if __name__=="__main__":
+   with app.test_request_context():
+       print(url_for('hello'))
+       print(url_for('get_userName', userName = "park"))
+
+```
 
