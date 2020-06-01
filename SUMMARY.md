@@ -104,6 +104,7 @@
   * [App & Route](flask/other/app-and-route.md)
 * [Flask Terms](flask/flask-terms.md)
 * [Template](flask/template.md)
+* [HTTP Protocol](flask/http-protocol.md)
 
 ## Internet <a id="webpage-webserver-search-engine"></a>
 
