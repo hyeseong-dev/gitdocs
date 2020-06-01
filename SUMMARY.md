@@ -83,6 +83,7 @@
 * [No.2](undefined-1/no.2/README.md)
   * [데브옵스가 뭔데요?](undefined-1/no.2/undefined.md)
 * [No.1](undefined-1/no.1/README.md)
+  * [IaaS, PaaS, SaaS DaaS란](undefined-1/no.1/iaas-paas-saas-daas.md)
   * [영속성\(Persistence\) 정의](undefined-1/no.1/persistence.md)
   * [software-properties-common](undefined-1/no.1/software-properties-common.md)
   * [PHP란?](undefined-1/no.1/php.md)
@@ -124,6 +125,4 @@
 
 * [Library](python/library/README.md)
   * [Socket 모듈](python/library/socket.md)
-* [Github](python/github.md)
-* [시험용 제목](undefined-2.md)
 
