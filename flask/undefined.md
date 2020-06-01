@@ -41,7 +41,7 @@ hello world를 출력해볼게요. 아래 소스코드를 작성하고 파일이
 ```text
 from flask import Flask
 
-app = Flask(__name__)
+app = Flask(__name__) # 플라스크 객체 인스턴스를 만듬
 
 @app.route("/")
 def hello(): 

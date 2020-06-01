@@ -96,6 +96,12 @@
   * [API가 뭔가요?](undefined-1/no.1/api.md)
   * [온프레미스와 클라우드 차이점](undefined-1/no.1/undefined.md)
 
+## Flask
+
+* [시작하기](flask/undefined.md)
+* [other](flask/other/README.md)
+  * [App & Route](flask/other/app-and-route.md)
+
 ## Internet <a id="webpage-webserver-search-engine"></a>
 
 * [Deep Dive To The Internet](webpage-webserver-search-engine/deep-dive-to-the-internet/README.md)
@@ -125,10 +131,4 @@
 
 * [Library](python/library/README.md)
   * [Socket 모듈](python/library/socket.md)
-
-## Flask
-
-* [Environment](flask/untitled.md)
-* [시작하기](flask/undefined.md)
-* [실행과정](flask/undefined-1.md)
 
