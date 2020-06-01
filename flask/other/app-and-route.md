@@ -1,6 +1,6 @@
 # App & Route
 
-### main.py - hello world 
+## 실습1 - hello world 
 
 ```text
 from flask import Flask 
@@ -35,5 +35,64 @@ if __name__=='__main__':
 
 ###  Routing? 
 
+*  URL & URI를 간단하게 처리하게 해주는 기능 
+* route\(\)epzhfpdlxj\(@\) 사용 
+
+> **Warning!!   
+> 2개의 서버를 띄울수 없어요.   
+> 새로운 파일을 만들어서 서버를 돌릴때는 이전 서버는 종료시켜주세요.**
+
+\*\*\*\*
+
+## 실습2 - Hello flask 
+
+이번엔 라우트를 한개 더 추가해볼게요.
+
+```text
+from flask import Flask 
+app = Flask(__name__) # 인스턴스 생성 
+
+@라우트 작
+@app.route('/')
+def hello():
+   return "Hello World"
+
+@app.route('/flask/')
+def flask():
+   return "Hello flask"
+
+if __name__=="__main__":
+   app.run()
+```
+
+라우트 패턴은 반드시 /\(슬래시\)로 시작해서 /\(슬래시\)로 끝나야해요.   
+만약 없는 경우 파일로 인식해요. ex.index.txt 
+
+##  실습3 - Route 매개변수 전달\(문자열\) 
+
+```text
+from flask import Flask
+
+app = Flask(__name__) #Flask 객체 인스턴스 생성
+
+#라우트 작업
+@app.route('/')
+def hello():
+   return "Hello World"
+
+@app.route('/flask/')
+def flask():
+   return "Hello flask"
+
+@app.route('/user/<userName>')
+def get_userName(userName):
+   return "Hello "+ userName
+
+if __name__=="__main__":
+   app.run()
+```
+
+14 번째줄을 보게 되면 인자값에 &lt;userName&gt;이라는 것이 보이나요?   
+동적 움직임을 url에서 보여주고 있는 거에요. 또한 View함수\(get\_userName의 매개변수 username\)와 동일 해야해요.   
 
 
