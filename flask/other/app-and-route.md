@@ -93,6 +93,72 @@ if __name__=="__main__":
 ```
 
 14 번째줄을 보게 되면 인자값에 &lt;userName&gt;이라는 것이 보이나요?   
-동적 움직임을 url에서 보여주고 있는 거에요. 또한 View함수\(get\_userName의 매개변수 username\)와 동일 해야해요.   
+동적 움직임을 url에서 보여주고 있는 거에요. 또한 View함수\(get\_userName의 매개변수 username\)와 동일 해야해요. 
 
+## 실습4 - string말고 다른 data 전달 
+
+```text
+from flask import Flask
+
+app = Flask(__name__) #Flask 객체 인스턴스 생성
+
+#라우트 작업
+@app.route('/')
+def hello():
+   return "Hello World"
+
+@app.route('/flask/')
+def flask():
+   return "Hello flask"
+
+@app.route('/user/<userName>')
+def get_userName(userName):
+   return "Hello "+ userName
+
+@app.route('/userid/<int:userId>')
+def get_userId(userId):
+   return "user ID : {}".format(userId)
+
+if __name__=="__main__":
+   app.run()
+
+
+
+```
+
+
+
+18번째줄에서 &lt;int:userId&gt; 부분은 &lt;타입:매개변수명&gt;과 같은 형태로 적는데요.   
+실수는 float, 정수는, int에요.   
+
+
+### 실습5 -View 함수 return에 html문법 적용
+
+```text
+from flask import Flask
+
+app = Flask(__name__) #Flask 객체 인스턴스 생성
+
+#라우트 작업
+@app.route('/')
+def hello():
+   return "<h1>Hello World</h1>"
+
+@app.route('/flask/')
+def flask():
+   return "<h3>Hello flask</h3>"
+
+@app.route('/user/<userName>')
+def get_userName(userName):
+   return "Hello "+ userName
+
+@app.route('/userid/<int:userId>')
+def get_userId(userId):
+   return "user ID : {}".format(userId)
+
+if __name__=="__main__":
+   app.run()
+```
+
+> 8번째줄, 12번째줄의 html에서 h태그는 제목의 크기를 h1\(젤큼\)~h6\(젤작음\)까지 나태내요.
 
