@@ -13,6 +13,7 @@
     * [플라스크 구조](flask/fcamp/basic-flask/untitled.md)
     * [MVC란](flask/fcamp/basic-flask/mvc.md)
     * [Flask-SQLAlchemy](flask/fcamp/basic-flask/flask-sqlalchemy.md)
+    * [Jinja2](flask/fcamp/basic-flask/jinja2.md)
 * [Untitled](flask/untitled.md)
 * [Quick Start](flask/other/README.md)
   * [Untitled](flask/other/untitled.md)
