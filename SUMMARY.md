@@ -104,9 +104,9 @@
   * [App & Route](flask/other/app-and-route.md)
 * [Flask Terms](flask/flask-terms.md)
 * [Template](flask/template.md)
-* [부트스트랩 이용한 JinJa2 템플릿](flask/jinja2.md)
-* [Jinja2 Template 엔진](flask/jinja2-template.md)
 * [HTTP Protocol](flask/http-protocol.md)
+* [Jinja2 Template 엔진](flask/jinja2-template.md)
+* [부트스트랩 이용한 JinJa2 템플릿](flask/jinja2.md)
 
 ## Internet <a id="webpage-webserver-search-engine"></a>
 
