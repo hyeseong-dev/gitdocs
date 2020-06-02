@@ -76,6 +76,7 @@
   * [가상머신 clipboard 활성화](linux-1/error/clipboard.md)
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 * [Appendix](linux-1/appendix/README.md)
+  * [ORM](linux-1/appendix/orm.md)
   * [PPA](linux-1/appendix/ppa.md)
 
 ## 개념정리 <a id="undefined-1"></a>
@@ -104,6 +105,7 @@
   * [Basic Flask](flask/fcamp/basic-flask.md)
   * [플라스크 구조](flask/fcamp/untitled.md)
   * [MVC란](flask/fcamp/mvc.md)
+  * [Flask-SQLAlchemy](flask/fcamp/flask-sqlalchemy.md)
 * [Quick Start](flask/other/README.md)
   * [HTTP Protocol](flask/other/http-protocol.md)
   * [부트스트랩 이용한 JinJa2 템플릿](flask/other/jinja2.md)
