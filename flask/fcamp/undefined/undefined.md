@@ -254,7 +254,7 @@ if __name__=='__main__':
     
     db.init_app(app)
     db.app = app
-    
+    db.create_all()
     app.run(host=127.0.0.1, port = 5000, debug=True)
 ```
 {% endtab %}
@@ -270,5 +270,5 @@ if __name__=='__main__':
 20번째 줄에서 db.init\_app\(app\)을 통해 초기화가 되는거에요.   
 정리하면 20번째줄에서 초기화를 하고 21번째줄에서 그앱을 넣는코드를 작성한거에요 
 
-
+이제는 db를 생성해야해요. 22번째 줄을 작성하는거조.
 
