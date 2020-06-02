@@ -30,3 +30,16 @@ def hello():
 
 그런데 이번에 바뀐 19번째줄은 return render\_template\('hello.html'\)로 작성해서 control와 view가 구분되게 되는거에요. 
 
+아래와 같이 templates 폴더를 생성해주세요.   
+그리고 이번에 app.py를 재실행하면 hello.html 에 작성한 Hello world를 볼 수 있을 거에요.
+
+```text
+C:.
+│  app.py
+│
+├─templates
+│      hello.html
+```
+
+사실 우리는 Jinja라는 템플릿 라이브러리를 사용하고 있지만 진짜 우리가 Jinja라이브러리를 사용하지 않고 flask가 내부적으로 알아서 사용하고 있기 때문에 flask가 제공하는 함수를 통해서 jinja를 사용하게 되요. 
+
