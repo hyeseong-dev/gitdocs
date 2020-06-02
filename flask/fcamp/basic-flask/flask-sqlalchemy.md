@@ -135,5 +135,10 @@ def hello():
 
 ![db.sqlite&#xAC00; &#xC0DD;&#xC131;&#xB41C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/image%20%28223%29.png)
 
- 정상적으로 db.sqlite가 생성된걸 확인했나요?
+ 정상적으로 db.sqlite가 생성된걸 확인했나요?  
+터미널에서 
+
+```text
+cat db.sqlite # 작성했던 내용들이 보일거에요.
+```
 
