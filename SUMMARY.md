@@ -76,7 +76,6 @@
   * [가상머신 clipboard 활성화](linux-1/error/clipboard.md)
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 * [Appendix](linux-1/appendix/README.md)
-  * [ORM](linux-1/appendix/orm.md)
   * [PPA](linux-1/appendix/ppa.md)
 
 ## 개념정리 <a id="undefined-1"></a>
@@ -84,6 +83,7 @@
 * [No.2](undefined-1/no.2/README.md)
   * [데브옵스가 뭔데요?](undefined-1/no.2/undefined.md)
 * [No.1](undefined-1/no.1/README.md)
+  * [ORM](undefined-1/no.1/orm.md)
   * [IaaS, PaaS, SaaS DaaS란](undefined-1/no.1/iaas-paas-saas-daas.md)
   * [WSGI](undefined-1/no.1/wsgi.md)
   * [영속성\(Persistence\) 정의](undefined-1/no.1/persistence.md)
