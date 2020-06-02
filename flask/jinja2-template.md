@@ -69,3 +69,28 @@ if __name__=="__main__":
   | {\# | comment start string | 주석 시작 기호 |
   | }\# | comment end string | 주석 끝 기호 |
 
+
+
+### 예제 03/02.py - JinJa 변수 출력
+
+* 현재 html을 따로 안만들었기 때문에 Template 객체로 직접 html코드를 넣어주고 있다.
+* 나중에는 Template에서 사용하는 {{ }} 등의 표현을 사용한 html파일을 만들면된다.
+
+
+
+```text
+from jinja2 import Template
+
+template = Template("Hello {{userName}}")
+result = template.render(userName="반원")
+
+print(result)
+print(type(result))
+
+```
+
+3 : 템플릿 인스턴스를 하나 만든다. 그리고 userName변수를 출력할 자리 지정  
+4 : userName 값을 "반원"으로 넣어서 렌더링 한다.  
+6 : 마치 파이썬 format 함수처럼 작동한다.  
+7 : 타입을 확인하면 문자열이다.
+
