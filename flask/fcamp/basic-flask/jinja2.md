@@ -23,8 +23,10 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def hello():
-    return 'Hello world'
+    return render_template('hello.html')
 ```
 
+ 19번째이 기존에는 return 'hello world라고 작성되었는데요. 그 의미는 app.py라는 이 Control안에서 View코드까지 작성한거였어요.
 
+그런데 이번에 바뀐 19번째줄은 return render\_template\('hello.html'\)로 작성해서 control와 view가 구분되게 되는거에요. 
 
