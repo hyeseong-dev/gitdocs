@@ -10,7 +10,7 @@ MVC는 디자인 패턴 중 하나
 
          
 
-![mvc &#xAD6C;&#xC870;](../../../.gitbook/assets/image%20%28221%29.png)
+![mvc &#xAD6C;&#xC870;](../../../.gitbook/assets/image%20%28222%29.png)
 
 
 
