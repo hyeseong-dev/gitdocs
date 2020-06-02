@@ -118,6 +118,7 @@ models.py 파일에 필요한 db 소스코드들을 app,py 파일 안에서 가�
 ```text
 from flask import Flask
 from flask import render_template
+ 
 
 app = Flask(__name__)
 
@@ -128,15 +129,146 @@ def hello():
 if __name__=='__main__':
     app.run(host=127.0.0.1, port = 5000, debug=True)
 ```
-
-10번째 줄이 파이썬으로 app.py를 구동시키는 거에요.   
-11번째 줄에는 로컬 서버인 127.0.0.1을 매개변수로 넣고 포트 번호 역시 넣습니다. 그리고 개발 서버이기 때문에 debug 변수를 넣어서 즉각적인 서버의 변화를 확인하도록 매개변수로 둔거에요. 
 {% endtab %}
 
-{% tab title="" %}
+{% tab title="models.py" %}
 ```
+import os 
+from app import app
+from flask_sqlalchemy import SQLAlchemy
 
+basedir = os.path.abspath(os.path.dirname(__file__))
+dbfile = os.path.join(basedir, 'db.sqlite')
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+class webUser(db.Model): 
+    __tablename__ = 'webuser'
+    id = db.Column(db.Integer, primary_key=True)
+    pwd = db.Column(db.String(64))
+    userid= db.Column(db.String(32))
+    username = db.Column(db.String(8))  
 ```
 {% endtab %}
 {% endtabs %}
+
+10번째 줄이 파이썬으로 app.py를 구동시키는 거에요.   
+11번째 줄에는 로컬 서버인 127.0.0.1을 매개변수로 넣고 포트 번호 역시 넣습니다. 그리고 개발 서버이기 때문에 debug 변수를 넣어서 즉각적인 서버의 변화를 확인하도록 매개변수로 둔거에요. 
+
+하지만 app.py를 run시켜도 실행은 되지만 models.py가 실행되지 않아요. 당연히 연결을 시켜주지 않았기 때문이조. 이를 위해서 import 소스코드를 넣어줘야해요. 
+
+
+
+{% tabs %}
+{% tab title="app.py" %}
+```text
+from flask import Flask
+from flask import render_template
+from models import db
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return render_template('hello.html')
+    
+if __name__=='__main__':
+    app.run(host=127.0.0.1, port = 5000, debug=True)
+```
+{% endtab %}
+{% endtabs %}
+
+ 그래서 3번째 줄에 models 모듈을 넣고 db 변수를 가져옵니다.   
+하지만 그렇게 되면 app.py와 models.py가 서로 호출되는 현상이 발생해요.   
+그럼 loop구조에 빠지게 되는거조.  
+  
+이를 해결하기 위해서 models.py와 app.py를 변경해줄텐데요.   
+'**models.py 수정전'** 5~10번째 줄까지를 'app.py 수정'의 if \_\_name\_\_구분에다가 넣어둡니다. 이후 models.py 수정전 부분에서 from app import 부분을 지우게되요  
+
+{% tabs %}
+{% tab title="models.py 수정전" %}
+```
+import os 
+from app import app
+from flask_sqlalchemy import SQLAlchemy
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+dbfile = os.path.join(basedir, 'db.sqlite')
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+class webUser(db.Model): 
+    __tablename__ = 'webuser'
+    id = db.Column(db.Integer, primary_key=True)
+    pwd = db.Column(db.String(64))
+    userid= db.Column(db.String(32))
+    username = db.Column(db.String(8))  
+```
+{% endtab %}
+
+{% tab title="models.py 수정후" %}
+```
+import os 
+from flask_sqlalchemy import SQLAlchemy
+
+
+db = SQLAlchemy(app)
+
+class webUser(db.Model): 
+    __tablename__ = 'webuser'
+    id = db.Column(db.Integer, primary_key=True)
+    pwd = db.Column(db.String(64))
+    userid= db.Column(db.String(32))
+    username = db.Column(db.String(8))  
+```
+{% endtab %}
+
+{% tab title="app.py 수정" %}
+```
+import os
+from flask import Flask
+from flask import render_template
+from models import db
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return render_template('hello.html')
+    
+if __name__=='__main__':
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    dbfile = os.path.join(basedir, 'db.sqlite')
+    
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+    app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    
+    db.init_app(app)
+    db.app = app
+    
+    app.run(host=127.0.0.1, port = 5000, debug=True)
+```
+{% endtab %}
+{% endtabs %}
+
+ 
+
+####  app.py 수정
+
+추가적으로 20번쨰에서 db.app 이라는 부분을 통해서 db안에 app을 넣을수 있는거조.  
+그리고 사실 여기선app.config 3개만 적었지만 이 app.config를 초기화 시켜주는 소스코드를 넣을 거에요. 
+
+20번째 줄에서 db.init\_app\(app\)을 통해 초기화가 되는거에요.   
+정리하면 20번째줄에서 초기화를 하고 21번째줄에서 그앱을 넣는코드를 작성한거에요 
+
+
 
