@@ -1,4 +1,4 @@
-# Appendix
+# SQLite
 
 안드로이드 운영체계는 "SQLite" 데이터베이스를 기본으로 지원합니다.
 
