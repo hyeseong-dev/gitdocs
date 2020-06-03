@@ -1,3 +1,7 @@
+---
+description: 수정 필요
+---
+
 # 키페어 없이 EC2 접속
 
 ####  EC2 Key Pair 없이 비밀번호로 접속 <a id="AWS-EC2-Key-Pair-&#xC5C6;&#xC774;-&#xB300;&#xC2E0;-&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB85C;-&#xC811;&#xC18D;&#xD558;&#xAE30;"></a>
