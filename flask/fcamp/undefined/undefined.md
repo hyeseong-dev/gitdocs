@@ -54,7 +54,7 @@ db = SQLAlchemy(app)
 
  근데 app을 쓸려니깐 뜬금없이 app.~~으로 쓸순 없겠조?
 
-그래서 
+그래서  
 
 
 
@@ -255,7 +255,7 @@ if __name__=='__main__':
     db.init_app(app)
     db.app = app
     db.create_all()
-    app.run(host=127.0.0.1, port = 5000, debug=True)
+    app.run(host='127.0.0.1', port = 5000, debug=True)
 ```
 {% endtab %}
 {% endtabs %}
