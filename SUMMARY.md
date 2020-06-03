@@ -148,9 +148,10 @@
 
 ## Python
 
-* [virtualenv로 가상환경 사용](python/virtualenv.md)
-* [python -m venv로 가상환경 사용](python/python-m-venv.md)
-* [pip upgrade os별 방법](python/pip-upgrade-os.md)
+* [가상환경](python/undefined/README.md)
+  * [virtualenv로 가상환경 사용](python/undefined/virtualenv.md)
+  * [python -m venv로 가상환경 사용](python/undefined/python-m-venv.md)
+  * [pip upgrade os별 방법](python/undefined/pip-upgrade-os.md)
 * [Library](python/library/README.md)
   * [Socket 모듈](python/library/socket.md)
 
