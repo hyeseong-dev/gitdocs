@@ -151,6 +151,7 @@
 ## Python
 
 * [리눅스 PPA로 파이썬 설치](python/ppa.md)
+* [Python 버전 변경 in Ubuntu Linux](python/python-in-ubuntu-linux.md)
 * [가상환경](python/undefined/README.md)
   * [virtualenv로 가상환경 사용](python/undefined/virtualenv.md)
   * [python -m venv로 가상환경 사용](python/undefined/python-m-venv.md)
