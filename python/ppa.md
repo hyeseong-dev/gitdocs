@@ -1,4 +1,4 @@
-# PPA로 파이썬 설치
+# 리눅스 PPA로 파이썬 설치
 
 You are getting that error because you first need to update the package list and the prerequisites.
 
