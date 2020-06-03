@@ -4,7 +4,9 @@ description: 수정 필요
 
 # 키페어 없이 EC2 접속
 
-####  EC2 Key Pair 없이 비밀번호로 접속 <a id="AWS-EC2-Key-Pair-&#xC5C6;&#xC774;-&#xB300;&#xC2E0;-&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB85C;-&#xC811;&#xC18D;&#xD558;&#xAE30;"></a>
+####  <a id="AWS-EC2-Key-Pair-&#xC5C6;&#xC774;-&#xB300;&#xC2E0;-&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB85C;-&#xC811;&#xC18D;&#xD558;&#xAE30;"></a>
+
+#### AWS EC2 Key Pair 없이 대신 비밀번호로 접속하기 <a id="AWS-EC2-Key-Pair-&#xC5C6;&#xC774;-&#xB300;&#xC2E0;-&#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB85C;-&#xC811;&#xC18D;&#xD558;&#xAE30;"></a>
 
 원래 AWS EC2 인스턴스를 만들고 터미널에서 접속하려면 기본 명령어는 `ssh -i [KeyPairName].pem ubuntu@[인스턴스 IPv4 IP 주소]` 이다.  
 하지만, 다양한 PC나 심지어 모바일에서 접속할 때 Key Pair를 가지고 있지 않다면 루트 사용자로 로그인조차 할 수 없다는 단점이 있다.  
@@ -33,7 +35,8 @@ description: 수정 필요
 1. `/PasswordAuth` 입력
 
 ![6](https://user-images.githubusercontent.com/37604501/42146941-158ae002-7e06-11e8-920d-36c332802bd7.png)  
-
+![7](https://user-images.githubusercontent.com/37604501/42146942-15b66920-7e06-11e8-8962-6c8386817ca9.png)  
+![8](https://user-images.githubusercontent.com/37604501/42146944-15e1f4f0-7e06-11e8-9ab1-10987dfc413a.png)
 
 1. `i` 눌러서 INSERT MODE로 바꾸고 `PasswordAuthentication no`에서 `no`를 `yes`로 바꿈
 
@@ -66,8 +69,4 @@ description: 수정 필요
 
 * AWS KEY 없이도 어떤 Device에서도 접속 가능하다.
 * SSH 명령어가 매우 간소화되었다.
-
-반대급부로 Password 뚫리면 그말싫.. 위험해진다..  
-비밀번호는 반드시 어려운걸로!  
-이제 행ㅋ복ㅋ EC2 인스턴스를 사용해보자.
 
