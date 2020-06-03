@@ -41,5 +41,21 @@ C:.
 │      hello.html
 ```
 
-사실 우리는 Jinja라는 템플릿 라이브러리를 사용하고 있지만 진짜 우리가 Jinja라이브러리를 사용하지 않고 flask가 내부적으로 알아서 사용하고 있기 때문에 flask가 제공하는 함수를 통해서 jinja를 사용하게 되요. 
+사실 우리는 Jinja라는 템플릿 라이브러리를 사용하고 있지만 진짜 우리가 Jinja라이브러리를 사용하지 않고 flask가 내부적으로 알아서 사용하고 있기 때문에 flask가 제공하는 함수를 통해서 jinja를 사용하게 되요.
+
+## 실행  
+
+터미널에서 flask run 이라고 입력해보세요.  
+마우스로 127.0.0.1에 갖다대고 Ctrl + click하게 되면 template폴더안의 hello.html폴더를 rendering해서 hello world를 볼 수 있게 되요. 
+
+```text
+PS C:\Project> flask run       
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [03/Jun/2020 11:10:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [03/Jun/2020 11:10:27] "GET /favicon.ico HTTP/1.1" 404 -
+```
 
