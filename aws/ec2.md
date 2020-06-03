@@ -33,8 +33,7 @@ description: 수정 필요
 1. `/PasswordAuth` 입력
 
 ![6](https://user-images.githubusercontent.com/37604501/42146941-158ae002-7e06-11e8-920d-36c332802bd7.png)  
-![7](https://user-images.githubusercontent.com/37604501/42146942-15b66920-7e06-11e8-8962-6c8386817ca9.png)  
-![8](https://user-images.githubusercontent.com/37604501/42146944-15e1f4f0-7e06-11e8-9ab1-10987dfc413a.png)
+
 
 1. `i` 눌러서 INSERT MODE로 바꾸고 `PasswordAuthentication no`에서 `no`를 `yes`로 바꿈
 
