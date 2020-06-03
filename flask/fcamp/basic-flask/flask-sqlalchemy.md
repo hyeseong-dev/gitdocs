@@ -110,7 +110,7 @@ db = SQLAlchemy(app)
 class Test(db.Model):
         __tablename__ = 'test_table'
         id =db.Column(db.Integer, primary_key=True)
-        name = db.column(db.String(32), unique=True)
+        name = db.Column(db.String(32), unique=True)
 
 db.create_all()
 
@@ -135,10 +135,40 @@ def hello():
 
 ![db.sqlite&#xAC00; &#xC0DD;&#xC131;&#xB41C; &#xBAA8;&#xC2B5;](../../../.gitbook/assets/image%20%28223%29.png)
 
- 정상적으로 db.sqlite가 생성된걸 확인했나요?  
-터미널에서 
+## sqlite 설치 
+
+생성한 db의 테이블 명과 스키마를 확인하기 위해 sqlite3 툴을 이용할게요. 
+
+1. sqlite를 설치해주세요.\(각 os버전에 맞는걸 선택해주세요. 전window10 64비트\)
+2. 저는  [sqlite-tools-win32-x86](https://www.sqlite.org/2020/sqlite-tools-win32-x86-3320100.zip) 이 압축파일을 다운받았어요 다운로드 : [https://www.sqlite.org/download.html](https://www.sqlite.org/download.html)
+3. C드라이브에 sqlite라는 폴더를 생성해서 내용물을 풀어주세요.  그리고 경로를 Ctrl + C로 복사해주세요. 
+4. 환경변수 등록
+5. 시험삼아 cmd 창 실행해서 sqlite3 명령어를 실행시켜보시면 sqlite&gt; 텍스트로 입력 모양이 바뀌면 끝이에요. 
+
+## DB확인 
+
+vscode 터미널에서 db.sqlite를 확인해볼게요.   
+아래와 같이 나오면 정상적으로 출력된거에요.   
+
 
 ```text
-cat db.sqlite # 작성했던 내용들이 보일거에요.
+$ sqlite3 db.sqlite
+$ .tables
+test_table # 테이블 이름 출력
+$ .schema 
+CREATE TABLE test_table (    
+        id INTEGER NOT NULL, 
+        name VARCHAR(32),
+        PRIMARY KEY (id),
+        UNIQUE (name)
+);
+
+```
+
+윈도우는 sqlite를 설치해야하지만 리눅스와 mac os의 경우 설치되있을수도 있다고 하네요.   
+또한 굳이 sqlite로 db를 확인하지 않아도 되요. 여러가지 툴을 이용해도 되고 아니면 그냥 아래와 같이 입력해도 되요. 
+
+```text
+cat db.sqlite # 화면에서 글이 조금 깨져 나올수 있어요. 
 ```
 
