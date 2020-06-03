@@ -43,17 +43,13 @@ description: 수정 필요
 ![9](https://user-images.githubusercontent.com/37604501/42146945-160d1f04-7e06-11e8-83d5-5fecd7894198.png)
 
 1. 다시 `i` 누른 후 `:wq` 입력하고 나옴
-2. 나중에 Key Pair로 로그인 할 때를 위해 Key Pair를 복사하자.
+2. SSH를 다시 시작해주자.
 
-   |  |  |
-   | :--- | :--- |
+```text
+sudo service ssh restart
+```
 
-3. SSH를 다시 시작해주자.
-
-   |  |  |
-   | :--- | :--- |
-
-4. `exit` 입력해서 로그아웃을 해주고
+1. `exit` 입력해서 로그아웃을 해주고
 
 ![10](https://user-images.githubusercontent.com/37604501/42146946-16402fac-7e06-11e8-9f46-e991310d6893.png)
 
