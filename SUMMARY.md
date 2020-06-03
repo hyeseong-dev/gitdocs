@@ -136,6 +136,7 @@
 ## etc
 
 * [아무거나](etc/undefined-1/README.md)
+  * [cmd창 복사붙여 넣기 단축키](etc/undefined-1/cmd.md)
   * [모르는거 어떻게 해결하세요?](etc/undefined-1/undefined-2.md)
   * [크롬 단축키](etc/undefined-1/undefined.md)
   * [grub-pc 설정](etc/undefined-1/grub-pc.md)
