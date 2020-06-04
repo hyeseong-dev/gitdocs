@@ -29,7 +29,15 @@ for memo in memos:
 ```
 {% endcode %}
 
-fetchone\(\), fetchall\(\)
+## 모르는 용어, 메소드
+
+원인 : 
+
+1. cursor\(\)
+2. execute\(\)
+3. fetchone\(\)
+4. fetchall\(\)
+5. connect\(\)
 
 리스트의 특정한 index나 혹은 리스트 index 전체를 가져올때 가져온다. 
 
