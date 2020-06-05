@@ -1,4 +1,4 @@
-# Untitled
+# HKIT class
 
 sqlite를 실습하기 위해 가볍게 파이썬 파일을 아래와 같이 작성해 볼게요.
 
