@@ -2,6 +2,10 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## PROJECT
+
+* [DataBase](project/database.md)
+
 ## DB
 
 * [sqlite3](db/sqlite3/README.md)
@@ -174,9 +178,4 @@
 ## AWS
 
 * [키페어 없이 EC2 접속](aws/ec2.md)
-
-## PROJECT
-
-* [WebApp](project/webapp/README.md)
-  * [DataBase](project/webapp/database.md)
 
