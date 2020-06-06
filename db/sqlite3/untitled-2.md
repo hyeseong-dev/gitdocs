@@ -4,7 +4,7 @@
 
 ## 실습 
 
-### 1. 접속하자마자 DB생
+### 1. 접속하자마자 DB생성
 
 ```text
 PS C:\Workspace\db_practice> sqlite3 userinfo.sqlite3
