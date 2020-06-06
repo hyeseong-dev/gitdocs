@@ -91,6 +91,7 @@
 ## Linux <a id="linux-1"></a>
 
 * [Linux Command](linux-1/linux-command/README.md)
+  * [백그라운드](linux-1/linux-command/undefined.md)
   * [scp](linux-1/linux-command/scp.md)
   * [기본명령어 & 네트워크명령어](linux-1/linux-command/and/README.md)
     * [리눅스 기본 명령어](linux-1/linux-command/and/undefined.md)
