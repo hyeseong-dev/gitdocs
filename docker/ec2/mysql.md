@@ -89,7 +89,7 @@ Query OK, 1 row affected (0.00 sec)
 exit 명령어로 mysql bash 모드에서 나가주세요. 
 
 ```text
-mysql> show database; 
+mysql> show databases; 
 +--------------------+
 | Database           |
 +--------------------+
