@@ -40,3 +40,53 @@ cp 명령어와 틀은와 같다.
 
 **단, 로컬일 경우 계정과 IP정보는 기입하지 않아도 된다.**
 
+\*\*\*\*
+
+## 정리 
+
+#### 리눅스\(우분투\) 원격 접속
+
+PS&gt; ssh [hkit0x@home.hkit.xyz](mailto:hkit0x@home.hkit.xyz)
+
+
+
+#### pyvenv가상환경만듬
+
+$ python3 -m venv pyvenv
+
+
+
+#### 최신 pip 버전 받기
+
+$ pip instal pip --upgrade
+
+
+
+#### 플라스크 설치
+
+$ pip install flask
+
+#### 
+
+#### Windows에서 리눅스로 폴더 복사
+
+ps&gt; scp -r ./minicafeweb [hkit0x@home.hkit.xyz](mailto:hkit0x@home.hkit.xyz):/home/hkit0x
+
+#### 
+
+#### 소스 편집
+
+$ nano minicafeweb.py app.run\(host='0.0.0.0', port=50xx\)
+
+#### 
+
+#### 플라스크 시작하기
+
+$ python minicafeweb.py
+
+#### 
+
+#### 크롬에서 [http://hkit0x.hkit.xyz:50xx로](http://hkit0x.hkit.xyz:50xx%EB%A1%9C/) 접속하기
+
+
+
