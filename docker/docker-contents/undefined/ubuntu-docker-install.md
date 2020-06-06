@@ -2,8 +2,9 @@
 
  우분투에 도커를 설치하는 방법이 여러가지 있었네요.   
 저는 그것도 모르고 그냥 설치했는데 다른 설치 방법도 알아볼게요.   
-  
-**첫째, 자동설치 스크립트** 
+
+
+### **첫째, 자동설치 스크립트** 
 
 ```text
 $ curl -s https://get.docker.com | sudo sh 
@@ -22,7 +23,7 @@ curl은 data transfer tool이에요 . 옵션은 -s가 붙어 있는데, 정숙 �
 
 ---
 
-## 둘째, 우분투 패키지 
+### 둘째, 우분투 패키지 
 
 ```text
 $ sudo apt-get update
@@ -54,8 +55,21 @@ docker:x:999:
 
 docker 그룹에 사용자가 추가되지 않았어요. 초기 설정으로 root유저이외에 docker를 사용할수 없어요. 일반 사용자에게 docker 사용 권한을 주고 싶으면 아래 명령어를 수행하면 된다고 해요. 
 
+
+
+###  별첨 sudo 없이 사용 
+
 ```text
  sudo usermod -a -G docker <USER_ID>
+
+$ sudo usermod -aG docker osori
+```
+
+```text
+sudo service docker restart
+
+로그아웃(서버 나갔다가 다시 로그인 하세요.)
+이후 sudo 명령어 없이 docker images, docker ps, docker ps -a 명령어 입력후 확인
 ```
 
 기본적으로 docker를 수행하기 위해서 sudo를 붙여 실행하면 됩니다.
