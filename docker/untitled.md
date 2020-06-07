@@ -95,7 +95,45 @@ docker ps
 
 워드프레스는 호스트 서버의 8000 포트를 사용하고 있다고 하네요. 웹 브라우저는 HTTP 프로토콜을 사용하는 경우 80포트로 접속하게되. 따라서 8000 포트를  80 포트로 변경이 필요하.
 
-워드프레스 도커 이미지에는 워드프레스 전용 웹서버가 포함되게 되요. 하지만 여러 서비스를 사용하기 위해서는 호스트 서버의 요청을 받아 분기 시켜주는 웹서버가 앞단에 하나 더 필요하다. 필자는 [NGINX 웹서버](https://www.nginx.com/)를 도커가 아닌 호스트 서버에 설치하여 80 포트에 연결하고 서비스별로 라우팅 시키는 방법을 선택했다.
+워드프레스 도커 이미지에는 워드프레스 전용 웹서버가 포함되게 되요. 하지만 여러 서비스를 사용하기 위해서는 호스트 서버의 요청을 받아 분기 시켜주는 웹서버가 앞단에 하나 더 필요하다. [NGINX 웹서버](https://www.nginx.com/)를 도커가 아닌 호스트 서버에 설치하여 80 포트에 연결하고 서비스별로 라우팅 시키는 방법 찾아 볼게요.
 
-![image-20200130-011513](https://www.popit.kr/wp-content/uploads/2020/01/image-20200130-011513-1024x707.png)
+![&#xD750;&#xB984;&#xB3C4;](https://www.popit.kr/wp-content/uploads/2020/01/image-20200130-011513-1024x707.png)
+
+### Ngnix 설치 
+
+```text
+sudo apt install nginx-core
+```
+
+### Ngnix 실행 
+
+```text
+sudo service nginx start
+```
+
+### nginx 설정 파일 변경 
+
+설정 파일 이름은 nginx.conf이에요. 확장자 이름이 conf인데요.   
+일반적으로 conf는 configure, configuration의 설정이라는 의미의 줄임말이에요.   
+설정파일에 들어가서 작업에 들어갈거에요.\(vi, nano, jupyter-notebook으로 편집\)
+
+```text
+sudo find / -name nginx.conf 
+/etc/nginx/nginx.conf
+```
+
+```text
+server {
+   listen       80;
+   // ...
+   location / {
+                proxy_pass http://127.0.0.1:8000;
+                proxy_set_header Host $http_host;
+                proxy_set_header X-Forwarded-Host $http_host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+   }
+}
+```
 
