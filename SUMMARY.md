@@ -2,6 +2,10 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## Wordpress
+
+* [Untitled](wordpress/untitled.md)
+
 ## PROJECT
 
 * [DataBase](project/database/README.md)
@@ -186,8 +190,4 @@
 ## AWS
 
 * [키페어 없이 EC2 접속](aws/ec2.md)
-
-## Wordpress
-
-* [Untitled](wordpress/untitled.md)
 
