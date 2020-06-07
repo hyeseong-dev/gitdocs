@@ -116,3 +116,20 @@ def register\(\):
 {% endtab %}
 {% endtabs %}
 
+  
+이제 결국 post를 활성화 시켜줘야해요.   
+아래 5번째 줄에서 route\(\)안에 method인자값을 만들어서 'GET', 'POST'값을 넣어줍니다.  
+이렇게 되면 두 가지 방식이 허용되요. 
+
+```text
+import os
+from flask import request
+생략 
+
+@app.route('/register', methods=['GET', 'POST'] ) # 인자값생성
+def register():        
+    print(request.method)
+    return render_template('register.html')
+
+```
+
