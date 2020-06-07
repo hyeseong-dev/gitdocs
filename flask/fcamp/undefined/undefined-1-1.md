@@ -311,6 +311,8 @@ db.session.commit\(\)를 해준답니다.
 
 
 
+{% tabs %}
+{% tab title="Plain Text" %}
 ```text
 import os
 from flask import Flask
@@ -326,7 +328,6 @@ app = Flask(__name__)
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':                       
-        # 회원정보 생성 
         userid = request.form.get('userid')
         username = request.form.get('username')
         password = request.form.get('password')
@@ -341,14 +342,13 @@ def register():
           db.session.add(fcuser)
           db.session.commit()
 
-        return redirect('/')
+    return redirect('/')
 
 @app.route('/')
 def hello():
     return render_template('hello.html')
 
 
-    
 if __name__=='__main__':
     basedir = os.path.abspath(os.path.dirname(__file__))
     dbfile = os.path.join(basedir, 'db.sqlite')
@@ -362,4 +362,6 @@ if __name__=='__main__':
     db.create_all()
     app.run(host='127.0.0.1', port = 5000, debug=True)
 ```
+{% endtab %}
+{% endtabs %}
 
