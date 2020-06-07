@@ -104,10 +104,12 @@ def register\(\):
 <html>
     <head>
 
-생
-            <form method="POST" > # 기존 action='.'이 삭제
+생략
+    
+            <form method="POST" > # 기존 action='.' 삭제
                <div class="form-group">
-생
+생략
+    
     </body>
 </html>
 ```
