@@ -38,6 +38,18 @@ PS C:\project\example> .\Scripts\Activate.ps1
 
 이 상태에서 pip로 패키지를 설치하면 C:\project\example\Lib\site-packages 안에 패키지가 저장됩니다\(dir로 파일과 폴더 확인해보기, /B는 최소 포맷 옵션\).
 
+###  ubuntu linux 
+
+os별 파이썬 가상환경 설치가 너무 다르다는 점. 꼭 명심하세요.  
+이렇게하면 bin디렉토리에 activate 파일이 만들어져요.    
+
+
+```text
+python -m virtualenv pyenv(가상환경 이름)
+```
+
+####  
+
 
 
 ###             패키지 목록 관리하기
