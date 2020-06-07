@@ -19,11 +19,7 @@
 {% tabs %}
 {% tab title="MYSQL 이미지 이용 데이터베이스 컨테이너" %}
 ```text
-docker run -d \
---name wordpressdb \
--e MYSQL_ROOT_PASSWORD=password \ 
--e MYSQL_DATABASE=wordpress \ 
-mysql:5.7 
+docker run -d --name wordpressdb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=wordpress mysql:5.7 
 ```
 {% endtab %}
 {% endtabs %}
