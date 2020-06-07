@@ -1,4 +1,4 @@
-# 가상환경 설치
+# virtualenv install, activate, deactivate
 
 ### 가상환경 구성
 
@@ -50,7 +50,11 @@ os별 파이썬 가상환경 설치가 너무 다르다는 점. 꼭 명심하세
 python -m virtualenv pyenv(가상환경 이름)
 ```
 
-####  
+###  가상환경 종료 
+
+```text
+deactivate
+```
 
 
 

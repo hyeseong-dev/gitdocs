@@ -179,9 +179,8 @@
 
 * [리눅스 PPA로 파이썬 설치](python/ppa.md)
 * [Python 버전 변경 in Ubuntu Linux](python/python-in-ubuntu-linux.md)
-* [가상환경](python/undefined/README.md)
-  * [가상환경 설치](python/undefined/python-m-venv.md)
-  * [virtualenv로 가상환경 사용](python/undefined/virtualenv.md)
+* [python virtualenv](python/undefined/README.md)
+  * [virtualenv install, activate, deactivate](python/undefined/python-m-venv.md)
   * [\[pip\] requirement.txt  일괄 설치](python/undefined/pip-requirement.txt.md)
   * [pip upgrade os별 방법](python/undefined/pip-upgrade-os.md)
 * [Library](python/library/README.md)

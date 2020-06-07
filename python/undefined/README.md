@@ -1,2 +1,2 @@
-# 가상환경
+# python virtualenv
 

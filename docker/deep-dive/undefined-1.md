@@ -31,12 +31,7 @@ mysql:5.7
 {% tabs %}
 {% tab title="워드프레스 웹 서버 컨테이너" %}
 ```text
-docker run -d \ 
--e WORDPRESS_DB_PASSWORD=password \ 
---name wordpress \ 
---link wordpressdb:mysql \
--p 80 \
-wordpress
+docker run -d -e WORDPRESS_DB_PASSWORD=password --name wordpress --link wordpressdb:mysql -p 80 wordpress
 ```
 {% endtab %}
 {% endtabs %}
