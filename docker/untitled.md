@@ -72,5 +72,22 @@ docker ps
 
 ![](../.gitbook/assets/image%20%28231%29.png)
 
+##  WORDPRESS 사용  
 
+### 8000번 포트로 접속
+
+![install img](https://www.popit.kr/wp-content/uploads/2020/01/image-20200114-214105-600x393.png)
+
+위와 같이 인스톨 화면이 잘 나타나와. 어렵지 않아요. 한글 설정하시고, 처음 이용하시는 분들이라면 가입과정을 거치면 되요.   
+
+
+###  설정 
+
+1.   ![image-20200114-214259](https://www.popit.kr/wp-content/uploads/2020/01/image-20200114-214259-600x395.png)
+
+2.   ![image-20200120-215147](https://www.popit.kr/wp-content/uploads/2020/01/image-20200120-215147-1024x674.png)
+
+3.   ![image-20200120-215231](https://www.popit.kr/wp-content/uploads/2020/01/image-20200120-215231-1024x674.png)
+
+4.   ![image-20200120-220219](https://www.popit.kr/wp-content/uploads/2020/01/image-20200120-220219-1024x674.png)
 
