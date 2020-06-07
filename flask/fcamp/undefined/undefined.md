@@ -43,6 +43,7 @@ def hello():
 
 {% tab title="models.py" %}
 ```
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -59,6 +60,19 @@ db = SQLAlchemy(app)
 
 
 {% tabs %}
+{% tab title="app.py" %}
+```
+from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello world'
+```
+{% endtab %}
+
 {% tab title="models.py" %}
 ```
 import os 
@@ -74,25 +88,12 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-class webUser(db.Model): 
-    __tablename__ = 'webuser'
+class Fcuser(db.Model): 
+    __tablename__ = 'Fcuser'
     id = db.Column(db.Integer, primary_key=True)
-    pwd = db.Column(db.String(64))
+    password= db.Column(db.String(64))
     userid= db.Column(db.String(32))
     username = db.Column(db.String(8))  
-```
-{% endtab %}
-
-{% tab title="app.py" %}
-```
-from flask import Flask
-from flask import render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello():
-    return 'Hello world'
 ```
 {% endtab %}
 {% endtabs %}
