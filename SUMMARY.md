@@ -4,7 +4,7 @@
 
 ## Wordpress
 
-* [Untitled](wordpress/untitled.md)
+* [Usage](wordpress/untitled.md)
 
 ## PROJECT
 
