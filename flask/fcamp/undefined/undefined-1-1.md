@@ -341,9 +341,10 @@ def register():
   
           db.session.add(fcuser)
           db.session.commit()
+          
+          return redirect('/')
 
-    return redirect('/')
-
+    return render_template('register.html')
 @app.route('/')
 def hello():
     return render_template('hello.html')
@@ -361,6 +362,24 @@ if __name__=='__main__':
     db.app = app
     db.create_all()
     app.run(host='127.0.0.1', port = 5000, debug=True)
+```
+{% endtab %}
+
+{% tab title="models.py" %}
+```
+import os 
+from flask_sqlalchemy import SQLAlchemy
+
+
+db = SQLAlchemy()
+
+class Fcuser(db.Model): 
+
+    __tablename__ = 'Fcuser'
+    id = db.Column(db.Integer, primary_key=True)
+    password = db.Column(db.String(64))
+    userid= db.Column(db.String(32))
+    username = db.Column(db.String(8))  
 ```
 {% endtab %}
 {% endtabs %}
