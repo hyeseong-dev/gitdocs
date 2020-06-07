@@ -2,11 +2,6 @@
 
 * [osori-magu 기술 블로그](README.md)
 
-## Wordpress
-
-* [Usage](wordpress/untitled/README.md)
-  * [1강](wordpress/untitled/1.md)
-
 ## PROJECT
 
 * [DataBase](project/database/README.md)
