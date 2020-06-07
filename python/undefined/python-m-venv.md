@@ -44,6 +44,8 @@ os별 파이썬 가상환경 설치가 너무 다르다는 점. 꼭 명심하세
 이렇게하면 bin디렉토리에 activate 파일이 만들어져요.    
 
 
+#### 출처 [https://askubuntu.com/questions/1202547/problem-with-source-env-bin-activate](https://askubuntu.com/questions/1202547/problem-with-source-env-bin-activate)
+
 ```text
 python -m virtualenv pyenv(가상환경 이름)
 ```
@@ -89,7 +91,7 @@ C:\project>C:\Python34\python.exe -m venv example3
 리눅스, macOS
 
 ```text
-~$ python3 -m venv example
+~$ python3 -m virtualenv example
 ~$ cd example
 ~/example$ source bin/activate
 (example) ~/example$
