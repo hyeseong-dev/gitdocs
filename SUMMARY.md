@@ -77,7 +77,6 @@
       * [2. 볼륨컨테이너](docker/deep-dive/book/volume/2..md)
   * [실습](docker/deep-dive/undefined/README.md)
     * [Untitled](docker/deep-dive/undefined/untitled.md)
-  * [Docker in Docker?](docker/deep-dive/docker-in-docker.md)
   * [애플리케이션구축](docker/deep-dive/undefined-1.md)
 * [Excercise](docker/ec2/README.md)
   * [EC2 서버구축하기](docker/ec2/ch1-ec2.md)
