@@ -65,7 +65,7 @@ from models import db
 
 app = Flask(__name__)
 
-@app.route('/register')
+@app.route('/register') # form태그에 대한 더미 컨트롤러에요.
 def register():
     return render_template('register.html')
 
@@ -98,8 +98,6 @@ if __name__=='__main__':
 다음은 body를 만들거에요. body를 통해서 회원가입 페이지의   
 아이디, 사용자이름, 비밀번호, 비밀번호 확인, 등록버튼을 구현할거에요.   
 
-
-
 16번째 줄의 &lt;div class="row mt-5"&gt; 가로 5줄을 의미해요. 이렇게 class이름을 지정하면 bootstrap이 약속된 이름이란걸 인식해서 표를 만들어 주는거에요. 
 
  17번째 줄에서 &lt;div class="col-12"&gt; 세로 12줄을 의미해요.  
@@ -110,4 +108,10 @@ html의 form태그를 18번째줄에서 만들어 줍니다.
 > form 태그는  웹상에서 사용자 정보를 입력하는 여러\(text, button, checkbox, file, hidden, image, password, radio, reset, submit\)방식의 영역을 제공하며, 사용자로부터 할당된 데이터를 서버로 전송하는 역활을 담당  
 >   
 > 출처: [https://mohwaproject.tistory.com/entry/FORM-객체란](https://mohwaproject.tistory.com/entry/FORM-%EA%B0%9D%EC%B2%B4%EB%9E%80) \[무하프로젝트\]
+
+19번째 줄부터 34번째 줄까지 form에 들어갈 필드들입니다. 
+
+
+
+
 
