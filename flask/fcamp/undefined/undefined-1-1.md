@@ -312,7 +312,7 @@ db.session.commit\(\)를 해준답니다.
 
 
 {% tabs %}
-{% tab title="Plain Text" %}
+{% tab title="app.py" %}
 ```text
 import os
 from flask import Flask
