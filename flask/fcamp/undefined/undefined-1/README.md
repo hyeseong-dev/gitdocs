@@ -112,7 +112,7 @@ html의 form태그를 18번째줄에서 만들어 줍니다.
 19번째 줄부터 34번째 줄까지 form에 들어갈 필드들입니다. 
 
 > 참고로 bootstrap은 class="form-group",  class="form-control"이 있어야 가능해요.   
-> 기존에 가지고 있던 css와 javascript기능을 구현한 UI를 가져올 수 있어요.  그러니 head부분에 bootstramp을 박아버린만큼 꼭 규칙을 따라야 겠조?
+> 기존에 가지고 있던 css와 javascript기능을 구현한 Bootstrap의 UI를 가져올 수 있어요.  그러니 head부분에 bootstramp을 박아버린만큼 꼭 규칙을 따라야 겠조?
 
 
 
