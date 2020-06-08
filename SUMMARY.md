@@ -40,7 +40,6 @@
   * [Appendix](flask/fcamp/appendix/README.md)
     * [SQLite](flask/fcamp/appendix/sqlite.md)
     * [Flask-sqlAlchemy](flask/fcamp/appendix/flask-sqlalchemy.md)
-* [Untitled](flask/untitled.md)
 * [Quick Start](flask/other/README.md)
   * [Untitled](flask/other/untitled.md)
   * [HTTP Protocol](flask/other/http-protocol.md)
