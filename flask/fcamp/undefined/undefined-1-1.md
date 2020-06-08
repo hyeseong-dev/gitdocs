@@ -311,6 +311,8 @@ db.session.commit\(\)를 해준답니다.
 
 
 
+###  이번 page의 app.py models.py 
+
 {% tabs %}
 {% tab title="app.py" %}
 ```text
@@ -331,7 +333,7 @@ def register():
         userid = request.form.get('userid')
         username = request.form.get('username')
         password = request.form.get('password')
-        re_password = request.form.get('re_password')
+        re_password = request.form.get('re-password')
 
         if (userid and username and password and re_password) and password == re_password :
           fcuser = Fcuser()
