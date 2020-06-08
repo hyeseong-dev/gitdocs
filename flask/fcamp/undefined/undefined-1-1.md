@@ -202,7 +202,7 @@ request안에 from이라는 변수가 있고 그 안에서 하나씩 꺼낼수 �
 결국 아래와 같이 작성하는 이유는 값을 전달해주기 위함이에요. 
 
 > userid = request.form.get\('userid'\)   
-> username = req0uest.form.get\('username'\)   
+> username = request.form.get\('username'\)   
 > password = request.form.get\('password'\)   
 > re\_password = request.form.get\('re\_password'\)
 >

@@ -106,7 +106,7 @@ models.py 파일에 필요한 db 소스코드들을 app.py 파일 안에서 가�
 
 15번째 줄은 테이블의 이름을 webuser라고 지었어요. 
 
-16~19번째 줄까지는 테이블 컬럼의 Id, pwd, userid, username을 각 줄마다 만들어 볼게요.  
+16~19번째 줄까지는 테이블 컬럼의 Id, password, userid, username을 각 줄마다 만들어 볼게요.  
   
 여기서 models.py가 실행되어야 db가 만들어지는데요.   더불어 app.py가 실행되는데 models.py 역시 연결되어야 서로 잘 맞물려 돌아 갈거에요.   
   
