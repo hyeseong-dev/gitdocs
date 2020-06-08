@@ -98,7 +98,7 @@ class Fcuser(db.Model):
 {% endtab %}
 {% endtabs %}
 
-models.py 파일에 필요한 db 소스코드들을 app,py 파일 안에서 가져왔어요. 
+models.py 파일에 필요한 db 소스코드들을 app.py 파일 안에서 가져왔어요. 
 
 회원 정보를 만들어 볼게요. 
 
