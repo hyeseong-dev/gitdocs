@@ -307,7 +307,13 @@ db.session.add\(fcuser\) fcuser가 add\(\)로 session에 추가되게 되면~~~
 db.session.commit\(\)를 해준답니다.   
   
 그럼 정상적으로 값을 입력했다면 db에 값이 저장이 될거에요.  
-일단 값을 직접 넣어보고 db에 가서 진짜값이 들어 있는지 확인도 해볼게요.  
+일단 값을 직접 넣어보고 db에 가서 진짜값이 들어 있는지 확인도 해볼게요.    
+  
+
+
+![register.html &#xD68C;&#xC6D0;&#xAC00;&#xC785; &#xC591;&#xC2DD; &#xC785;&#xB825;&#xD6C4; &#xB4F1;&#xB85D;&#xBC84;&#xD2BC; click](../../../.gitbook/assets/image%20%28232%29.png)
+
+![DB &#xC800;&#xC7A5; &#xC644;&#xB8CC;](../../../.gitbook/assets/image%20%28233%29.png)
 
 
 
