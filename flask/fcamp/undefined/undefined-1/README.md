@@ -105,7 +105,7 @@ html의 form태그를 18번째줄에서 만들어 줍니다.
   
 18번째 줄에서 &lt;form method="POST" action="."&gt;
 
-> form 태그는  웹상에서 사용자 정보를 입력하는 여러\(text, button, checkbox, file, hidden, image, password, radio, reset, submit\)방식의 영역을 제공하며, 사용자로부터 할당된 데이터를 서버로 전송하는 역활을 담당  
+> form 태그는  웹상에서 사용자 정보를 입력하는 여러\(text, button, checkbox, file, hidden, image, password, radio, reset, submit\)방식의 영역을 제공하며, 사용자로부터 할당된 데이터를 서버로 전송하는 역활을 담당해요  
 >   
 > 출처: [https://mohwaproject.tistory.com/entry/FORM-객체란](https://mohwaproject.tistory.com/entry/FORM-%EA%B0%9D%EC%B2%B4%EB%9E%80) \[무하프로젝트\]
 
