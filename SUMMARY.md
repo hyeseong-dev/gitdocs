@@ -41,7 +41,6 @@
     * [SQLite](flask/fcamp/appendix/sqlite.md)
     * [Flask-sqlAlchemy](flask/fcamp/appendix/flask-sqlalchemy.md)
 * [Quick Start](flask/other/README.md)
-  * [Untitled](flask/other/untitled.md)
   * [HTTP Protocol](flask/other/http-protocol.md)
   * [부트스트랩 이용한 JinJa2 템플릿](flask/other/jinja2.md)
   * [Jinja2 Template 엔진](flask/other/jinja2-template.md)
