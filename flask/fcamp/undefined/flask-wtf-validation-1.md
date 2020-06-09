@@ -169,7 +169,7 @@ def register():
           
           return redirect('/')
 
-    return render_template('register.html')
+    return render_template('register.html',form=form)
 @app.route('/')
 def hello():
     return render_template('hello.html')
