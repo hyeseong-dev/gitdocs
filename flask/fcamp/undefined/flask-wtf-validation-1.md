@@ -22,7 +22,7 @@ pip install Flask-WTF
 Flask-WTF패키지를 갖추고 아래 register.html을 파이썬을 이용해서 forms.py 파일을 생성하여 이를 register.html에 data를 다시 재전달하는 방식으로 모듈화하 좀더 짧고 임펙트있게  바꿀거에요.  
 
 
-#### 장
+#### 장점 
 
 * CSRF라는 보호기법을 사용 할 수 있음 
 * Validation! 즉, 값에 대한 검증도 수월하게 할 수 있음.
