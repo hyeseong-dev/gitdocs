@@ -38,6 +38,7 @@
     * [모델 만들기 - 회원](flask/fcamp/undefined/undefined.md)
     * [컨트롤러만들기-회원](flask/fcamp/undefined/undefined-1-1.md)
     * [Flask-WTF 활용을 통한 Validation -1](flask/fcamp/undefined/flask-wtf-validation-1.md)
+    * [Flask-WTF 활용을 통한 Validation -2](flask/fcamp/undefined/flask-wtf-validation-2.md)
   * [Appendix](flask/fcamp/appendix/README.md)
     * [SQLite](flask/fcamp/appendix/sqlite.md)
     * [Flask-sqlAlchemy](flask/fcamp/appendix/flask-sqlalchemy.md)
