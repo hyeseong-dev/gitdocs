@@ -47,8 +47,14 @@ os별 파이썬 가상환경 설치가 너무 다르다는 점. 꼭 명심하세
 #### 출처 [https://askubuntu.com/questions/1202547/problem-with-source-env-bin-activate](https://askubuntu.com/questions/1202547/problem-with-source-env-bin-activate)
 
 ```text
+virtualenv --python=python3.8(버전) pyvenv(가상환경이름)
+```
+
+```text
 python -m virtualenv pyenv(가상환경 이름)
 ```
+
+
 
 ###  가상환경 종료 
 
