@@ -218,7 +218,7 @@ from forms import RegisterForm
 ```
 
   
-그리고  16번쨰 줄에 form = RegisterForm 한 줄을 추가 작성해 주시면 되요.   
+그리고  16번쨰 줄에 form = RegisterForm\(\) 한 줄을 추가 작성해 주시면 되요.   
 딱 봐도 RegisterForm 클래스를 form이라는 인스턴스를 만들어서 활용하는게 보이조?   
 그리고 template에 전달 할건데요.  34째줄에 인자값으로 form=form 을 작성하게되요. 
 
@@ -238,7 +238,7 @@ app = Flask(__name__)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    form = RegisterForm
+    form = RegisterForm()
     if request.method == 'POST':                       
         userid = request.form.get('userid')
         username = request.form.get('username')
@@ -408,6 +408,22 @@ if __name__=='__main__':
 그리고 바로 아래에는 그냥 태그를 만들면 되요.\(마지막 .label만 없애주세요.\)  
   
 이렇게 지정하면 아래와 같이 허접하게 표현되요. 
+
+  
+이를 잡기위해서 추가 작업을 더 할게요. 
+
+{% tabs %}
+{% tab title="" %}
+```
+{{form.userid.label("아이디") }}
+{{form.userid(class="form-control", placeholder="아이디")}}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+
 
 
 
