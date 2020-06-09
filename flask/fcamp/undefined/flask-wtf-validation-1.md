@@ -407,23 +407,71 @@ if __name__=='__main__':
 윗 부분이 userid이고 label 태그였조.   
 그리고 바로 아래에는 그냥 태그를 만들면 되요.\(마지막 .label만 없애주세요.\)  
   
-이렇게 지정하면 아래와 같이 허접하게 표현되요. 
-
-  
+이렇게 지정하면 아래와 같이 허접하게 표현되요.   
 이를 잡기위해서 추가 작업을 더 할게요. 
 
 {% tabs %}
-{% tab title="" %}
+{% tab title="register.html" %}
 ```
 {{form.userid.label("아이디") }}
 {{form.userid(class="form-control", placeholder="아이디")}}
 ```
+
+이렇게 작성된 2줄을 근거로 이외 사용자 이름, 비밀번호, 비밀번호 확인 라벨들을 바꿀게요.
 {% endtab %}
 {% endtabs %}
 
+```text
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
 
-
-
+    <body>
+      <div class="container">
+        <div class="row mt-5">
+          <h1>회원가입</h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <form method="POST">
+               <div class="form-group">
+                 <!-- <label for="userid">아이디</label>
+                 <input type="userid" class="form-control" id="userid" placeholder="아이디" name="userid" /> -->
+                {{ form.userid.label("아이디")}}
+                {{ form.userid(class="form-control", placeholder="아이디") }}
+               </div>
+               <div class="form-group">
+                 <!-- <label for="username">사용자 이름</label>
+                 <input type="text" class="form-control" id="username" placeholder="사용자 이름" name="username" /> -->
+                 {{ form.userid.label("사용자 이름")}}
+                 {{ form.userid(class="form-control", placeholder="사용자 이름") }}  
+                </div>
+               <div class="form-group">
+                 <!-- <label for="password">비밀번호</label>
+                 <input type="password" class="form-control" id="password" placeholder="비밀번호" name="password" /> -->
+                 {{ form.userid.label("비밀번호")}}
+                 {{ form.userid(class="form-control", placeholder="비밀번호") }} 
+                </div>
+               <div class="form-group">
+                 <!-- <label for="re-password">비밀번호 확인</label>
+                 <input type="password" class="form-control" id="re-password" placeholder="비밀번호확인" name="re-password" /> -->
+                 {{ form.userid.label("비밀번호 확인")}}
+                 {{ form.userid(class="form-control", placeholder="비밀번호 확인") }} 
+                </div>
+               <button type="submit" class="btn btn-primary">등록</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+```
 
 
 
