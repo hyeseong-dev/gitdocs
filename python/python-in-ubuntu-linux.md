@@ -65,8 +65,8 @@ update-alternatives: error: no alternatives for python
 아래와 같이 입력하면 2.7과 3.6버전이 update-alternatives에 등록됩니다. 물론 파이썬 2.7과 3.6이 설치되어 있어야 합니다. 만약 설치위치가 저와 다르다면 자신의 PC에 설치된 path로 변경하셔야 합니다.
 
 ```text
-$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-$ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
+ sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 2
 ```
 
 그리고 `update-alternatives --config python`을 다시 입력하면 등록한 파이썬 버전을 선택하는 메뉴가 나옵니다.
