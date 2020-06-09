@@ -75,12 +75,6 @@ Flask-WTF패키지를 갖추고 아래 register.html을 파이썬을 이용해�
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="" %}
-```
-
-```
-{% endtab %}
 {% endtabs %}
 
 ### forms.py 작성 
@@ -139,8 +133,283 @@ forms.py를 굴리기 전에 CSRF를 설정해줄거에요. 일단 CSRF가 무�
 >
 > 출처: 구글
 
-###  
+**결론은 프레임워크에서 제공하거나 패키지에서 제공하는 기능들을 그대로 사용하여 편리하고 손쉬운 보안을 구축 할 수 있다는 거에요.**  
+app.py 파일 안 7번째줄에 CSRFProtect를 가지고 올거에요.
+
+{% code title="app.py" %}
+```text
+import os
+from flask import Flask
+from flask import request 
+from flask import redirect
+from flask import render_template
+from models import db
+from flask_wtf.csrf import CSRFProtect
+
+from models import Fcuser
+
+app = Flask(__name__)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':                       
+        userid = request.form.get('userid')
+        username = request.form.get('username')
+        password = request.form.get('password')
+        re_password = request.form.get('re-password')
+
+        if (userid and username and password and re_password) and password == re_password :
+          fcuser = Fcuser()
+          fcuser.userid = userid
+          fcuser.username = username
+          fcuser.password = password
+  
+          db.session.add(fcuser)
+          db.session.commit()
+          
+          return redirect('/')
+
+    return render_template('register.html')
+@app.route('/')
+def hello():
+    return render_template('hello.html')
+
+
+if __name__=='__main__':
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    dbfile = os.path.join(basedir, 'db.sqlite')
+    
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+    app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SECRET_KEY'] = 'djfdhjhuqerb1234412bjd!@#**&^#' #원래는 복잡한 시크릿 키를 넣어야함.
+    
+    csrf = CSRFProtect()
+    csrf.init_app(app)        
+    db.init_app(app)
+    db.app = app
+    db.create_all()
+    app.run(host='127.0.0.1', port = 5000, debug=True)
+```
+{% endcode %}
+
+### 환경 설정 
+
+if 조건문 내부에 이 app객체에   
+sqlite환경 설정을 했듯이 이번에도 유사하게 csrf설정을 할거에요.   
+47, 48번째 줄에 앱등록을 50, 51번째줄의 db등록을 한것과 같이 하게 될거에요.
+
+> app.config\['SECRET\_KEY'\] = 'djfdhjhuqerb1234412bjd!@\#\*\*&^\#'
+
+원래는 복잡한 시크릿 키를 넣어야함. 
+
+#### 일단 여기까지 CSRF설정을 완료했어요. 
+
+
+
+### html을 forms.py 파일에 맞춰 재작성 
+
+남은 걸 이제 해볼게요. 저희가 파이썬을 이용해서 froms.py파일을 작성했조?   
+그럼 html 파일에 그에 맞는 문법 표현식을 적용해서 표현할 거에요.   
+app.py파일의 8번쨰 줄에 아래 RegisterForm 을 임포트해주세요.
+
+```text
+from forms import RegisterForm
+```
 
   
+그리고  16번쨰 줄에 form = RegisterForm 한 줄을 추가 작성해 주시면 되요.   
+딱 봐도 RegisterForm 클래스를 form이라는 인스턴스를 만들어서 활용하는게 보이조?   
+그리고 template에 전달 할건데요.  34째줄에 인자값으로 form=form 을 작성하게되요. 
+
+```text
+import os
+from flask import Flask
+from flask import request 
+from flask import redirect
+from flask import render_template
+from models import db
+from flask_wtf.csrf import CSRFProtect
+from forms import RegisterForm
+
+from models import Fcuser
+
+app = Flask(__name__)
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegisterForm
+    if request.method == 'POST':                       
+        userid = request.form.get('userid')
+        username = request.form.get('username')
+        password = request.form.get('password')
+        re_password = request.form.get('re-password')
+
+        if (userid and username and password and re_password) and password == re_password :
+          fcuser = Fcuser()
+          fcuser.userid = userid
+          fcuser.username = username
+          fcuser.password = password
+  
+          db.session.add(fcuser)
+          db.session.commit()
+          
+          return redirect('/')
+
+    return render_template('register.html', form=form)
+@app.route('/')
+def hello():
+    return render_template('hello.html')
+
+
+if __name__=='__main__':
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    dbfile = os.path.join(basedir, 'db.sqlite')
+    
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+    app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SECRET_KEY'] = 'djfdhjhuqerb1234412bjd!@#**&^#' #원래는 복잡한 시크릿 키를 넣어야함.
+    
+    csrf = CSRFProtect()
+    csrf.init_app(app)        
+    db.init_app(app)
+    db.app = app
+    db.create_all()
+    app.run(host='127.0.0.1', port = 5000, debug=True)
+```
+
+이 상태로 실행해도 별다른 변화는 없습니다. \(오류는 뜨면 안돼요.\)  
+왜? template에 전달은 했지만 형태 변환을 template파일에 하지 않았기 때문이에요. 
+
+### template형태 변환 
+
+앞서서 한거는 template app.py --&gt; template 파일로 data를 전달하고 처리하는 과정을 표현한거고요. 이제는 실제 template 파일에 코드를 작성해서 바꿔 볼게요.   
+  
+바꿔 볼거는 label, input태그를 편집해볼거에요. 
+
+{% tabs %}
+{% tab title="register.html 수정 전" %}
+```text
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row mt-5">
+          <h1>회원가입</h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <form method="POST">
+               <div class="form-group">
+                 <label for="userid">아이디</label>
+                 <input type="userid" class="form-control" id="userid" placeholder="아이디" name="userid" />
+               </div>
+               <div class="form-group">
+                 <label for="username">사용자 이름</label>
+                 <input type="text" class="form-control" id="username" placeholder="사용자 이름" name="username" />
+               </div>
+               <div class="form-group">
+                 <label for="password">비밀번호</label>
+                 <input type="password" class="form-control" id="password" placeholder="비밀번호" name="password" />
+               </div>
+               <div class="form-group">
+                 <label for="re-password">비밀번호확인</label>
+                 <input type="password" class="form-control" id="re-password" placeholder="비밀번호확인" name="re-password" />
+               </div>
+               <button type="submit" class="btn btn-primary">등록</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+```
+{% endtab %}
+
+{% tab title="register.html 수정 후" %}
+```
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row mt-5">
+          <h1>회원가입</h1>
+        </div>
+        <div class="row mt-5">
+          <div class="col-12">
+            <form method="POST">
+               <div class="form-group">
+                 <label for="userid">아이디</label>
+                 <input type="userid" class="form-control" id="userid" placeholder="아이디" name="userid" />
+               </div>
+               <div class="form-group">
+                 <label for="username">사용자 이름</label>
+                 <input type="text" class="form-control" id="username" placeholder="사용자 이름" name="username" />
+               </div>
+               <div class="form-group">
+                 <label for="password">비밀번호</label>
+                 <input type="password" class="form-control" id="password" placeholder="비밀번호" name="password" />
+               </div>
+               <div class="form-group">
+                 <label for="re-password">비밀번호확인</label>
+                 <input type="password" class="form-control" id="re-password" placeholder="비밀번호확인" name="re-password" />
+               </div>
+               <button type="submit" class="btn btn-primary">등록</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+기존의 label, input 태그
+
+{% tabs %}
+{% tab title="수정전" %}
+```text
+<label for="userid">아이디</label>
+<input type="userid" class="form-control" id="userid" placeholder="아이디" name="userid" />
+```
+{% endtab %}
+
+{% tab title="수정후 " %}
+```
+{{ form.userid.label }}
+{{form.userid }}
+```
+{% endtab %}
+{% endtabs %}
+
+ {{ }} \( curly bracket\)으로 넣어 바꿀거에요. 
+
+윗 부분이 userid이고 label 태그였조.   
+그리고 바로 아래에는 그냥 태그를 만들면 되요.\(마지막 .label만 없애주세요.\)  
+  
+이렇게 지정하면 아래와 같이 허접하게 표현되요. 
+
+
+
 
 
