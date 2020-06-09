@@ -85,7 +85,7 @@ Flask-WTF패키지를 갖추고 아래 register.html을 파이썬을 이용해�
 from flask_wtf import FlaskForm
 from wtforms import StringField
 from wtforms import PasswordField
-from wtforms.vaildators import DataRequired
+from wtforms.validators import DataRequired
 
 class RegisterForm(FlaskForm): 
     userid = StringField('userid', validators=[DataRequired()])
