@@ -49,6 +49,8 @@
   * [App & Route](flask/other/app-and-route.md)
   * [Flask Terms](flask/other/flask-terms.md)
   * [Template](flask/other/template.md)
+* [Error](flask/error/README.md)
+  * [Errno 98](flask/error/errno-98.md)
 
 ## Docker
 
