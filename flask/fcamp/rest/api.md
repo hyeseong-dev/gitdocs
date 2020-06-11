@@ -134,7 +134,9 @@ def test():
 
 그리고 그 data는 json형태에요. 그래서 json 형태로 반환 할 수 있도록   
 아래 소스코드 첫번째 줄에서 flask 라이브러리의 jsonify를 가져와요.   
-jsonify를 통해서 적용될 리스트, 딕셔너리 자료형을 써주면 json으로 그대로 변환해주게 됩니다.  
+jsonify를 통해서 적용될 리스트, 딕셔너리 자료형을 써주면 json으로 그대로 변환해주게 되요.   
+  
+우선 아무것도 쓰지 않을게요. 그리고 기본 뼈대는 다 만들었어요. 
 
 {% tabs %}
 {% tab title="user.py" %}
@@ -149,7 +151,61 @@ def test():
 {% endtab %}
 {% endtabs %}
 
+#### 다시 한번 리뷰하면 
 
+api\_v1이라는 폴더를 만들었으며 \_\_init\_\_파일에 api라는 Blueprint를 만들었으며 그리고 bluepirnt를 사용해서 user.py 파일에 view코드를 만들었어요.
+
+{% tabs %}
+{% tab title="api\_v1폴더 구조" %}
+```text
+회원관리api생성(폴더)
+                   api_v1  1) __init__.py
+                           2) user.py
+```
+{% endtab %}
+{% endtabs %}
+
+이후 아래 app.py파일에서는 이 blueprint 사용을 적어줘야 해요. 다른 말로는 등록한다고 하겠조?  
+5번째 줄처럼 작성하고요. 3째불에 api\_v1모듈을 from에 넣어주고요. 그리고 \_\_init\_\_.py에서 정의한 api 객체를 import해주면 되요.   
+as를 붙이고 이름을 다시 api\_v1이라고 바꿀게요.\(바로 직관적으로 파악하기 위함\)  
+  
+다시 6번째 줄의 app.register\_blueprint\(api\_v1, url\_prefix\)의 매개변수 두개를 넣을거에요. api\_v1 녀석을 첫번째로 넣고 다음 url\_prefix를 둘거고요.   
+여기서 api\_v1이 의미하는 것은 api\_v1이 제공하는 view코드들 \(api.route\('?'\) 여러 코드들을 말해요.\) 다른 말로는 컨트롤러 코드들은  
+아래와 같이 사용자에게 api.route의 매개변수 /test처럼 제공할 것이지
+
+> from . import api  
+>   
+> @api.route\('/test'\)  
+> def test\(\):  
+>     return jsonify\(\)
+
+ 
+
+
+
+{% tabs %}
+{% tab title="app.py" %}
+```text
+from flask import Flask
+from flask import render_template
+from api_v1 import api as api_v1
+
+app = Flask(__name__)
+app.register_blueprint(api_v1, url_prefix='/api/v1')
+
+@app.route('/register')
+def register():
+  return render_template('register.html')
+
+@app.route('/')
+def hello():
+  return 'hello world'
+
+if __name__=='__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)
+```
+{% endtab %}
+{% endtabs %}
 
 
 
