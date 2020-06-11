@@ -83,7 +83,13 @@ if __name__=='__main__':
 
  user.py는 사용자와 관련한 api에요.   
 그리고 우선 \_\_init\_\_.py  코드를 아래와 같이 작성해 볼게요.   
-우선 flask의 Blueprint를 임포트 할게요. 
+첫 번째줄, 우선 flask의 Blueprint를 임포트 할게요.   
+세 번째줄, Bluepirnt 클래스에 매개변수을\(api로 넣고 \_\_name\_\_ 역시 넣어 줄게요. api라는 인스턴스를 만들어 줄게요.   
+  
+그리고 api\_v1의 디렉토리에서\( . \) user 파일을 임포트해줄게요. 나중에게 가져올때 편리하게 구성한거에요.   
+
+
+#### \_\_init\_\_.py
 
 {% tabs %}
 {% tab title="api\_v1/\_\_init\_\_.py" %}
@@ -94,6 +100,56 @@ api = Blueprint('api', __name__)
 ```
 {% endtab %}
 {% endtabs %}
+
+####  user.py 
+
+아래 코드 첫 번째줄은 현재 디렉토리의 api라는 녀석을 가져오는건데요. api라는 파일은 디렉토리 경로에서는 보이지 않을거에요. 하지만 \_\_init\_\_.py 파일 안에 Blueprint 클래스로 만든 api라는 객체가 보일거에요. 그걸 끌어다써서 임포트 한다는 말이에요.   
+**즉, \_\_init\_\_.py의 api 객체 가져온거임**  
+
+
+3째줄에 api.route\(\)데코레이터 보이조? 기존 메인 디렉토리 \("회원관리api생성/app.py" 파일 안에 있는 녀석들 다수와 비슷하조?   
+그때는 app.route\(\) 였고 바로 아래 코드는 api.route\(\)에요.   
+차이점은 app.route\(\)로 접근하냐 api로 접근하냐는 차이가 존재해요.   
+  
+계속해서, @api.route\('/test'\)로 만들거에요.  
+그리고 바로 아래에 메서드를 만들거에요. 명칭은 route\('/?'\) 안의 매개변수 ?와 동일하게 매서드 이름을 만들어 주세요.   
+여기서 return 하게 될때 html을 반환하는것이 아닌 data를 반환하게 되요.   
+  
+그리고 그 data는 json형태에요. 그래서 json 형태로 반환 할 수 있도록   
+
+
+{% tabs %}
+{% tab title="user.py" %}
+```text
+from . import api
+
+@api.route('/test')
+def test():
+    return 
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+그리고 그 data는 json형태에요. 그래서 json 형태로 반환 할 수 있도록   
+아래 소스코드 첫번째 줄에서 flask 라이브러리의 jsonify를 가져와요.   
+jsonify를 통해서 적용될 리스트, 딕셔너리 자료형을 써주면 json으로 그대로 변환해주게 됩니다.  
+
+{% tabs %}
+{% tab title="user.py" %}
+```text
+from flask import jsonify
+from . import api
+
+@api.route('/test')
+def test():
+    return jsonify({})
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 
 
