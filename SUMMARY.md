@@ -2,27 +2,6 @@
 
 * [osori-magu 기술 블로그](README.md)
 
-## PROJECT
-
-* [DataBase](project/database/README.md)
-  * [Meeting](project/database/meeting.md)
-  * [Workspace](project/database/workspace.md)
-  * [ERROR](project/database/error.md)
-* [Server](project/untitled/README.md)
-  * [Meeting](project/untitled/meeting.md)
-  * [Workspace](project/untitled/workspace.md)
-  * [ERROR](project/untitled/error.md)
-
-## DB
-
-* [sqlite3](db/sqlite3/README.md)
-  * [SQLite 키워드 유의사항](db/sqlite3/untitled-4.md)
-  * [SQL문 주석](db/sqlite3/untitled-3.md)
-  * [Create & Connect](db/sqlite3/untitled-2.md)
-  * [Untitled](db/sqlite3/untitled-1.md)
-  * [Untitled](db/sqlite3/untitled.md)
-* [HKIT class](db/untitled-1.md)
-
 ## Flask
 
 * [시작하기](flask/undefined.md)
@@ -51,6 +30,23 @@
   * [Template](flask/other/template.md)
 * [Error](flask/error/README.md)
   * [Errno 98](flask/error/errno-98.md)
+
+## PROJECT
+
+* [DataBase](project/database/README.md)
+  * [Workspace](project/database/workspace.md)
+* [Server](project/untitled/README.md)
+  * [ERROR](project/untitled/error.md)
+
+## DB
+
+* [sqlite3](db/sqlite3/README.md)
+  * [SQLite 키워드 유의사항](db/sqlite3/untitled-4.md)
+  * [SQL문 주석](db/sqlite3/untitled-3.md)
+  * [Create & Connect](db/sqlite3/untitled-2.md)
+  * [Untitled](db/sqlite3/untitled-1.md)
+  * [Untitled](db/sqlite3/untitled.md)
+* [HKIT class](db/untitled-1.md)
 
 ## Docker
 
