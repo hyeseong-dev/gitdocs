@@ -38,19 +38,17 @@ api만 개발해서 웹사이트에 제공하지 않을거고요. render\_templa
 1. 사용자에 대한 요청으로 html코드를 전달하는 uri
 2. api로 리소스만 전달하는 uri 
 
-사실 9번째 줄에서 쓰여진 @app.route\('/api/v1'\)처럼 만들수 있지만 이렇게 하면 한 파일에 모든 코드가 들어가기 때문에 코드의 가독성과 코드 효율성이 떨어짐으로 모듈화를 할거에요.
+사실 7번째 줄에서 쓰여진 @app.route\('/api/v1'\)처럼 만들수 있지만 이렇게 하면 한 파일에 모든 코드가 들어가기 때문에 코드의 가독성과 코드 효율성이 떨어짐으로 모듈화를 할거에요.  
+
 
 ```text
-# 회원관리api생성/app.py
-
+#회원관리api생성/app.py
 from flask import Flask
 from flask import render_template
-
 
 app = Flask(__name__)
 
 @app.route('/api/v1')
-
 
 @app.route('/register')
 def register():
@@ -63,6 +61,45 @@ def hello():
 if __name__=='__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
 ```
+
+그래서 flask에서 제공하는 blueprint를 이용해서 이 view코드도  분리하도록 할게요.  
+그러기 위해선 폴더를 만들거에요. 위치는 "회원관리api생성" 폴더 바로 아래에 "api\_v1"이라는 폴더를 만들어 주세요. 
+
+{% tabs %}
+{% tab title="api\_v1폴더 구조" %}
+```text
+회원관리api생성(폴더)
+                   api_v1(폴더)   1) __init__.py
+                                  2) user.py
+```
+{% endtab %}
+{% endtabs %}
+
+> 참고로 실제 프로젝트에서는 버전업이 많이 발생해요.   
+> 서비스들이 제공하는 api를 많이 사용해봐도 여러가지가 있고 새로운 버전이 나온다고 해서 이전 버전을 지우진 않아요.   
+>   
+> 즉, 버전별로 코드를 분리해서 관리하는 것이 중요해요.  
+> 그래서 굳이 v1이라는 명칭을 말미에 붙였어요.
+
+ user.py는 사용자와 관련한 api에요.   
+그리고 우선 \_\_init\_\_.py  코드를 아래와 같이 작성해 볼게요.   
+우선 flask의 Blueprint를 임포트 할게요. 
+
+{% tabs %}
+{% tab title="api\_v1/\_\_init\_\_.py" %}
+```text
+from flask import Blueprint
+
+api = Blueprint('api', __name__) 
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
 
 {% tabs %}
 {% tab title="app.py" %}
@@ -108,7 +145,7 @@ class Fcuser(db.Model):
 
 {% tab title="register.html" %}
 ```
-원관리api생성/register/register.html
+회원관리api생성/register/register.html
 <html> 
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
