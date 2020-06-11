@@ -171,7 +171,7 @@ as를 붙이고 이름을 다시 api\_v1이라고 바꿀게요.\(바로 직관�
   
 다시 6번째 줄의 app.register\_blueprint\(api\_v1, url\_prefix\)의 매개변수 두개를 넣을거에요. api\_v1 녀석을 첫번째로 넣고 다음 url\_prefix를 둘거고요.   
 여기서 api\_v1이 의미하는 것은 api\_v1이 제공하는 view코드들 \(api.route\('?'\) 여러 코드들을 말해요.\) 다른 말로는 컨트롤러 코드들은  
-아래와 같이 사용자에게 api.route의 매개변수 /test처럼 제공할 것이지
+아래와 같이 사용자에게 api.route의 매개변수 /test처럼 **URI**를 제공할 것이지
 
 > from . import api  
 >   
@@ -179,7 +179,7 @@ as를 붙이고 이름을 다시 api\_v1이라고 바꿀게요.\(바로 직관�
 > def test\(\):  
 >     return jsonify\(\)
 
- 
+실제 내부적으로는 **url\_prefix='/api/v1'**과 같이 작성되어 진거에요. 
 
 
 
