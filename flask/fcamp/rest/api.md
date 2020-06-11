@@ -2,10 +2,66 @@
 
 ## 시작하기 앞서
 
-준비 되어야 할 코드 
+준비 되어야 할 코드입니다. 
+
+
 
 ```text
+# 회원관리api생성/app.py
 
+from flask import Flask
+from flask import render_template
+
+
+app = Flask(__name__)
+
+
+@app.route('/register')
+def register():
+  return render_template('register.html')
+
+@app.route('/')
+def hello():
+  return 'hello world'
+
+if __name__=='__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)
+```
+
+  
+api만 개발해서 웹사이트에 제공하지 않을거고요. render\_template처럼  
+사용자에 대한 요청으로 html코드를 전달하는 uri도 있으며 api로 리소스만 전달하는 uri도 만들거에요.   
+이 두가지를 구분하여 만들거에요. 
+
+#### 요약 
+
+1. 사용자에 대한 요청으로 html코드를 전달하는 uri
+2. api로 리소스만 전달하는 uri 
+
+사실 9번째 줄에서 쓰여진 @app.route\('/api/v1'\)처럼 만들수 있지만 이렇게 하면 코드의 가독성과 코드 효율성이 떨어짐으로 뮤듈화를 할거에요.
+
+```text
+# 회원관리api생성/app.py
+
+from flask import Flask
+from flask import render_template
+
+
+app = Flask(__name__)
+
+@app.route('/api/v1')
+
+
+@app.route('/register')
+def register():
+  return render_template('register.html')
+
+@app.route('/')
+def hello():
+  return 'hello world'
+
+if __name__=='__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)
 ```
 
 {% tabs %}
