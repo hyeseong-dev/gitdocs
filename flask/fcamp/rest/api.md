@@ -370,7 +370,70 @@ if __name__=='__main__':
     app.run(host='127.0.0.1', port = 5000, debug=True)
 ```
 {% endtab %}
+
+{% tab title="user.py 전" %}
+```
+from flask import jsonify
+from . import api 
+
+@api.route('/test')
+def test():
+  return jsonify()
+ 
+```
+{% endtab %}
+
+{% tab title="user.py 수정 후 " %}
+```
+from flask import jsonify
+from flask import request
+from . import api
+
+@api.route('/users', methods=['GET', 'POST'] ) 
+def users():
+    if request.method == 'POST':
+        userid = request.form.get('userid')
+        username = request.form.get('username')
+        password = request.form.get('password')
+        re_password = request.form.get('re-password')
+
+        if not(userid and username and password and re_password):
+          return jsonify({'error': 'No arguments'}), 400
+        
+        if password != re_password: 
+          return jsonify({'error': 'Wrong password'}), 400
+
+        fcuser = Fcuser()
+        fcuser.userid = userid
+        fcuser.username = username
+        fcuser.password = password
+
+        db.session.add(fcuser)
+        db.session.commit(fcuser)
+        return jsonify(), 201
+
+    return jsonify()
+```
+{% endtab %}
 {% endtabs %}
+
+  **user.py**  
+4번째 줄을 @api.route\( '/test' \)를 @api.route\( '/users', method=\['GET', 'POST'\] \) 로 바꾸어 줄게요.   
+그리고 사용자로부터 요청 받는 DATA가 있어요.   
+userid가 필요 하므로 request가 필요해요.\(이전에는 flask-WTF import해서 사용했어요.\)  
+그래서 8번째 줄에 request.form.get\('userid'\)를 넣어서 html에 해당하는 &lt;label for='userid' ~~~에 착안해서 사용하게 되요. 아이디, 사용자이름, 비밀번호, 비밀번호 재확인이 각각 존재하조?  
+거기에 맞게 다 넣어 줄게요.   
+  
+그리고 사용자로부터 요청을 받았을때\('POST'\)  8 - 11번줄까지를 if문으로 안에서 돌아가게되요.   
+7번째 줄 if request.method == 'POST': 의 의미는 앞선 의미를 내포한거에요. GET이 아닌이유는   
+  
+첫 째로, GET으로 받을 경우  브라우저 주소창에 그대로 개인 신상이 노출되기 때문에 POST방식을 사용한거에요.   
+  
+두번째로는 더 많은 DATA를 브라우저에 굳이 넣지 않고 처리 하는 장점이 있기 때문이에요.   
+  
+13 - 14번째 줄은 db, table에서 4가지 정보중 하나라도 없다면 400오류를 발생시키게 했으며,   
+16 - 17번째 줄은 비밀번호 != 비밀번호 재확인이 맞지 않을 경우   
+
 
 {% tabs %}
 {% tab title="app.py" %}
@@ -478,14 +541,34 @@ from . import api
 
 {% tab title="user.py" %}
 ```
-# 회원관리api생성/api_v1/user.py
+from flask import jsonify
+from flask import request
+from . import api
 
-from flask import Blueprint
+@api.route('/users', methods=['GET', 'POST'] ) 
+def users():
+    if request.method == 'POST':
+        userid = request.form.get('userid')
+        username = request.form.get('username')
+        password = request.form.get('password')
+        re_password = request.form.get('re-password')
 
+        if not(userid and username and password and re_password):
+          return jsonify({'error': 'No arguments'}), 400
+        
+        if password != re_password: 
+          return jsonify({'error': 'Wrong password'}), 400
 
-api = Blueprint('api', __name__)
+        fcuser = Fcuser()
+        fcuser.userid = userid
+        fcuser.username = username
+        fcuser.password = password
 
-from . import user
+        db.session.add(fcuser)
+        db.session.commit(fcuser)
+        return jsonify(), 201
+
+    return jsonify()
 ```
 {% endtab %}
 {% endtabs %}
