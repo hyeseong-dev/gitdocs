@@ -203,7 +203,46 @@ if __name__=='__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
 ```
 {% endtab %}
+
+{% tab title="\_\_init\_\_.py" %}
+from flask import Blueprint
+
+api = Blueprint\('api', **name**\)
+
+from . import api
+{% endtab %}
+
+{% tab title="models.py" %}
+from flask\_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy\(\)
+
+class Fcuser\(db.Model\):   
+\_\_**tablename\_\_** = 'fcuser'  
+id = db.Column\(db.Integer, primary\_key=True\)   
+password = db.Column\(db.String\(64\)\)   
+userid = db.Column\(db.String\(32\)\)   
+username = db.Column\(db.String\(8\)\)
+{% endtab %}
+
+{% tab title="user.py" %}
+from flask import jsonify from . import user
+
+@api.route\('/test'\)   
+def test\(\):  
+  return jsonify\(\),404
+{% endtab %}
 {% endtabs %}
+
+위 소스 코드를 한번 실행해 볼게요.  그럼 아래와 같이 빈 딕셔너리가 나오는걸 확인할 수 있어요. 
+
+![](../../../.gitbook/assets/image%20%28237%29.png)
+
+또 404 오류코드를 확인 하는 방법은 
+
+![](../../../.gitbook/assets/image%20%28235%29.png)
+
+
 
 
 
@@ -311,7 +350,7 @@ from flask import Blueprint
 
 api = Blueprint('api', __name__)
 
-from . import user
+from . import api
 ```
 {% endtab %}
 
