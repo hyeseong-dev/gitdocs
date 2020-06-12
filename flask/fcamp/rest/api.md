@@ -144,11 +144,12 @@ jsonify를 통해서 적용될 리스트, 딕셔너리 자료형을 써주면 js
 {% tab title="user.py" %}
 ```text
 from flask import jsonify
-from . import api
+from . import api 
 
 @api.route('/test')
 def test():
-    return jsonify({})
+  return jsonify()
+ 
 ```
 {% endtab %}
 {% endtabs %}
@@ -253,7 +254,8 @@ def test\(\):
 
 ## 회원가입 API 생성 
 
-이제 본격적으로 회원가입 API를 만들어 볼게요.  내부 동작은 기존\(회원가입 register.html\)의 코드들과과 동일해요. 기존에 만들었던 html코드들을 끌어 올게요. 
+이제 본격적으로 회원가입 API를 만들어 볼게요.  내부 동작은 기존\(회원가입 register.html\)의 코드들과과 동일해요. 기존에 만들었던 html코드들을 끌어 올게요.   
+이미 언급되었다 시피 API는 리소스 중심이에요.
 
 
 
