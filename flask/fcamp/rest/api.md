@@ -181,8 +181,6 @@ as를 붙이고 이름을 다시 api\_v1이라고 바꿀게요.\(바로 직관�
 
 실제 내부적으로는 **url\_prefix='/api/v1'**과 같이 작성되어 진거에요. 
 
-
-
 {% tabs %}
 {% tab title="app.py" %}
 ```text
