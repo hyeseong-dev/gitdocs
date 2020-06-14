@@ -102,9 +102,9 @@ models.py 파일에 필요한 db 소스코드들을 app.py 파일 안에서 가�
 
 회원 정보를 만들어 볼게요. 
 
-14째줄 webUser라는 클래스 이름을 지어서 db.Model을 상속 받도록 할게요. 
+14째줄 Fcuser라는 클래스 이름을 지어서 db.Model을 상속 받도록 할게요. 
 
-15번째 줄은 테이블의 이름을 webuser라고 지었어요. 
+15번째 줄은 테이블의 이름을 fcuser라고 지었어요. 
 
 16~19번째 줄까지는 테이블 컬럼의 Id, password, userid, username을 각 줄마다 만들어 볼게요.  
   
