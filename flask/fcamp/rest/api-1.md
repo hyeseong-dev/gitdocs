@@ -244,6 +244,7 @@ class Fcuser(db.Model):
     return {
       'id': self.id,
       'password': self.password,
+      'userid' : self.userid, 
       'username': self.username
     }
 ```
