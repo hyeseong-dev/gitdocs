@@ -424,6 +424,7 @@ def test():
 ```
 from flask import jsonify
 from flask import request
+from models import Fcuser,db
 from . import api
 
 @api.route('/users', methods=['GET', 'POST'] ) 
@@ -446,7 +447,7 @@ def users():
         fcuser.password = password
 
         db.session.add(fcuser)
-        db.session.commit(fcuser)
+        db.session.commit()
         return jsonify(), 201
 
     return jsonify()
@@ -504,6 +505,8 @@ db.init_app(app)
 db.app = app
 db.create_all()
 ```
+
+어느 정도 완성이 되었으니 실행해서 결과를 한번봐야겠조? 정상적으로 예측된다면 회원가입 화면에서 입력란 전부 다  입력하 등록버튼을 누르 201코드가 \(F12누르고 Ctrl + G\)나와야해요.
 
 {% tabs %}
 {% tab title="app.py" %}
