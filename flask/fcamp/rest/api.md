@@ -367,7 +367,44 @@ if __name__=='__main__':
     db.init_app(app)
     db.app = app
     db.create_all()
+    
     app.run(host='127.0.0.1', port = 5000, debug=True)
+```
+{% endtab %}
+
+{% tab title="app.py 수정 후" %}
+```
+import os 
+from flask import Flask
+from flask import render_template
+from models import db
+from api_v1 import api as api_v1
+
+app = Flask(__name__)
+app.register_blueprint(api_v1, url_prefix='/api/v1')
+
+@app.route('/register')
+def register():
+  return render_template('register.html')
+
+@app.route('/')
+def hello():
+  return 'hello world'
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+dbfile = os.path.join(basedir, 'db.sqlite')
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'djfdhjhuqerb1234412bjd!@#**&^#' 
+
+db.init_app(app)
+db.app = app
+db.create_all()
+
+if __name__=='__main__':
+    app.run(host='127.0.0.1', port=5000, debug=True)
 ```
 {% endtab %}
 
@@ -432,8 +469,41 @@ userid가 필요 하므로 request가 필요해요.\(이전에는 flask-WTF impo
 두번째로는 더 많은 DATA를 브라우저에 굳이 넣지 않고 처리 하는 장점이 있기 때문이에요.   
   
 13 - 14번째 줄은 db, table에서 4가지 정보중 하나라도 없다면 400오류를 발생시키게 했으며,   
-16 - 17번째 줄은 비밀번호 != 비밀번호 재확인이 맞지 않을 경우   
+16 - 17번째 줄은 비밀번호 != 비밀번호 재확인이 맞지 않을 경우 "wrong password"와 400오류를 낼거에요.   
+  
+19번째 줄부터는 앞선 if 구간들을 모두 지나와서 일치할 경우의 결과들을 처리해줘야합니다. fcuser = Fcuser\(\) 이렇게 두는데요.   
+근데 Fcuser\(\)는 models.py에 있으니 import해줘야 겠지요?  
+  
+21번째 우항의 userid를 유저가 입력한 요소를 fcuser테이블의 userid컬럼에 입력하게되요. fcuser.userid = userid로써 말이지요.   
+22번째 줄에는 fcuser.username = username  
+23번째 줄에는 fcuser.password = password 넣어주게 됩니다.   
+  
+이후 db를 넣어야 해요.   
+25번쨰 줄에는 db.를 우선 넣을 거에요.   
+db.session.add\(fcuser\) 물론 commit도 해줄게요.   
+db.session.commit\(\)  
+  
+이후 해당 값들의 생성에 대한 성 처리 결과를 return jsonify\(\), 201로 반환해줄게요.   
+  
+여기서 잘 보면 25, 26번째에 db를 사용했지만 db를 정작 import하지 안않어요.  models.py에서 가져올게요.   
+일단 위의 app.py에 있는 소스코드들이 모두 가져온 예시니 잘 참고 하세요. 
 
+```text
+from models import Fcuser, db
+
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+dbfile = os.path.join(basedir, 'db.sqlite')
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + dbfile
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'djfdhjhuqerb1234412bjd!@#**&^#' #원래는 복잡한 시크릿 키를 넣어야함.
+         
+db.init_app(app)
+db.app = app
+db.create_all()
+```
 
 {% tabs %}
 {% tab title="app.py" %}
