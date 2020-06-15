@@ -50,8 +50,8 @@
   * [Create & Connect](db/sqlite3/untitled-2.md)
   * [Untitled](db/sqlite3/untitled-1.md)
   * [Untitled](db/sqlite3/untitled.md)
-* [HKIT class](db/untitled-1.md)
-* [June - 12 - 2020](db/june-12-2020.md)
+* [HKIT class](db/untitled-1/README.md)
+  * [June - 12 - 2020](db/untitled-1/june-12-2020.md)
 
 ## Docker
 
