@@ -37,7 +37,21 @@ def users():
 
     users = Fcuser.query.all()
     return jsonify([user.serialize for user in users])
+    
+@api.route('/user/<uid>>', methods=['GET', 'PUT', 'DELETE'])
+def user_detail(uid):
+    if request.method == 'GET':
+        user= Fcuser.query.filter(Fcuser.id == uid).first()
+        return jsonify()     
 ```
+
+@api.route\('/users/&lt;uid&gt;', \) URI에서 입력값을 받을 수 있게 &lt;uid&gt; 꺽쇠 괄호로 값을 받을 수 도 있어요. 수정, 삭제, 조회를 조회 할 수 있어요.  그리고 user\_detail\(\)이라는 함수가 만들어져요.   
+해당 함수안의 매개변수 uid는 route\(\)메소드의 꺽쇠 이름과 동일해야해요. 그렇지 않으면 서로 찾지를 못해서 오류가 발생해요.   
+  
+이제 method를 확인해서 원하는 API를 만들면 되요. 먼저 'GET'부터 만들어 볼게요.   
+GET요청은 조회에요. 쿼리에서 id가 들어 왔으니깐. Fcuser.query.fileter\(Fcuser.id == uid\).first\(\)를 사용해서 모든 id정보중에서 하나만 뽑아내게 되요.   
+그리고 return jsonify\(\)해주는데요. 여기서 user는 object에요. 이후 serialize하게되는데요.   
+바로 실행해 볼게요. 
 
 
 
