@@ -7,7 +7,7 @@
 * [시작하기](flask/undefined/README.md)
   * [Slack ChatBot](flask/undefined/untitled/README.md)
     * [1. Slack chatbot원리](flask/undefined/untitled/slack-chatbot.md)
-    * [2. slack 생성](flask/undefined/untitled/2.-slack.md)
+    * [2. Slack 생성](flask/undefined/untitled/2.-slack.md)
   * [Error](flask/undefined/error/README.md)
     * [Errno 98](flask/undefined/error/errno-98.md)
   * [Quick Start](flask/undefined/other/README.md)
