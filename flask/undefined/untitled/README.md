@@ -1,4 +1,4 @@
-# Slack chatbot원리
+# Slack ChatBot
 
 ## Why? 
 
@@ -17,7 +17,7 @@
 
 ## Slack chatbot 동작 원리 
 
-![](../../.gitbook/assets/image%20%28239%29.png)
+![](../../../.gitbook/assets/image%20%28239%29.png)
 
 1번 가장 왼쪽은 Flask 서버에요.  
 2번 가장 아래 아이콘은 Slack  
