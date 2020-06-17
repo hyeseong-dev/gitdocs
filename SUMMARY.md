@@ -40,7 +40,7 @@
   * [Template](flask/other/template.md)
 * [Error](flask/error/README.md)
   * [Errno 98](flask/error/errno-98.md)
-* [Untitled](flask/untitled.md)
+* [Slack ChatBot](flask/untitled.md)
 
 ## PROJECT
 
