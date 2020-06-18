@@ -6,7 +6,7 @@
 
 ### Incoming Webhook
 
-![](../../../../.gitbook/assets/image%20%28258%29.png)
+![](../../../../.gitbook/assets/image%20%28260%29.png)
 
 우선 **Activate** **Incoming** **Webhooks** 를 On으로 활성화 시켜주세요.   
 그 다음으로 가장 아래  **Add** **New** **Webhook** **to** **Workspace 클릭 새로운 Webhook을 생성하는 화면으로 전환되요.**   
@@ -20,7 +20,7 @@
   
 
 
-![](../../../../.gitbook/assets/image%20%28259%29.png)
+![](../../../../.gitbook/assets/image%20%28261%29.png)
 
 flaskbot was added to \#flaskdev by LEE HYE SEONG. 라는 부분이 대화창에 나타나게 됩니다.   
 
@@ -72,13 +72,22 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 
 ### Slash Command
 
+![](../../../../.gitbook/assets/image%20%28257%29.png)
 
+#### Slash Commands -&gt; Create New Command 버튼 클릭
+
+![](../../../../.gitbook/assets/image%20%28256%29.png)
 
 #### 
 
-#### 
+#### Create New Command 버튼 클릭시 입력란이 나오게 되요. 
 
-#### 
+1. 명령어 이름을 지정
+2. 요청할 URL 주소\(임의로 Naver로 했어요. 추후에 바꿀거에요.\)
+3. 명령문에 대한 짧은 설명
+4. 사용 힌트 
+
+그리고 Save 버튼을 클릭할게요. 
 
 #### 
 
