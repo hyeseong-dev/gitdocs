@@ -92,7 +92,8 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 
 ![](../../../../.gitbook/assets/image%20%28254%29.png)
 
-완성된 Slash Commads가 등록된걸 볼수 있어요. 수정과 삭제도 가능해요. 
+완성된 Slash Commads가 등록된걸 볼수 있어요. 수정과 삭제도 가능해요.  
+ 
 
 
 
