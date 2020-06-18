@@ -9,6 +9,7 @@
     * [1. Slack chatbot원리](flask/undefined/untitled/slack-chatbot.md)
     * [2. Slack 생성](flask/undefined/untitled/2.-slack.md)
     * [3. Incoming Webhook, Slash Command 활성화](flask/undefined/untitled/03.-incoming-webhook-slash-command/README.md)
+      * [HTTP Content-Type 정리](flask/undefined/untitled/03.-incoming-webhook-slash-command/http-content-type.md)
       * [curl](flask/undefined/untitled/03.-incoming-webhook-slash-command/curl.md)
   * [Error](flask/undefined/error/README.md)
     * [Errno 98](flask/undefined/error/errno-98.md)
