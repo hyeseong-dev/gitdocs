@@ -87,17 +87,6 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 3. 명령문에 대한 짧은 설명
 4. 사용 힌트 
 
-그리고 Save 버튼을 클릭할게요. 
-
-#### 
-
-#### 
-
-#### 
-
-#### 
-
-####   
-
-림
+그리고 Save 버튼을 클릭하면 slash 커맨드 완성되요.   
+즉, 이전 Incomming Webhook은 파이썬에서 사용하는 명령어라면 지금 생성한 slash 커맨드의 경우 slack에서 사용한 명령어를 **Request URL 로 보내지게 되요.**
 
