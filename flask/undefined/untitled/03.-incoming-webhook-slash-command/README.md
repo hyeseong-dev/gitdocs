@@ -4,6 +4,8 @@
 
 #### 1\) Incoming Webhook & 2\) Slash Command 활성화
 
+### Incoming Webhook
+
 ![](../../../../.gitbook/assets/image%20%28258%29.png)
 
 우선 **Activate** **Incoming** **Webhooks** 를 On으로 활성화 시켜주세요.   
@@ -63,7 +65,14 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 3\)  -H : 요청 헤더를 지  
 4\) Content-type: application/json 형태로 지정   
 5\)** --data '{"text":"Hello, World!"}' Json 형태의 내용을 입력하게 되요.   
-6\) 
+6\)  보내는 URL은 WebHook URL이에요.  
+  
+일단 이 정도로  Incoming Webhook을 알아보고 **Slash** **Command** 를 알아볼게요.   
+
+
+### Slash Command
+
+
 
 #### 
 
