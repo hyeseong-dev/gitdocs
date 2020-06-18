@@ -1,6 +1,6 @@
 # curl
 
-**\# curl이란?**
+e**\# curl이란?**
 
 서버와 통신할 수 있는 커맨드 명령어 툴입니다. 웹개발에 매우 많이 사용되고 있는 **무료 오픈소스**입니다. curl의 특징으로는 다음과 같은 수 많은 프로토콜을 지원한다는 장점이 있습니다.  
   
@@ -16,7 +16,6 @@ DICT, FILE, FTP, FTPS, Gopher, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3
 curl은 아래 사이트에서 다운로드가 가능합니다. 현재 17년 5월 26 기준 **7.54.0 버전**까지 릴리즈되어있습니다.  
   
 **curl 다운로드 바로가기 &gt;** [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html)  
-  
 
 
 ### ! curl에 설정 가능한 옵션보기
