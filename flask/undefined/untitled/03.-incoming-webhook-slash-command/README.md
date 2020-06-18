@@ -46,7 +46,7 @@ cmd or Powershell을 실행시켜 위 명령어를 복붙해서 실행해주세�
 
 위 flaskdev 채널로 다시 가보면 챗봇이 Hello World라고 반응한걸 보실수 있어요.   
   
-우선 위에서 제가 입력하였던 명령어를 아는데까 분석해볼게요.   
+우선 위에서 제가 입력하였던 명령어를 아는데까지 분석해볼게요.   
 **Sample curl request to post to a channel:**
 
 ```text
