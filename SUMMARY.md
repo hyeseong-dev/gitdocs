@@ -11,6 +11,7 @@
     * [3. Incoming Webhook, Slash Command 활성화](flask/undefined/untitled/03.-incoming-webhook-slash-command/README.md)
       * [HTTP Content-Type 정리](flask/undefined/untitled/03.-incoming-webhook-slash-command/http-content-type.md)
       * [curl](flask/undefined/untitled/03.-incoming-webhook-slash-command/curl.md)
+    * [4. Slack Project 설정](flask/undefined/untitled/4.-slack-project.md)
   * [Error](flask/undefined/error/README.md)
     * [Errno 98](flask/undefined/error/errno-98.md)
   * [Quick Start](flask/undefined/other/README.md)
