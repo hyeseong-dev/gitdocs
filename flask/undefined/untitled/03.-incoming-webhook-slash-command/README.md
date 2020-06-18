@@ -20,7 +20,7 @@
   
 
 
-![](../../../../.gitbook/assets/image%20%28264%29.png)
+![](../../../../.gitbook/assets/image%20%28265%29.png)
 
 flaskbot was added to \#flaskdev by LEE HYE SEONG. 라는 부분이 대화창에 나타나게 됩니다.   
 
