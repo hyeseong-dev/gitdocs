@@ -59,7 +59,11 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 
 #### 1\) curl :  서버와 통신할 수 있는 커맨드 명령어 툴. 웹개발에 매우 많이 사용되고 있는 **무료 오픈소스**
 
-**2\) -X :** 
+**2\) -X : 요청 메소를 지정\(옵션이 없으면 기본값은 GET\)  
+3\)  -H : 요청 헤더를 지  
+4\) Content-type: application/json 형태로 지정   
+5\)** --data '{"text":"Hello, World!"}' Json 형태의 내용을 입력하게 되요.   
+6\) 
 
 #### 
 
