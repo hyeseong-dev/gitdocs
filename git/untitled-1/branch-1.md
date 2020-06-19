@@ -242,11 +242,49 @@ index 0000000..7898192
 +++ b/f3.txt
 @@ -0,0 +1 @@
 +a
+```
 
-이혜성@DESKTOP-CF2UBJF MINGW64 ~/Desktop/새 폴더 (master)
-$
+exp 브렌치에는 없고 오직 master 브렌치에만 있는 커밋이 5라는것과 그리고 exp에는 파일이 없는데\(--- /dev/null \) master에 있는 파일\(+++ b/f3.txt\) 을 명시한거에요.  그리고 \(+a\)라는 표시를 통해서 a 소스코드가 추가 된걸 파악 할 수 있어요. 
+
+### git diff 
+
+각각으 branch에 현재 상태들을 비교 할 수 있어요. 
+
+> git diff master..exp
+
+```text
+$ git diff master..exp
+diff --git a/f1.txt b/f1.txt
+index 422c2b7..de98044 100644
+--- a/f1.txt
++++ b/f1.txt
+@@ -1,2 +1,3 @@
+ a
+ b
++c
+diff --git a/f2.txt b/f2.txt
+new file mode 100644
+index 0000000..7898192
+--- /dev/null
++++ /b/f2.txt
+@@ -0,0 +1 @@
++a
+diff --git a/f3.txt b/f3.txt
+deleted file mode 10644
+index 7898192..0000000
+--- a/f3.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-a
 
 ```
+
+4번째줄이 master 5번째 줄이 exp 브렌치에요.   
+7~8번째 줄을 보면 master 브렌치의 f1.txt파일은 a,b만 있는데 9번쨰 줄 exp브렌치는 c까지도 포함하여 가지고 있다는 의미에요.
+
+16번쨰줄 +a 만 적힌 부분은 f2.txt파일에있고 exp브렌치에는 있는데 master에는 없다는걸 말해요. 
+
+ 23번째줄은 master에는 있는 20번쨰줄의 master에는 있, f3.txt가 21번째줄에서 exp브렌치에는 없다는걸 말해요\(+++ /dev/null\)
 
 ## 요약 정리 
 
