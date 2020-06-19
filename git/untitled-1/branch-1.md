@@ -97,7 +97,7 @@ Date:   Fri Jun 19 13:56:09 2020 +0900
 $ git log --branches --decorate --graph 
 ```
 
-![git log --branches --decorate --graph](../../.gitbook/assets/image%20%28275%29.png)
+![git log --branches --decorate --graph](../../.gitbook/assets/image%20%28276%29.png)
 
 --graph 옵션을 추가하면 빨간줄이 있는  모습이 보여요.   
 즉, branch가 흘러간 모습을 보여주는거에요.   
@@ -115,7 +115,7 @@ $ git commit -m 5
 $ git log 
 ```
 
-![1, 2, 5  &#xB0B4;&#xC5ED;&#xB9CC; &#xB098;&#xD0C0;&#xB0A8; ](../../.gitbook/assets/image%20%28271%29.png)
+![1, 2, 5  &#xB0B4;&#xC5ED;&#xB9CC; &#xB098;&#xD0C0;&#xB0A8; ](../../.gitbook/assets/image%20%28272%29.png)
 
 1, 2, 5 만 나오게 됩니다. 왜? 일까요?   
 git log는 현재 brach의 commit된 내역들만 보여주게 되요. 
@@ -126,7 +126,7 @@ git log는 현재 brach의 commit된 내역들만 보여주게 되요.
 git log --branches 
 ```
 
-![git log --branches ](../../.gitbook/assets/image%20%28269%29.png)
+![git log --branches ](../../.gitbook/assets/image%20%28270%29.png)
 
 이 방법의 한계는 여전히 브랜치 구분이 쉽지 않아요. 
 
@@ -134,7 +134,7 @@ git log --branches
 git log --branches --decorate --graph
 ```
 
-![git log --branches --decorate](../../.gitbook/assets/image%20%28267%29.png)
+![git log --branches --decorate](../../.gitbook/assets/image%20%28268%29.png)
 
 git log --branches V.S git log --branches --decorate   
 뒤에 --decorate 있나 없나 차이가 없네요. 동영상에는 있다 했는데....  
@@ -142,7 +142,7 @@ git log --branches V.S git log --branches --decorate
 
 #### git log --branches --decorate --graph 
 
-![git log --branches --decorate --graph ](../../.gitbook/assets/image%20%28276%29.png)
+![git log --branches --decorate --graph ](../../.gitbook/assets/image%20%28277%29.png)
 
 --graph 옵션을 붙이니 분기된 branch 모습들이 명확히 보이네요. 
 
@@ -180,7 +180,7 @@ sourcetree 명령어는 GUI 프로그램\(별도 설치 필요\)으로 본인의
 또한 전역변수 설정도 해줘야하는거 잊지마세요.\(installer가 아닌경우\)   
 
 
-![window, sourcetree ](../../.gitbook/assets/image%20%28280%29.png)
+![window, sourcetree ](../../.gitbook/assets/image%20%28282%29.png)
 
 CLI환경보다 더 직관적이며 마우스 클릭만으로 해결 가능하니 선택보다 필수에 가깝지 않을까? 생각해봐요.   
 물론 CLI 환경이 필요하거나 익숙한 경우도 있겠지요?!   
