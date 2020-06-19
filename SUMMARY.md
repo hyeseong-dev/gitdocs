@@ -4,6 +4,8 @@
 
 ## GIT
 
+* [Basic](git/basic/README.md)
+  * [저장소 생성](git/basic/undefined.md)
 * [Branch](git/untitled-1/README.md)
   * [Branch 만들기](git/untitled-1/branch.md)
   * [Branch 정보확인](git/untitled-1/branch-1.md)
