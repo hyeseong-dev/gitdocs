@@ -23,7 +23,7 @@ report.xsl -> report1.xsl -> report2.xsl -> report3.xsl-> report4.xsl ---->repor
 
 
 3번째줄은 원래 작업 공간\(원 브렌치\)이고 고객용으로 제공된 브랜치는 1번째줄이에요.   
-사실 report1.xsl  
+사실 report1.xsl에서 분화가 되조 report2\_client.xsl 부분이 또다른 브렌치로 나뉘게 되요.  
   
   
 출처: [https://opentutorials.org/course/2708/15259](https://opentutorials.org/course/2708/15259)
