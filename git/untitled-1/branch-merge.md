@@ -36,7 +36,7 @@ vim 에디터가 열리고 노락색 글자로 Merge branch 'exp'라는 문장�
 git log --branches --graph --decorate --online
 ```
 
-![](../../.gitbook/assets/image%20%28289%29.png)
+![](../../.gitbook/assets/image%20%28292%29.png)
 
 현재 master는 11467cd 커밋으로 checkout되었네요. 그리고 자동으로 작성된 commit message인 "Merge branch 'exp' " 가 보이네요.   
 그리고 이 11467cd 커밋은 2개의 부모 커밋을 가져요.   
@@ -79,7 +79,7 @@ $ git branch -d exp # exp 브렌치 삭제
 $ git log --branches --graph --decorate --oneline
 ```
 
-![](../../.gitbook/assets/image%20%28286%29.png)
+![](../../.gitbook/assets/image%20%28289%29.png)
 
 \(head -&gt; master\) 이 부분이 master branch만 남은게 보이고 다른 곳 어디에도 exp라는 글자가 보이지 않네요. 삭제된걸 파악 할 수 있어요.   
 이렇게 해서 병합\(merge\)이 무엇인지 살펴 봤어요. 
