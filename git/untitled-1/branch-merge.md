@@ -8,7 +8,7 @@ $ git log --branches --graph --decorate --oneline
 
 ```
 
-![](../../.gitbook/assets/image%20%28257%29.png)
+![](../../.gitbook/assets/image%20%28258%29.png)
 
 브랜치들 상태를 확인할 수 있어요.   
 위의 스샷을 요약하면 exp,master 브렌치에서 1,2commit은 공통이고   
@@ -27,7 +27,7 @@ $ git checkout master
 $ git merge exp  
 ```
 
-![git merge exp ](../../.gitbook/assets/image%20%28260%29.png)
+![git merge exp ](../../.gitbook/assets/image%20%28261%29.png)
 
 vim 에디터가 열리고 노락색 글자로 Merge branch 'exp'라는 문장이 보이네요. 다음 :wq! 키를 누르고 저장하고 나와주세요.   
 
@@ -36,7 +36,7 @@ vim 에디터가 열리고 노락색 글자로 Merge branch 'exp'라는 문장�
 git log --branches --graph --decorate --online
 ```
 
-![](../../.gitbook/assets/image%20%28281%29.png)
+![](../../.gitbook/assets/image%20%28282%29.png)
 
 현재 master는 11467cd 커밋으로 checkout되었네요. 그리고 자동으로 작성된 commit message인 "Merge branch 'exp' " 가 보이네요.   
 그리고 이 11467cd 커밋은 2개의 부모 커밋을 가져요.   
@@ -66,7 +66,7 @@ $ git merge master
 $ git log --branches --graph --decorate --oneline
 ```
 
-![](../../.gitbook/assets/image%20%28262%29.png)
+![](../../.gitbook/assets/image%20%28263%29.png)
 
 log 기록을 통해서 exp, master브랜치가 똑같은 커밋 기록을 가지고 있는걸 확인 할 수 있어요.   
 구체적으로 본다면 11467cd 커밋이 3~5번 커밋을 공통의 부모로 가지게 되었어요.   
@@ -79,7 +79,7 @@ $ git branch -d exp # exp 브렌치 삭제
 $ git log --branches --graph --decorate --oneline
 ```
 
-![](../../.gitbook/assets/image%20%28280%29.png)
+![](../../.gitbook/assets/image%20%28281%29.png)
 
 \(head -&gt; master\) 이 부분이 master branch만 남은게 보이고 다른 곳 어디에도 exp라는 글자가 보이지 않네요. 삭제된걸 파악 할 수 있어요.   
 이렇게 해서 병합\(merge\)이 무엇인지 살펴 봤어요. 

@@ -13,6 +13,21 @@ $ git checkout -b iss53
 > git branch iss53  
 > git checkout iss3
 
+![](../../.gitbook/assets/image%20%28255%29.png)
+
+```text
+$ vim index.html 
+$ git commit -am 'added a new footer (issue 53)'
+```
+
+
+
+
+
+
+
+
+
 
 
 출처 : [https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EC%99%80-Merge-%EC%9D%98-%EA%B8%B0%EC%B4%88)
