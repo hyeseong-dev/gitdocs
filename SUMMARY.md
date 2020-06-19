@@ -2,6 +2,10 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## GIT
+
+* [Branch](git/untitled-1.md)
+
 ## Flask
 
 * [시작하기](flask/undefined/README.md)
@@ -206,8 +210,4 @@
 ## AWS
 
 * [키페어 없이 EC2 접속](aws/ec2.md)
-
-## GIT
-
-* [Untitled](git/untitled-1.md)
 
