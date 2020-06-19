@@ -6,7 +6,7 @@
 
 ### Incoming Webhook
 
-![](../../../../.gitbook/assets/image%20%28268%29.png)
+![](../../../../.gitbook/assets/image%20%28272%29.png)
 
 우선 **Activate** **Incoming** **Webhooks** 를 On으로 활성화 시켜주세요.   
 그 다음으로 가장 아래  **Add** **New** **Webhook** **to** **Workspace 클릭 새로운 Webhook을 생성하는 화면으로 전환되요.**   
@@ -20,7 +20,7 @@
   
 
 
-![](../../../../.gitbook/assets/image%20%28274%29.png)
+![](../../../../.gitbook/assets/image%20%28278%29.png)
 
 flaskbot was added to \#flaskdev by LEE HYE SEONG. 라는 부분이 대화창에 나타나게 됩니다.   
 
@@ -44,7 +44,7 @@ cmd or Powershell을 실행시켜 위 명령어를 복붙해서 실행해주세�
 
 ![](../../../../.gitbook/assets/image%20%28255%29.png)
 
-![&#xCC57;&#xBD07;&#xC774; &#xBA85;&#xB839;&#xC5B4;&#xC5D0; &#xB300;&#xD55C; &#xBC18;&#xC751;\(Hello World!\)](../../../../.gitbook/assets/image%20%28257%29.png)
+![&#xCC57;&#xBD07;&#xC774; &#xBA85;&#xB839;&#xC5B4;&#xC5D0; &#xB300;&#xD55C; &#xBC18;&#xC751;\(Hello World!\)](../../../../.gitbook/assets/image%20%28258%29.png)
 
 위 flaskdev 채널로 다시 가보면 챗봇이 Hello World라고 반응한걸 보실수 있어요.   
   
@@ -72,11 +72,11 @@ https://hooks.slack.com/services/T015VBY2TND/B015KPVLXC5/qyNuoKTabommRGNETjbG1BN
 
 ### Slash Command
 
-![](../../../../.gitbook/assets/image%20%28261%29.png)
+![](../../../../.gitbook/assets/image%20%28264%29.png)
 
 #### Slash Commands -&gt; Create New Command 버튼 클릭
 
-![](../../../../.gitbook/assets/image%20%28260%29.png)
+![](../../../../.gitbook/assets/image%20%28263%29.png)
 
 #### 
 
