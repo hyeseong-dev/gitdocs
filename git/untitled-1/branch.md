@@ -172,6 +172,85 @@ Switched to branch 'master'
 git checkout master 명령어로 branch를 변경해볼게요. 
 
 ```text
+$ git log 
+commit b5eac942f5e38bd0e5c1bb29dc103490eecabebd (HEAD -> master)
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 13:57:21 2020 +0900
+
+    2
+
+commit 66d89f8cf905fbb019285dfca59b44b573efd626
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 13:56:09 2020 +0900
+
+    1
 
 ```
+
+```text
+$ cat f1.txt
+a
+b
+```
+
+master branch의 f1.txt 파일은 a, b라는 문자가 보이게 되요. 
+
+```text
+$ git checkout exp 
+Switched to branch 'exp'
+
+$ cat f1.txt
+a
+b
+c
+
+```
+
+exp 브렌치의 f1.txt파일을 확인해 보면 a,b,c 문자가 있는것이 보일거에요.  
+즉, branch에 따라 f1.txt파일의 내용이 완전히 달라지게 되요. 
+
+
+
+```text
+이혜성@DESKTOP-CF2UBJF MINGW64 ~/Desktop/새 폴더 (exp)
+$ vim f2.txt
+
+# 위명령어 새 폴더 디렉토리에 f2 파일이 생성되요. 
+
+$ git add f2.txt 
+$ git commit -m '4'
+$ git checkout master # 여기서 f2파일이 사라져요.
+
+$ git checkout exp # 다시 f2 파일이 생성되요. 
+```
+
+이 branch는 저장소를 추가적으로 사용하지 않고 light하고 편리 하다는거에요. 
+
+### 요약 
+
+**브랜치의 목록을 볼 때**
+
+git branch
+
+**브랜치를 생성할 때** 
+
+git branch "새로운 브랜치 이름"
+
+**브랜치를 삭제할 때**
+
+git branch -d
+
+**병합하지 않은 브랜치를 강제 삭제할 때** 
+
+git branch -D
+
+**브랜치를 전환\(체크아웃\)할 때**
+
+git checkout "전환하려는 브랜치 이름"
+
+**브랜치를 생성하고 전환까지 할 때** 
+
+git checkout -b "생성하고 전환할 브랜치 이름"
+
+
 
