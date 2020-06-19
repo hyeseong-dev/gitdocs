@@ -190,7 +190,62 @@ CLI 와 GUI 둘중 하나만 고집하지 말고 유연성있게 상황에 맞�
 ### branch간 차이점
 
 ```text
-git log master..exp
+$ git log master..exp
+commit 8b8db28b31818c9469109b80d9db9a7f72edd07c (exp)
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 15:13:07 2020 +0900
+
+    4
+
+commit cb32bbc4095e7030f5eade782a4b8018e2f65af0
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 14:30:38 2020 +0900
+
+    3
+
+```
+
+즉, master에는 없고 exp에는 있는 것들만 보여줘요. 
+
+```text
+$ git log exp..master
+commit 13014a559db79ab957ac57204d143c676587a1a9 (HEAD -> master)
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 17:50:28 2020 +0900
+
+    5
+
+
+```
+
+위의 경우는 log 브렌치에는 없고 master 브렌치에만 있는 5번 commit만 보여주게 되네요.   
+
+
+### 코드까지 확인 git log -p
+
+#### git log -p branch1..branch2
+
+branch1에는 없고 branch2에 있는  소스코드까지 보고 싶은 경우 위 명령어를 사용하게되요. 
+
+```text
+$ git log -p exp..master
+commit 13014a559db79ab957ac57204d143c676587a1a9 (HEAD -> master)
+Author: hyeseong <hyeseong@gmail.com>
+Date:   Fri Jun 19 17:50:28 2020 +0900
+
+    5
+
+diff --git a/f3.txt b/f3.txt
+new file mode 100644
+index 0000000..7898192
+--- /dev/null
++++ b/f3.txt
+@@ -0,0 +1 @@
++a
+
+이혜성@DESKTOP-CF2UBJF MINGW64 ~/Desktop/새 폴더 (master)
+$
+
 ```
 
 ## 요약 정리 
