@@ -162,3 +162,16 @@ Date:   Fri Jun 19 14:30:38 2020 +0900
     3
 ```
 
+
+
+```text
+$ git checkout master
+Switched to branch 'master'
+```
+
+git checkout master 명령어로 branch를 변경해볼게요. 
+
+```text
+
+```
+
