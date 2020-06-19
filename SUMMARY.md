@@ -9,8 +9,8 @@
 * [Branch](git/untitled-1/README.md)
   * [Branch 만들기](git/untitled-1/branch.md)
   * [Branch 정보확인](git/untitled-1/branch-1.md)
-  * [Untitled](git/untitled-1/untitled.md)
   * [Branch merge](git/untitled-1/branch-merge.md)
+  * [Exercise](git/untitled-1/untitled.md)
 
 ## Flask
 
