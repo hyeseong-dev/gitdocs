@@ -16,6 +16,20 @@ vim에디터로 a라는 글자를 입력할게요.  그리고 !wq!를 입력하�
 
 ```text
 git add f1.txt
-# 버전 관리 시작을 위한 명령어가 진행되요. 
+git commit -m '커밋 메시지 입력'
+```
+
+```text
+vim f1.txt
+
+<vim editor> 
+b #입력후 저장 
+```
+
+```text
+git commit -a -m '2' # -a 옵션은 git add f1.txt
+
+# 위 1번 코드의 옵션을 축약하면 -am이라고 적용해도 되요. 
+git commit -am '2' 
 ```
 
