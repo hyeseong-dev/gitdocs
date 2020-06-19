@@ -209,5 +209,6 @@
 
 ## GIT
 
-* [Untitled](git/untitled.md)
+* [Github 프로젝트 관리](git/untitled.md)
+* [Untitled](git/untitled-1.md)
 
