@@ -4,7 +4,8 @@
 
 ## GIT
 
-* [Branch](git/untitled-1.md)
+* [Branch](git/untitled-1/README.md)
+  * [Branch 만들기](git/untitled-1/branch.md)
 
 ## Flask
 
