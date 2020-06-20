@@ -217,10 +217,33 @@ function c() {}
 우리는 이를 원하는 방향으로 수정해 볼게요. 
 
 ```text
+# master branch/vim common.txt
+
 function b() {}
 function a(master, exp) {}
 function c() {}
 ```
+
+```text
+$ git add common.txt 
+$ git status 
+On branch master 
+All conflicts fixed but you are still merging. 
+(use 'git commit' to conclude merge) 
+changes to be committed: 
+        modified: common.txt
+
+```
+
+```text
+$ git commit 
+```
+
+
+
+
+
+
 
 
 
