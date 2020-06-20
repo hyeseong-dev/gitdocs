@@ -13,14 +13,14 @@ $ git checkout -b iss53
 > git branch iss53  
 > git checkout iss3
 
-![](../../.gitbook/assets/image%20%28256%29.png)
+![](../../.gitbook/assets/image%20%28257%29.png)
 
 ```text
 $ vim index.html 
 $ git commit -am 'added a new footer (issue 53)'
 ```
 
-![](../../.gitbook/assets/image%20%28268%29.png)
+![](../../.gitbook/assets/image%20%28269%29.png)
 
 갑자기 급하게 처리해야할 일이 있어서 마스터 브렌치에서 다시 브렌치를 뺄거에요. 그러기 위해선 먼저!! git checkout master 를 해줘야해요.    
 이후 git checkout -b hotfix 명령어를 실행하여 새로운 브렌치를 만들어줘요.   
@@ -38,7 +38,7 @@ $ vim index.html
 $ git commit -am 'c4 fixed the broken email address'
 ```
 
-![](../../.gitbook/assets/image%20%28294%29.png)
+![](../../.gitbook/assets/image%20%28295%29.png)
 
 여기서 hotfix 브렌치와 iss53 브렌치는 master라는 공통의 부모 커밋을 가지는 브렌치가 된다는점 유의하세요.   
 마스터 브렌치로 병합을 하려고 하면 일단 
@@ -56,7 +56,7 @@ Fast-forward
 
 merge를 했을때 4번째줄에 "Fast-forward"가 나타나요. 한글로는 빨리 감기라는 의미에요. 
 
-![](../../.gitbook/assets/image%20%28255%29.png)
+![](../../.gitbook/assets/image%20%28256%29.png)
 
 이제 master 브치는 hotfix 브랜치의 commit을 가리키게 되요.   
 그리고 별도의 commit을 가리키지 않아요! 
@@ -83,7 +83,7 @@ $ git commit -a -m 'finished the new footer [issue 53]'
 1 file changed, 1 insertion(+)
 ```
 
-![](../../.gitbook/assets/image%20%28293%29.png)
+![](../../.gitbook/assets/image%20%28294%29.png)
 
 ```text
 $ git checkout master 
@@ -99,7 +99,7 @@ Merge made by the 'recursive' strategy.
 Merge made by the 'recursive' strategy 문구가 뜨는게 보이조? 이전에는 Fast-forward였는데 말이조?!   
 
 
-![](../../.gitbook/assets/image%20%28286%29.png)
+![](../../.gitbook/assets/image%20%28287%29.png)
 
 issu53이 master로부터 독릭한 이후 master는 c2에서 c4로 커밋 변화가 일어났어요. 이러한 경우에는 Fast-forward를 할 수 없어요.   
 그런 깃은 내부적으로 동작을 하게되요.   
@@ -107,7 +107,7 @@ issu53이 master로부터 독릭한 이후 master는 c2에서 c4로 커밋 변�
 1\) git은 master와 iss53의 공통 조상을 찾게되요. 3 way merge라는 내부적인 방법을 이용해서 c4와 c5를 합치고 이 2개를 합쳤다는 정보를 알려주는 별도의 정보를 알려줘요. 즉 C6가 아래 스샷 처럼 만들어 지게 되는거에요.   
 
 
-![](../../.gitbook/assets/image%20%28261%29.png)
+![](../../.gitbook/assets/image%20%28262%29.png)
 
 위의 C6는 C5와 C4에 대한 정보를 모두 공통으로 갖는 부모를 가지게 되는거에요.   
 

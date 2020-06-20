@@ -33,12 +33,12 @@ $ git checkout master
 
 ```
 
-![](../../.gitbook/assets/image%20%28272%29.png)
+![](../../.gitbook/assets/image%20%28273%29.png)
 
 exp에서 수정했던 내용이 master까지 영향을 주게 되요.   
 다시 git checkout exp로 돌아갈게요.  여전한 모습을 status 명령어를 통해 확인 해 볼 수 있어요. 
 
-![](../../.gitbook/assets/image%20%28280%29.png)
+![](../../.gitbook/assets/image%20%28281%29.png)
 
 그럼 f1.txt를 어떻게 해야 할까요? git stash --help 명령어로 사용법을 알아볼게요. 
 
@@ -46,7 +46,7 @@ exp에서 수정했던 내용이 master까지 영향을 주게 되요.
 $ git stash --help 
 ```
 
-![&#xBA54;&#xB274;&#xC5BC; &#xC6F9; &#xD398;&#xC774;&#xC9C0; &#xD31D;&#xC5C5; ](../../.gitbook/assets/image%20%28277%29.png)
+![&#xBA54;&#xB274;&#xC5BC; &#xC6F9; &#xD398;&#xC774;&#xC9C0; &#xD31D;&#xC5C5; ](../../.gitbook/assets/image%20%28278%29.png)
 
 ```text
 $ git stash 
@@ -71,7 +71,22 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-맨 마지막 9번째줄을 보게 되면 nothing to commit 이라는 문구가 보여요 이말은 commit할 것들이 없다는 말이에요. 
+맨 마지막 9번째줄을 보게 되면 nothing to commit 이라는 문구가 보여요 이말은 commit할 것들이 없다는 말이에요.  그럼 이 상태에서   
+git checkout master 명령어를 사용하면 
+
+```text
+$ git checkout master
+```
+
+master branch에서 작업을 마음 편하게 할 수  있게 되는 거에요. 이후 다시 git checkout exp로 돌아온 다음 master로 checkout 하기 이전 작업 내역들을 다시 불러서 할 수 있어요. 
+
+```text
+$ git stash apply
+```
+
+![](../../.gitbook/assets/image%20%28253%29.png)
+
+그럼 아래 modified: f1.txt 라는 문구가 보일거에요. stash로 감춰줬던 사항들이 다시 적용되서 살아난거에요. 
 
 
 
