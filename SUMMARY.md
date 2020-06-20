@@ -13,6 +13,7 @@
   * [Exercise](git/untitled-1/untitled.md)
   * [Branch Conflict](git/untitled-1/branch-conflict.md)
   * [stash](git/untitled-1/stash.md)
+* [reset, checkout명령어](git/reset-checkout.md)
 
 ## Flask
 
