@@ -88,13 +88,196 @@ $ git stash apply
 
 그럼 아래 modified: f1.txt 라는 문구가 보일거에요. stash로 감춰줬던 사항들이 다시 적용되서 살아난거에요. 
 
+```text
+$ git stash list
+stash@{0}: WIP on exp: 2441228 1
+```
+
+```text
+$ git reset --hard HEAD 
+# 가장 최신 커밋 상태로 만드는건데, 다 지우는거에요. 
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+```text
+$ git stash list
+stash@{0}: WIP on exp: 2441228 1
+
+# 여전히 stash 이력이 남아  있어요. 
+
+$ git stash apply 
+On branch exp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        common.txt
+        exp.txt
+        master.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
 
 
 
+```text
+$ git reset --hard 
+HEAD is now at 2441228 1
+
+$ git stash apply
+On branch exp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        common.txt
+        exp.txt
+        master.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+특히 git stash를 명시적으로 삭제하지 않는 이상 항상 살아 있어요. 
+
+```text
+$ git stash list 
+stash@{0}: WIP on exp: 2441228 1
+```
+
+그리고 현재 수정된 내역을 다시 reset 해볼게요. 
+
+```text
+$ git reset --hard
+HEAD is now at 2441228 1
+$ vim f2.txt(a 입력) 
+$ git add f2.txt
+$ git stash 
+Saved working directory and index state WIP on exp: 2441228 1
+
+$ git status 
+On branch exp
+nothing to commit, working tree clean
+
+$ git stash list
+stash@{0}: WIP on exp: 2441228 1
+stash@{1}: WIP on exp: 2441228 1
+
+```
+
+13번째 줄의 git stash의 내역은 5번째줄에 처리한 git stash를 가리키게 되요.  그렇다면 14번째 줄은 그 이전에 stash한 내역을 말하겠조?  
+그래서 만약 git stash apply 명령어를 그냥 적용하면 git stash list의 0번째를 적용시켜요.   
+  
+그럼 만약 stash list의 내역을 0번째부터 순차적으로 적용하고자 한다면 어떻게 해야할까요? 아래와 같이 해볼게요. 
+
+```text
+$ git stash apply # 가장 최근(0번째) stash 리스트 내역 적용! 
+$ git stash drop  # 가장 최근(0번째) 리스트 삭제 
+Dropped refs/stash@{0} (b0de4a37c4cb3e9f2b105f4cd4c0b4394d15a
+
+$ git stash apply; git stash drop; # 2개의 명령 수행 
+```
+
+5번째 줄  적용과 삭제를 한번에 하게 되요.   
+위 방식은 그래도 뭔가 여러번 반복하는 작업이 있네요. 한번에 해결하는 방법을 알아볼게요. 우선 status 명령어로 상태부터 확인해 볼게요. 
+
+```text
+$ git status
+On branch exp
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   f2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+```
+
+깔끔하게 지울게요. 
+
+```text
+$ git reset --hard
+HEAD is now at 2441228 1
+
+$ git status
+On branch exp
+nothing to commit, working tree clean
+
+$ vim f1.txt( b추가 입력 ) 
+$ git add f1.txt 
+$ git stash 
+Saved working directory and index state WIP on exp: 2441228 1
+
+$ git status 
+On branch exp
+nothing to commit, working tree clean
+
+```
+
+10번째 stash 명령어로 감춰지고 11번째 줄의 status 명령어로 상태가 어떤지 바로 확인 가능해요.   
+이상태에서 아래 명령어를 실행해 볼게요. 
+
+```text
+$ git stash pop # == git stash apply; git stash drop;동일
+```
 
 
 
+#### 단 stash 기능은 최소한 버전관리를 하는 파일들만 이 기능을 사용할 수 있어요. 
 
+아래를 살펴 볼게요.
+
+```text
+$ git reset --hard 
+HEAD is now at 2441228 1
+
+$ vim f1.txt(a입력, 이미 있다면 b입력후 저장) 
+$ vim f2.txt(a 입력) 
+
+$ git status
+On branch exp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+```
+
+12번째 줄에서 modified: f1.txt라는거 보이조?   
+tracked되고 있다는 말이에요. 추적되고 있는 파일이에요.   
+  
+하지만 14번째 줄에서 Untracked files: ~~~~~f2.txt 가 보이조?  
+즉 추적되고 있지 않은 파일이에요.   
+  
+자! 이상태로 git stash를 하게될 경우. 
+
+```text
+$ git stash 
+$ git status 
+On branch exp
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+f2.txt는 추적되고 있지 않기 때문에 stash 기능을 적용 받을 수 없어요.   
+그래서 최소한 버전관리를 받고 있는 파일에서만 stash를 한다는것도 기억해 두어야 할 사항이에요. 
 
 
 
