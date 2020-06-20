@@ -239,7 +239,17 @@ changes to be committed:
 $ git commit 
 ```
 
+commit 내역들에 상세 내역을 볼수 있는 vim 에디터 모드로 전환되고. 다시 저장하고 나와주세요. 
 
+```text
+$ git log 
+$ vim common.txt 
+function b() {}
+function a(master,exp) {}
+function c() {}
+```
+
+정상적으로 잘 반영된 모습들을 확인 할 수 있어요. 
 
 
 
