@@ -6,7 +6,7 @@
 
 ### Incoming Webhook
 
-![](../../../../.gitbook/assets/image%20%28277%29.png)
+![](../../../../.gitbook/assets/image%20%28279%29.png)
 
 우선 **Activate** **Incoming** **Webhooks** 를 On으로 활성화 시켜주세요.   
 그 다음으로 가장 아래  **Add** **New** **Webhook** **to** **Workspace 클릭 새로운 Webhook을 생성하는 화면으로 전환되요.**   
@@ -20,7 +20,7 @@
   
 
 
-![](../../../../.gitbook/assets/image%20%28285%29.png)
+![](../../../../.gitbook/assets/image%20%28288%29.png)
 
 flaskbot was added to \#flaskdev by LEE HYE SEONG. 라는 부분이 대화창에 나타나게 됩니다.   
 

@@ -12,6 +12,7 @@
   * [Branch merge](git/untitled-1/branch-merge.md)
   * [Exercise](git/untitled-1/untitled.md)
   * [Branch Conflict](git/untitled-1/branch-conflict.md)
+  * [stash](git/untitled-1/stash.md)
 
 ## Flask
 

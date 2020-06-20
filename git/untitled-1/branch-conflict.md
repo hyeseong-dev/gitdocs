@@ -63,9 +63,9 @@ Merge branch 'exp'
 
 혹시 vim editorㅇ서 merge commit 메시지가 나타난다면 별것 없으니 :wq! 누르고 저장하며 나갈게요. 
 
-![&#xB450;&#xAC1C;&#xC758; branch &#xBCD1;&#xD568;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28286%29.png)
+![&#xB450;&#xAC1C;&#xC758; branch &#xBCD1;&#xD568;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28289%29.png)
 
-![ls -al &#xBA85;&#xB839;&#xC5B4; ](../../.gitbook/assets/image%20%28279%29.png)
+![ls -al &#xBA85;&#xB839;&#xC5B4; ](../../.gitbook/assets/image%20%28282%29.png)
 
 원래 exp 브렌치에 있던 exp.txt파일이 master 브렌치에 옮겨간 모습 잘 보이조? 즉, 파일이 다르면 무조건 자동으로 병합 되요.  하지만 파일이 같으면 문제가 발생해요. 
 
