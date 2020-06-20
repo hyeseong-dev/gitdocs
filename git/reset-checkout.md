@@ -131,3 +131,51 @@ fc987de HEAD@{3}: commit: 3
 
 ```
 
+2번째 줄의 0e5abd8 커밋 아이디 보이나요? 우리가 git reset --hard orig\_head 했을때 적용된 부분인걸 알수 있어요. 
+
+> git reset 0e5abd8 == git reset --hard orig\_hard
+
+명령어를 적용한 걸 유추해 볼 수 있어요.  
+
+
+
+### chekout 명령어 
+
+git log 기록중 3번 커밋의 아이디를 "git checkout 3번커밋 아이디 복붙" 이용해서 checkout 해볼게요. 
+
+```text
+$ git checkout fc987de11044869766f7a7bd2ccdf1dad204da3b
+Note: switching to 'fc987de11044869766f7a7bd2ccdf1dad204da3b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at fc987de 3
+
+```
+
+```text
+$ git branch 
+* (HEAD detached at fc987de)
+  master
+
+$ git checkout master # 다시 원래대로 master로 돌아가게되요.
+```
+
+지금 위의 상태는 detached라는 상태인데요. 원래는 master나 exp라는 명칭 혹은 다른 특정 이름을 가진 브렌치에 head가 위치하는데 지금은 특정 커밋의 아이디에 head가 위치되어 있어요.   
+  
+이를 detached된 상태에요.   
+
+
