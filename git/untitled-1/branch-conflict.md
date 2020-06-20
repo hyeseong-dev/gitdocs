@@ -67,9 +67,18 @@ merge commit 메시지는 별것 없으니 !wq 누르고 저장하며 나갈게�
 
 ![ls -al &#xBA85;&#xB839;&#xC5B4; ](../../.gitbook/assets/image%20%28279%29.png)
 
-원래 exp 브렌치에 있던 exp.txt파일이 master 브렌치에 옮겨간 모습 잘 보이조?
+원래 exp 브렌치에 있던 exp.txt파일이 master 브렌치에 옮겨간 모습 잘 보이조? 즉, 파일이 다르면 무조건 자동으로 병합 되요.  하지만 파일이 같으면 문제가 발생해요. 
 
-## 
+이제 master 브렌치와 exp 브렌치의 같은 파일 이름을 병합해 볼게요.   
+exp 브렌치로 checkout하고 common.txt파일을 생성한 다음 commit하고 master 브렌치로 돌아와서 exp의 내용을 merge시켜서 
+
+
+
+
+
+## 오류 유도 
+
+#### master & exp 브렌치에 같은 파일 생성하기 
 
 ## 
 
