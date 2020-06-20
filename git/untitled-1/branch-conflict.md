@@ -40,7 +40,7 @@ $ git checkout master
 ```
 
 ```text
-$ git log --branches --decorates --graph
+$ git log --branches --decorate --graph
 ```
 
 위 명령어를 입력하면 아래와 같이 결과가 나오게 되요. 
@@ -61,7 +61,7 @@ Merge branch 'exp'
 
 ```
 
-merge commit 메시지는 별것 없으니 !wq 누르고 저장하며 나갈게요. 
+혹시 vim editorㅇ서 merge commit 메시지가 나타난다면 별것 없으니 :wq! 누르고 저장하며 나갈게요. 
 
 ![&#xB450;&#xAC1C;&#xC758; branch &#xBCD1;&#xD568;&#xB41C; &#xBAA8;&#xC2B5; ](../../.gitbook/assets/image%20%28286%29.png)
 
@@ -98,10 +98,10 @@ drwxr-xr-x 1 이혜성 197121  0  6월 20 16:45 .git/
 exp branch에서 생성한 common.txt 파일이 master 브렌치에서도 동일하게 생성되었네요. 
 
 ```text
-$ vim common.txt(functin b(){} 내용을 기존 내용 앞에 붙임)
+$ vim common.txt(function b(){} 내용을 기존 내용 앞에 붙임)
 $ git commit -am "9" 
 $ git checkout exp 
-$ vim commont.txt( function c(){} 내용을 붙임 ) 
+$ vim common.txt( function c(){} 내용을 붙임 ) 
 $ git commit -am "10"
 $ git checkout master 
 ```
