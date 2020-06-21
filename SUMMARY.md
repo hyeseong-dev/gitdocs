@@ -14,6 +14,7 @@
   * [Branch Conflict](git/untitled-1/branch-conflict.md)
   * [stash](git/untitled-1/stash.md)
 * [reset, checkout명령어](git/reset-checkout.md)
+* [Merge&Conflict원리 및 kdiff3](git/merge-and-conflict-kdiff3.md)
 
 ## Flask
 
