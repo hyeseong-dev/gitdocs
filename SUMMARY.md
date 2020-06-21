@@ -79,7 +79,8 @@
 ## DB
 
 * [sqlite3](db/sqlite3/README.md)
-  * [Untitled](db/sqlite3/untitled.md)
+  * [Basic](db/sqlite3/untitled/README.md)
+    * [기본](db/sqlite3/untitled/undefined.md)
   * [추가](db/sqlite3/undefined/README.md)
     * [Create & Connect](db/sqlite3/undefined/untitled-2.md)
     * [SQL문 주석](db/sqlite3/undefined/untitled-3.md)
