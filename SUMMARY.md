@@ -84,7 +84,7 @@
   * [Create & Connect](db/sqlite3/untitled-2.md)
 * [HKIT class](db/untitled-1/README.md)
   * [종합평가](db/untitled-1/undefined.md)
-  * [June - 12 - 2020](db/untitled-1/june-12-2020.md)
+  * [DAO, ORM, IP주소](db/untitled-1/june-12-2020.md)
 
 ## Docker
 
