@@ -3,7 +3,7 @@
  이번에는 secure shell 줄여서 sssh를 이용해서 원격저장소에 접근하는 방법을 알아 볼게요.   
 우리는 원격 저장소, github을 이용해서 여러 서비스를 이용해요. 
 
-![](../../.gitbook/assets/image%20%28301%29.png)
+![](../../.gitbook/assets/image%20%28303%29.png)
 
  관심을 가지고 있었다면 2번에 해당하 Use SSH에 대해 알아보고 이용도 해봤을거에요.   
 오늘은 이 부분을 확실히 조져 볼게요.   
@@ -51,9 +51,9 @@ The key's randomart image is:
 
 해당 경로에 가볼게요. 아래 명령어를 쭉 따라 쳐보세요. 
 
-![](../../.gitbook/assets/image%20%28302%29.png)
+![](../../.gitbook/assets/image%20%28304%29.png)
 
-![](../../.gitbook/assets/image%20%28308%29.png)
+![](../../.gitbook/assets/image%20%28310%29.png)
 
 쉽게 보면 .ssh 폴더에 id\_rsa, id\_rsa.pub 파일 2개가 존재하는거에요. 
 
@@ -61,7 +61,7 @@ The key's randomart image is:
 
 #### id\_rsa.pub\(private key\): 비밀키 
 
-![](../../.gitbook/assets/image%20%28309%29.png)
+![](../../.gitbook/assets/image%20%28311%29.png)
 
 키가 2개 생성되고 나의 컴퓨터에는 private key가 다른 서버의 컴퓨터에는 public key가 주어지게 되는거에요. 
 
@@ -73,17 +73,17 @@ The key's randomart image is:
 $ cat id_rsa.pub
 ```
 
-![](../../.gitbook/assets/image%20%28307%29.png)
+![](../../.gitbook/assets/image%20%28309%29.png)
 
 #### 2\) settings\(github site\) -&gt; SSH&GPG KEY -&gt; New SSH key  
 
-![](../../.gitbook/assets/image%20%28310%29.png)
+![](../../.gitbook/assets/image%20%28312%29.png)
 
-![](../../.gitbook/assets/image%20%28305%29.png)
+![](../../.gitbook/assets/image%20%28307%29.png)
 
 본인 SSH키 이름과 Key를 넣어 주세요. 
 
-![](../../.gitbook/assets/image%20%28303%29.png)
+![](../../.gitbook/assets/image%20%28305%29.png)
 
 그럼 잘 등록되게 되요. 
 
@@ -93,12 +93,12 @@ $ cat id_rsa.pub
 
 우선 새로운 원격 저장소를 만들고 ssh버튼을 누르고 copy버튼을 눌러주세요. 
 
-![](../../.gitbook/assets/image%20%28304%29.png)
+![](../../.gitbook/assets/image%20%28306%29.png)
 
 빈 디렉토리를 만들어 주세요.   
 
 
-![](../../.gitbook/assets/image%20%28306%29.png)
+![](../../.gitbook/assets/image%20%28308%29.png)
 
 ```text
 $ git clone 'ssh버튼을 누르고 카피한 주소 입력'
@@ -115,7 +115,7 @@ $ git push
 
 위 명령어를 입력하면 정상적으로 사용된걸 확인 할 수 있어요. 
 
-![](../../.gitbook/assets/image%20%28297%29.png)
+![](../../.gitbook/assets/image%20%28298%29.png)
 
 ## 결론 
 

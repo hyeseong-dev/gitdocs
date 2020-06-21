@@ -17,7 +17,7 @@ $ git remote remove 저장소이름(origin)
 
 위 명령어를 실행하면 아래와 같이 실제 터미널에서 확인할 수 있어요. 
 
-![](../../.gitbook/assets/image%20%28300%29.png)
+![](../../.gitbook/assets/image%20%28302%29.png)
 
 
 
