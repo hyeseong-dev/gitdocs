@@ -52,7 +52,7 @@ kdiff3 tool을 설정하고 실행하는 명령어에요.
 {% endtab %}
 {% endtabs %}
 
-![](../../.gitbook/assets/image%20%28297%29.png)
+![](../../.gitbook/assets/image%20%28298%29.png)
 
 실행 하면 위와 같은 화면이 나타나요.   
 좌측 상단 화면 부터 base -&gt; Local -&gt; Remote 그리고 하단에 Output화면창이 있어요.   
@@ -69,7 +69,7 @@ $ git status
 $ git commit 
 ```
 
-![](../../.gitbook/assets/image%20%28298%29.png)
+![](../../.gitbook/assets/image%20%28299%29.png)
 
 git commit 명령어를 입력하면 merge commit 화면이 나타나고 비로소 merge conflict 문제를 해결하고 병합문제를 해결하게 되는거에요. 
 
