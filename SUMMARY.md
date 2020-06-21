@@ -84,7 +84,6 @@
   * [Create & Connect](db/sqlite3/untitled-2.md)
 * [HKIT class](db/untitled-1/README.md)
   * [종합평가](db/untitled-1/undefined.md)
-  * [DAO, ORM, IP주소](db/untitled-1/june-12-2020.md)
 
 ## Docker
 
@@ -169,6 +168,7 @@
 * [No.2](undefined-1/no.2/README.md)
   * [데브옵스가 뭔데요?](undefined-1/no.2/undefined.md)
 * [No.1](undefined-1/no.1/README.md)
+  * [DAO, ORM, IP주소](undefined-1/no.1/june-12-2020.md)
   * [JSON이란?](undefined-1/no.1/json.md)
   * [ORM](undefined-1/no.1/orm.md)
   * [IaaS, PaaS, SaaS DaaS란](undefined-1/no.1/iaas-paas-saas-daas.md)
