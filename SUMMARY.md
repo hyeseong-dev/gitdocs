@@ -14,7 +14,7 @@
   * [Branch Conflict](git/untitled-1/branch-conflict.md)
   * [stash](git/untitled-1/stash.md)
 * [추가](git/undefined/README.md)
-  * [Untitled](git/undefined/untitled.md)
+  * [등록된 저장소 지우기](git/undefined/untitled.md)
   * [Merge&Conflict원리 및 kdiff3](git/undefined/merge-and-conflict-kdiff3.md)
   * [reset, checkout명령어](git/undefined/reset-checkout.md)
 
