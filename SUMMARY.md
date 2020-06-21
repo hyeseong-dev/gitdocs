@@ -82,8 +82,6 @@
   * [SQLite 키워드 유의사항](db/sqlite3/untitled-4.md)
   * [SQL문 주석](db/sqlite3/untitled-3.md)
   * [Create & Connect](db/sqlite3/untitled-2.md)
-* [HKIT class](db/untitled-1/README.md)
-  * [종합평가](db/untitled-1/undefined.md)
 
 ## Docker
 
