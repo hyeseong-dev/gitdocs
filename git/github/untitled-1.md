@@ -2,7 +2,7 @@
 description: 'clone, log --reverse, checkout commit ID'
 ---
 
-# git clone
+# git remote reposi
 
 ###  git의 소스코드를 지역저장소로 가져오기
 

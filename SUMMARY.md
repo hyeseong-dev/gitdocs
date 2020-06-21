@@ -5,8 +5,8 @@
 ## GIT
 
 * [Github](git/github/README.md)
-  * [Untitled](git/github/untitled.md)
-  * [git clone](git/github/untitled-1.md)
+  * [git remote reposi](git/github/untitled-1.md)
+* [remote repository](git/untitled.md)
 * [Basic](git/basic/README.md)
   * [저장소 생성](git/basic/undefined.md)
 * [Branch](git/untitled-1/README.md)
