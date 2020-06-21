@@ -79,9 +79,11 @@
 ## DB
 
 * [sqlite3](db/sqlite3/README.md)
-  * [SQLite 키워드 유의사항](db/sqlite3/untitled-4.md)
-  * [SQL문 주석](db/sqlite3/untitled-3.md)
-  * [Create & Connect](db/sqlite3/untitled-2.md)
+  * [Untitled](db/sqlite3/untitled.md)
+  * [추가](db/sqlite3/undefined/README.md)
+    * [Create & Connect](db/sqlite3/undefined/untitled-2.md)
+    * [SQL문 주석](db/sqlite3/undefined/untitled-3.md)
+    * [SQLite 키워드 유의사항](db/sqlite3/undefined/untitled-4.md)
 
 ## Docker
 
