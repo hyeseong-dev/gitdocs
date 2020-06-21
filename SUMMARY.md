@@ -5,6 +5,7 @@
 ## GIT
 
 * [Github](git/github/README.md)
+  * [Local & Remote Repo Sync](git/github/local-and-remote-repo-sync.md)
   * [remote repository](git/github/untitled.md)
   * [git remote reposi](git/github/untitled-1.md)
 * [Basic](git/basic/README.md)
