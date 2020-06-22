@@ -11,5 +11,5 @@ $ ls -al
 $ unzip chatbot.zip
 ```
 
-
+**unzip** 명령어를 통해서 압축된 파일을 풀 수 있어요. 
 
