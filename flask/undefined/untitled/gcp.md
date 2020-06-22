@@ -13,3 +13,17 @@ $ unzip chatbot.zip
 
 **unzip** 명령어를 통해서 압축된 파일을 풀 수 있어요. 
 
+
+
+**가상환경 생성**
+
+```text
+$ python -m venv ( 이 부분에 임의로 가상환경 이름을 정하세요.)
+$ source 가상환경이름/bin/activate 
+$ pip install flask requests # 두개를 사용했어요. 
+```
+
+
+
+
+
