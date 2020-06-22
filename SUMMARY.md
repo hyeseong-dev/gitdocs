@@ -35,6 +35,7 @@
       * [curl](flask/undefined/untitled/03.-incoming-webhook-slash-command/curl.md)
     * [4. Slack Project 설정](flask/undefined/untitled/4.-slack-project.md)
     * [5. GCP 설정, centos7에 파이썬3.8설치](flask/undefined/untitled/5.-gcp.md)
+    * [GCP 배포](flask/undefined/untitled/gcp.md)
   * [Error](flask/undefined/error/README.md)
     * [Errno 98](flask/undefined/error/errno-98.md)
   * [Quick Start](flask/undefined/other/README.md)

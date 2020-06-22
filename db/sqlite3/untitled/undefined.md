@@ -42,7 +42,7 @@ BLOB는 이미지, 동영상과 같은 대용량 파일까지 처리가 가능�
   
 
 
-![](../../../.gitbook/assets/image%20%28319%29.png)
+![](../../../.gitbook/assets/image%20%28320%29.png)
 
 sqlite-tools-win32-x86 압축 파일을 설치해주세요.   
 1\) System32 폴더에 압축된 파일 3개를 풀어주세요. 그럼 sqlite3 명령어가 어느 디렉토리에서든지 실행할수 있어요.   
