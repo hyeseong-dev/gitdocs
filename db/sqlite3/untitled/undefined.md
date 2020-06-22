@@ -39,6 +39,8 @@ sqlite3가 대표적으로 관계형 DB RDBMS를 의미해요. 여기서 말하�
  데이터베이스 하나가 바로 파일이 되요.   
 BLOB는 이미지, 동영상과 같은 대용량 파일까지 처리가 가능해요. 
 
+### SQLITE 설
+
   
 
 
@@ -49,7 +51,47 @@ sqlite-tools-win32-x86 압축 파일을 설치해주세요.
 2\) 아니면 본인이 원하는 특정 working directory 구역에 폴더를 만들고 설치해주시고 해당 워킹 디렉토리를 전역변수로 설정해주시면 어디에서든 실행 가능한 상태가 되요.   
 
 
+```text
+sqlite> 
+```
 
+### sqlite-browser 설치 
+
+1\) 공식 웹페이지에 간다.   
+2\) 본인 OS와 bit에 맞는 installer를 설치하여준다.   
+
+
+#### 테이블 생성시 
+
+```text
+create table <table-name> (
+    <column-name> <type> [primary key] [autoincrement] [not null]
+    [default <default-value>], 
+    
+    <column-name> <type> [primary key] [autoincrement] [not null]
+    [default <default-value>].... 
+
+);
+```
+
+#### Sqlite Shell Command 
+
+```text
+$> sqlite3 test.db 
+sqlite> create table Student ( 
+    id integer primary key autoincrement not null, 
+    name test not null default 'aaa', 
+    mobile text null);
+    
+sqlite> insert into Student(name, mobile) values('홍길동, '010-2323-4545');
+sqlite> insert into Student(name, mobi) values('홍길순);
+
+sqlite> select * from Student; 
+
+sqlite> .mode column 
+sqlite> .headers on 
+
+```
 
 
 
