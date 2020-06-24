@@ -23,6 +23,8 @@
   * [등록된 저장소 지우기](git/undefined/untitled.md)
   * [Merge&Conflict원리 및 kdiff3](git/undefined/merge-and-conflict-kdiff3.md)
   * [reset, checkout명령어](git/undefined/reset-checkout.md)
+* [Error](git/error/README.md)
+  * [Push&Pull Error](git/error/push-and-pull-error.md)
 
 ## Flask
 
