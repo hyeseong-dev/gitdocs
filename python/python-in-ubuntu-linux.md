@@ -56,7 +56,7 @@ update-alternatives에 여러버전의 파이썬을 등록하고 변경하는 �
 `update-alternatives --config python` 옵션은 python 버전을 변경하는 옵션입니다. 만약 아래 error 로그처럼 설정된 것이 없다고 한다면 아무것도 등록된 것이 없다는 의미입니다.
 
 ```text
-$ sudo update-alternatives --config python
+    $ sudo update-alternatives --config python
 update-alternatives: error: no alternatives for python
 ```
 
