@@ -2,7 +2,7 @@
 
 
 
-### 1 개요\[[편집](https://zetawiki.com/w/index.php?title=%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD_virtualenv,_venv&action=edit&section=1)\]
+### 1 개요
 
 virtualenv, venv
 
@@ -46,30 +46,26 @@ virtualenv, venv
   </tbody>
 </table>
 
-### 2 필요한 상황\[[편집](https://zetawiki.com/w/index.php?title=%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD_virtualenv,_venv&action=edit&section=2)\]
+### 2 필요한 상황
 
 * django의 1.8 버전과 1.9 버전을 둘 다 동시에 써보고 싶다.
 * 그렇지만, 하나의 Python 환경에서는 동일한 라이브러리의 여러 버전을 쓸 수 없다.
 * 즉, django 1.8를 사용하려면 django 1.9를 삭제하고 django 1.9를 사용하려면 django 1.8을 삭제해야 한다.
 * 이런 경우에 virtualenv를 이용하여 각각 라이브러리에 대해 독립 공간을 만들어 사용할 수 있다.
 
-### 3 같이 보기\[[편집](https://zetawiki.com/w/index.php?title=%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD_virtualenv,_venv&action=edit&section=3)\]
+### 3 같이 보기
 
 * [virtualenv 사용법](https://zetawiki.com/wiki/Virtualenv_%EC%82%AC%EC%9A%A9%EB%B2%95)
 * [venv 사용법](https://zetawiki.com/wiki/Venv_%EC%82%AC%EC%9A%A9%EB%B2%95)
 * [PyPI 주요 모듈](https://zetawiki.com/wiki/PyPI_%EC%A3%BC%EC%9A%94_%EB%AA%A8%EB%93%88)
 * [tox](https://zetawiki.com/wiki/Tox)
 
-### 4 참고\[[편집](https://zetawiki.com/w/index.php?title=%ED%8C%8C%EC%9D%B4%EC%8D%AC%EA%B0%80%EC%83%81%ED%99%98%EA%B2%BD_virtualenv,_venv&action=edit&section=4)\]
+### 4 참고
 
 * [http://sourabhbajaj.com/mac-setup/Python/virtualenv.html](http://sourabhbajaj.com/mac-setup/Python/virtualenv.html)
 * [https://virtualenv.pypa.io/en/stable/](https://virtualenv.pypa.io/en/stable/)
 * [http://docs.python-guide.org/en/latest/dev/virtualenvs/](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
 * [http://masnun.com/2016/04/10/python-pyenv-pyvenv-virtualenv-whats-the-difference.html](http://masnun.com/2016/04/10/python-pyenv-pyvenv-virtualenv-whats-the-difference.html)
 
-: 
 
-* [Python](https://zetawiki.com/wiki/%EB%B6%84%EB%A5%98:Python)
-* [Virtualenv](https://zetawiki.com/wiki/%EB%B6%84%EB%A5%98:Virtualenv)
-* [Venv](https://zetawiki.com/wiki/%EB%B6%84%EB%A5%98:Venv)
 
