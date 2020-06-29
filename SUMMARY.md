@@ -11,6 +11,7 @@
   * [ssh 로그인 기능](git/github/ssh.md)
   * [Tag](git/github/tag.md)
 * [Basic](git/basic/README.md)
+  * [git 사용법 기초](git/basic/git.md)
   * [git add, commit, push 취소](git/basic/git-add-commit-push.md)
   * [저장소 생성](git/basic/undefined.md)
 * [Branch](git/untitled-1/README.md)
