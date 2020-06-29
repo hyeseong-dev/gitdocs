@@ -1,4 +1,4 @@
-# git add 문법
+# 수정, 삭제된 파일만 staging 하기
 
 > **modified , deleted된 파일만 stage 상태로 일괄로 처리하고 싶다면?**
 
