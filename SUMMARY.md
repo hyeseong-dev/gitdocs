@@ -12,7 +12,7 @@
   * [Tag](git/github/tag.md)
 * [Basic](git/basic/README.md)
   * [git 사용법\(gitbash\)](git/basic/git.md)
-  * [Untitled](git/basic/untitled.md)
+  * [git 사용법\(SourceTree\)](git/basic/git-sourcetree.md)
   * [git add, commit, push 취소](git/basic/git-add-commit-push.md)
   * [저장소 생성](git/basic/undefined.md)
 * [Branch](git/untitled-1/README.md)
