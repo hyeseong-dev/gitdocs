@@ -14,6 +14,7 @@
   * [git 사용법\(gitbash\)](git/basic/git.md)
   * [git 사용법\(SourceTree\)](git/basic/git-sourcetree.md)
   * [git add, commit, push 취소](git/basic/git-add-commit-push.md)
+  * [git add 문법](git/basic/git-add.md)
   * [저장소 생성](git/basic/undefined.md)
 * [Branch](git/untitled-1/README.md)
   * [Branch 만들기](git/untitled-1/branch.md)
