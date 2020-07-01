@@ -13,6 +13,7 @@
 * [Basic](git/basic/README.md)
   * [git 사용법\(gitbash\)](git/basic/git.md)
   * [git 사용법\(SourceTree\)](git/basic/git-sourcetree.md)
+  * [.gitignore 적용](git/basic/.gitignore.md)
   * [git add, commit, push 취소](git/basic/git-add-commit-push.md)
   * [수정, 삭제된 파일만 staging 하기](git/basic/git-add.md)
   * [저장소 생성](git/basic/undefined.md)
