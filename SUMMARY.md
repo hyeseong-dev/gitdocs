@@ -239,5 +239,5 @@
 
 ## Django
 
-* [Untitled](django/untitled.md)
+* [Project Setup](django/untitled.md)
 
