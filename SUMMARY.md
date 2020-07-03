@@ -2,6 +2,10 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## Django
+
+* [Project Setup](django/untitled.md)
+
 ## GIT
 
 * [Github](git/github/README.md)
@@ -236,8 +240,4 @@
 ## AWS
 
 * [키페어 없이 EC2 접속](aws/ec2.md)
-
-## Django
-
-* [Project Setup](django/untitled.md)
 
