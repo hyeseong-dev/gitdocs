@@ -100,5 +100,30 @@ urlpatterns = [
 
 웹브라우저의 홈페이지를 출력하면 이전에 생성한 index.html페이지를 출력하기 위해서 '/' 슬래쉬 하나만 입력하고 -&gt; fcuser앱안의 view로 넘어가서 index 메서드를 호출하고 -&gt; templates안의 index.html을 다시 찾아서 요청에 대한 응답으로 돌려주게되요. 
 
-### 
+## 회원가입 페이지 
+
+### 1\) form 생성 
+
+{% tabs %}
+{% tab title="fcuser/forms.py" %}
+```text
+from django import forms
+
+class RegisterForm(form.Form):
+    email = forms.EmailField(
+        error_message={
+            'required' : '이메일을 입력해주세요'
+        }, 
+    max_length=64, label='이메일'
+    )
+    password= forms.CharField(
+        error_message={
+            'required' : '비밀번호 입력해주세요'
+        }
+    )
+```
+
+1번째 줄은 django 라이브러리 안의 form 메서드를 임포트할게요. 
+{% endtab %}
+{% endtabs %}
 
