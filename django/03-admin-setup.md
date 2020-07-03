@@ -89,6 +89,43 @@ verbose\_name 옵션이 잘 적용된게 보이네요.
 
 각 모델을 문자열로 변환 했을때 표시하는 함수를  만들어 볼게요. 
 
+
+
+{% tabs %}
+{% tab title="product/models.py" %}
+```text
+...
+    def __str__(self):
+        return self.name
+...
+```
+
+각 앱의 모델안에다가 \_\_str\_\_메서드를 넣어 객체를 문자로 표현할 수 있게 만들어 주세요. 
+
+order앱의 Order클래스 안의 \_\_str\_\_메소드의 return 부분만 그냥 빈걸로 두세요.
+{% endtab %}
+
+{% tab title="fcuser/models.py" %}
+```
+...
+        def __str__(self):
+                return self.email
+...
+```
+{% endtab %}
+
+{% tab title="order/models.py" %}
+```
+...
+                def __str__(self):
+                                return str(self.fcuser) + ' ' + str(self.product)
+...
+```
+
+str\(self.fcuser\) + ' ' + str\(self.product\) 를 작성해서 return할게요. 지금은 바로 확인되지 않아요.
+{% endtab %}
+{% endtabs %}
+
 {% tabs %}
 {% tab title="fcuser/models.py" %}
 ```text
@@ -164,7 +201,7 @@ admin.site.register\(클래스명,  바로위 클래스\) 으로 작성해줘요
 {% endtab %}
 {% endtabs %}
 
-## 
+![](../.gitbook/assets/image%20%28335%29.png)
 
 
 
