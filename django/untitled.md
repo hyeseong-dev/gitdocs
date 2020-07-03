@@ -2,7 +2,7 @@
 description: '01'
 ---
 
-# Project Setup
+# 01\_Project Setup
 
 본격적인 프로젝트 구성을 진행해 볼게요.   
 이를 위해 **가상환경**을 만들어 볼게요. 
