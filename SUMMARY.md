@@ -6,6 +6,7 @@
 
 * [01 Project Setup](django/untitled.md)
 * [02 Model Setup](django/02-model-setup.md)
+* [03 Admin Setup](django/03-admin-setup.md)
 
 ## GIT
 
