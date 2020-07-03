@@ -4,7 +4,7 @@
 
 ## Django
 
-* [01\_Project Setup](django/untitled.md)
+* [01 Project Setup](django/untitled.md)
 * [02 Model Setup](django/02-model-setup.md)
 
 ## GIT
