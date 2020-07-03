@@ -94,9 +94,11 @@ from fcuser.views import index
 
 urlpatterns = [
     path('admin', admin.site.urls),
-    path('/', index)
+    path('/', index),
 ]
 ```
+
+웹브라우저의 홈페이지를 출력하면 이전에 생성한 index.html페이지를 출력하기 위해서 '/' 슬래쉬 하나만 입력하고 -&gt; fcuser앱안의 view로 넘어가서 index 메서드를 호출하고 -&gt; templates안의 index.html을 다시 찾아서 요청에 대한 응답으로 돌려주게되요. 
 
 ### 
 
