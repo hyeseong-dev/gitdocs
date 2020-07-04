@@ -119,7 +119,14 @@ class RegisterForm(form.Form):
     password= forms.CharField(
         error_message={
             'required' : '비밀번호 입력해주세요'
-        }
+        },
+        widget=forms.PasswordInput, label='비밀번호'
+    )
+    re-password= forms.CharField(
+        error_message={
+            'required' : '비밀번호 입력해주세요'
+        },
+        widget=forms.PasswordInput, label='비밀번호 확인'
     )
 ```
 
