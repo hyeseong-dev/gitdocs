@@ -4,10 +4,6 @@
 
 1\) 로그인 폼, 폼뷰로 연결 
 
-
-
-
-
 {% tabs %}
 {% tab title=" fcuser/views.py " %}
 ```text
