@@ -201,7 +201,7 @@ admin.site.register\(클래스명,  바로위 클래스\) 으로 작성해줘요
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/image%20%28335%29.png)
+![](../.gitbook/assets/image%20%28336%29.png)
 
 
 
