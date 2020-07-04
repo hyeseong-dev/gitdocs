@@ -8,6 +8,7 @@
 * [02 Model Setup](django/02-model-setup.md)
 * [03 Admin Setup](django/03-admin-setup.md)
 * [04 View - Register](django/04-view-register.md)
+* [05 Login](django/05-login.md)
 
 ## GIT
 
