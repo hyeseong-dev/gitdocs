@@ -2,7 +2,7 @@
 description: JSON Array to HTML Table with Javascript
 ---
 
-# 1st
+# Table Creation
 
 ## 들어가기 앞
 
@@ -21,15 +21,15 @@ description: JSON Array to HTML Table with Javascript
 
 **첫째, 우선 아래와 같은 표를 만들거에요.**
 
-![](../.gitbook/assets/image%20%28344%29.png)
+![](../.gitbook/assets/image%20%28346%29.png)
 
 둘째,  sorting 기능을 구현해 볼게요.\(name, age, birthday\)
 
-![](../.gitbook/assets/image%20%28345%29.png)
+![](../.gitbook/assets/image%20%28348%29.png)
 
 셋째, 검색 기능을 구현해 볼게요. 
 
-![](../.gitbook/assets/image%20%28342%29.png)
+![](../.gitbook/assets/image%20%28343%29.png)
 
 넷째, API를 만들어서 URL을 랜더링해서 HTML테이블로 나타나도록 할게요.
 
@@ -39,12 +39,12 @@ description: JSON Array to HTML Table with Javascript
 
 테이블의 컬럼 3개와 약간의 스타일링을 아래와 같이 할거에요. 
 
-![](../.gitbook/assets/image%20%28346%29.png)
+![](../.gitbook/assets/image%20%28353%29.png)
 
 가장 첫번째 줄은 jquery리 cdn을 박아 넣을게요.   
 그리고 아래에 Bootstrap을 붙여 넣을게요.
 
-![](../.gitbook/assets/image%20%28347%29.png)
+![](../.gitbook/assets/image%20%28354%29.png)
 
 그리고 소스코드가 계속 이어져서 아래 스크린샷의 1번은 css를 이용한거에요.   
 2번째는 html table태그를 이용해서 th태그의 이름을 딱 정해뒀어요.   
@@ -52,7 +52,7 @@ description: JSON Array to HTML Table with Javascript
   
 3번째는 array of object 객체 배열이 나오게되요. 
 
-![](../.gitbook/assets/image%20%28343%29.png)
+![](../.gitbook/assets/image%20%28345%29.png)
 
 이제 본격적으로 함수를 만들어 볼건데요. 3번 바로 아래에 작성하면 되요.   
 3번째 줄에 테이블 쿼리문을 작성해볼게요. 

@@ -4,7 +4,8 @@
 
 ## Javascript&HTML
 
-* [1st](javascript-and-html/1st.md)
+* [Table Creation](javascript-and-html/1st.md)
+* [Table Sorting](javascript-and-html/table-sorting.md)
 
 ## Django
 
