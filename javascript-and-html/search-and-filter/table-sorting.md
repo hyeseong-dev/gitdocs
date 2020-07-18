@@ -120,38 +120,38 @@ API call과 JSON 응답을 html table에 적용시켜보도록 할게요
 	function buildTable(data){
 ```
 
-![](../../.gitbook/assets/image%20%28350%29.png)
+![](../../.gitbook/assets/image%20%28352%29.png)
 
 분명 우리는 빈 array로 줬는데 값이 들어있는 모습이네요. 다시 수정해 볼게요.
 
 
 
-![](../../.gitbook/assets/image%20%28344%29.png)
+![](../../.gitbook/assets/image%20%28345%29.png)
 
 response뒷부분에 .data를 입력했어요.   
 
 
-![](../../.gitbook/assets/image%20%28352%29.png)
+![](../../.gitbook/assets/image%20%28354%29.png)
 
 안의 데이터 내용을 보니 테이블 구조를 조금 바꿔 줄게요. 
 
-![](../../.gitbook/assets/image%20%28349%29.png)
+![](../../.gitbook/assets/image%20%28351%29.png)
 
 이번엔 ajax메소드 안에서 buildTable 함수를 호출하도록 할텐데요.   
   
 그리고 기존에 작성된 값들 3개 몽땅 바꾸도록 할게요. 
 
-![](../../.gitbook/assets/image%20%28355%29.png)
+![](../../.gitbook/assets/image%20%28357%29.png)
 
 그리고 기존 호출되었던 buildTable함수를 호출했던 소스코드를 삭제할게요.
 
-![](../../.gitbook/assets/image%20%28347%29.png)
+![](../../.gitbook/assets/image%20%28348%29.png)
 
 
 
 그리고 나서 확인해보니 아래와 같이 잘 출력된 걸 확인 할 수 있어요. 
 
-![](../../.gitbook/assets/image%20%28351%29.png)
+![](../../.gitbook/assets/image%20%28353%29.png)
 
 ```text
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
