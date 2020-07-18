@@ -2,6 +2,10 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## Javascript&HTML
+
+* [1st](javascript-and-html/1st.md)
+
 ## Django
 
 * [01 Project Setup](django/untitled.md)
