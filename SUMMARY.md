@@ -7,7 +7,7 @@
 * [JSON Array to HTML Table with Javascript](javascript-and-html/search-and-filter/README.md)
   * [Table Creation](javascript-and-html/search-and-filter/1st.md)
   * [Table Sorting](javascript-and-html/search-and-filter/table-sorting.md)
-  * [Untitled](javascript-and-html/search-and-filter/untitled.md)
+  * [Search/Filter](javascript-and-html/search-and-filter/untitled.md)
 
 ## Django
 
