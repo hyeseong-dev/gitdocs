@@ -1,11 +1,11 @@
-# Table Sorting
+# API call/Adding the JSON response
 
 ## 들어가기 앞서 
 
 이전 시간 Table Creation을 했어요. 이번에는 Ajax를 이용해서 API endpoint 요청을 만들거고  
 요청 받은 data를 바탕으로 테이블에 출력 하도록 할게요.   
   
-한마디로 내림차순, 오름차순 기능을 구현한다는 말이에요.
+API call과 JSON 응답을 html table에 적용시켜보도록 할게요
 
 ## 현재까지 소스코드 
 
