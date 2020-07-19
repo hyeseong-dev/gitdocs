@@ -8,7 +8,7 @@
   * [Table Creation](javascript-and-html/search-and-filter/1st.md)
   * [API call/Adding the JSON response](javascript-and-html/search-and-filter/table-sorting.md)
   * [Search/Filter](javascript-and-html/search-and-filter/untitled.md)
-  * [Untitled](javascript-and-html/search-and-filter/untitled-1.md)
+  * [Sortable Table Columns](javascript-and-html/search-and-filter/untitled-1.md)
 
 ## Django
 
