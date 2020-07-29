@@ -188,6 +188,7 @@
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 * [Appendix](linux-1/appendix/README.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
+    * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
     * [SSH 기본개념](linux-1/appendix/how-to-ssh-w-o-pw/ssh.md)
   * [PPA](linux-1/appendix/ppa.md)
 
