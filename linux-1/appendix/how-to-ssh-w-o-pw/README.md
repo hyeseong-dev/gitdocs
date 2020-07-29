@@ -6,9 +6,9 @@
   
 우선 아래 왼쪽은 local환경이고 오른쪽은 remote 환경입니다.
 
-![](../../.gitbook/assets/image%20%28368%29.png)
+![](../../../.gitbook/assets/image%20%28368%29.png)
 
 ### private key & public key 생
 
-![](../../.gitbook/assets/image%20%28369%29.png)
+![](../../../.gitbook/assets/image%20%28369%29.png)
 
