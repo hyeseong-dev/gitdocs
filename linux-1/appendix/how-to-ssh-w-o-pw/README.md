@@ -78,7 +78,35 @@ chmod 명령어를 이용해서 permission 설정을 하도록 할게요.
 
 나만 사용할 수 있어야 하니까 당연히 100번대에만 권한을 줍니다. 이때 읽기는 4, 쓰기는 2, 실행은 1입니다. 읽고 쓰기가 가능해야 하므로 4+2 = 6 해서 chmod 600 이 되는 것입니다. 
 
-  
-  
 
+
+이제 로컬 터미널에서 **ssh osori@ IP주소**
+
+한 후 실행하면 비밀번호 입력없이 잘 접속하는 화면인걸 볼 수 있어요.
+
+### 콘솔 비밀번호 입력 기능 off
+
+sshd\_config 파일을 복사해서 sshd\_config.bat파일로 생성하도록 할게요.  
+이유는 원본 파일 백업용이에요.
+
+```text
+osori@django-server:~$ sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bat
+```
+
+####  파일 수정
+
+```text
+sudo nano /etc/ssh/sshd_config
+```
+
+나노 편집기로 파일을 열어보면 쭉~ 뭔가 많은 데요. 아래 빨간 부분을 찾아 no로 입력해주세요.  
+그리고 저장하고 나가주세요.
+
+![](../../../.gitbook/assets/image%20%28376%29.png)
+
+```text
+sudo service ssh restart
+```
+
+위 명령어를 실행해서 ssh를 다시 실행할게요. 
 
