@@ -187,6 +187,7 @@
   * [가상머신 clipboard 활성화](linux-1/error/clipboard.md)
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 * [Appendix](linux-1/appendix/README.md)
+  * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw.md)
   * [PPA](linux-1/appendix/ppa.md)
 
 ## 개념정리 <a id="undefined-1"></a>
