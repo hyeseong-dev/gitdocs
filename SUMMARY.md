@@ -2,6 +2,11 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## PROJECT
+
+* [Dockerizing a Django App](project/dockerizing-a-django-app/README.md)
+  * [Docker & Django App Session1](project/dockerizing-a-django-app/docker-and-django-app-session1.md)
+
 ## Javascript&HTML
 
 * [JSON Array to HTML Table with Javascript](javascript-and-html/search-and-filter/README.md)
@@ -92,8 +97,6 @@
     * [Appendix](flask/undefined/fcamp/appendix/README.md)
       * [SQLite](flask/undefined/fcamp/appendix/sqlite.md)
       * [Flask-sqlAlchemy](flask/undefined/fcamp/appendix/flask-sqlalchemy.md)
-
-## PROJECT
 
 ## DB
 
