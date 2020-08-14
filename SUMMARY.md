@@ -95,10 +95,6 @@
 
 ## PROJECT
 
-* [DataBase](project/database.md)
-* [Server](project/untitled/README.md)
-  * [ERROR](project/untitled/error.md)
-
 ## DB
 
 * [sqlite3](db/sqlite3/README.md)
