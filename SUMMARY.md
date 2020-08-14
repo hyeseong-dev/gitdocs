@@ -10,14 +10,6 @@
   * [Search/Filter](javascript-and-html/search-and-filter/untitled.md)
   * [Sortable Table Columns](javascript-and-html/search-and-filter/untitled-1.md)
 
-## Django
-
-* [01 Project Setup](django/untitled.md)
-* [02 Model Setup](django/02-model-setup.md)
-* [03 Admin Setup](django/03-admin-setup.md)
-* [04 View - Register](django/04-view-register.md)
-* [05 Login](django/05-login.md)
-
 ## GIT
 
 * [Github](git/github/README.md)
