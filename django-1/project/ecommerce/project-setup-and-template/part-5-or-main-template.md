@@ -68,9 +68,9 @@ Bootstrap을 기본으로 메인 레이아웃으로 깔고 이용 할게요.
 
 **아래처럼 코드를 작성해주세요.**
 
-![](../../../../.gitbook/assets/image%20%28405%29.png)
+![](../../../../.gitbook/assets/image%20%28406%29.png)
 
-![](../../../../.gitbook/assets/image%20%28397%29.png)
+![](../../../../.gitbook/assets/image%20%28398%29.png)
 
 ## 코드 실행
 

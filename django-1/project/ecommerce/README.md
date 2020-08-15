@@ -14,7 +14,7 @@
 
 #### 화면2
 
-![](../../../.gitbook/assets/image%20%28403%29.png)
+![](../../../.gitbook/assets/image%20%28404%29.png)
 
 #### 화면3 -1\(실제 해당 주소지로 배송되는 상품\)
 
@@ -36,15 +36,15 @@ ex. Online paid contents
 
 참고로 paypal business\(사업자용\), personal\(일반 구매자용\) 계정을 만들어야 가능합니다.
 
-![](../../../.gitbook/assets/image%20%28399%29.png)
+![](../../../.gitbook/assets/image%20%28400%29.png)
 
 #### 화면6
 
-![](../../../.gitbook/assets/image%20%28407%29.png)
+![](../../../.gitbook/assets/image%20%28408%29.png)
 
 #### 화면7 
 
-![](../../../.gitbook/assets/image%20%28401%29.png)
+![](../../../.gitbook/assets/image%20%28402%29.png)
 
 #### 화면 8 
 
