@@ -18,6 +18,9 @@
 ## Django <a id="django-1"></a>
 
 * [Django 개념정리](django-1/django.md)
+* [Project](django-1/project/README.md)
+  * [Video Subscription Membership](django-1/project/video-subscription-membership/README.md)
+    * [Untitled](django-1/project/video-subscription-membership/untitled.md)
 
 ## GIT
 
