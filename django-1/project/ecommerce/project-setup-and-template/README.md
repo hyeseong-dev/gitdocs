@@ -1,4 +1,4 @@
-# Part1 \| Project Setup & Template
+# 1 \| Project Setup & Template
 
 ## Part1 \| Configure App
 
