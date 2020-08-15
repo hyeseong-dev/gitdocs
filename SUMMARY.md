@@ -23,6 +23,7 @@
     * [1 \| Project Setup & Template](django-1/project/ecommerce/project-setup-and-template/README.md)
       * [Part 1 \| 앱 설정](django-1/project/ecommerce/project-setup-and-template/step1-or.md)
       * [Part 2 \| 템플릿](django-1/project/ecommerce/project-setup-and-template/part-2-or.md)
+      * [Part 3 \| 뷰&URLs](django-1/project/ecommerce/project-setup-and-template/part-3-or-and-urls.md)
   * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
     * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
   * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
