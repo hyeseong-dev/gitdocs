@@ -1,2 +1,2 @@
-# Part 8 \| Cart.html
+# Part 8 \| Cart template
 
