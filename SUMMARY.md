@@ -20,7 +20,6 @@
 * [Django 개념정리](django-1/django.md)
 * [Project](django-1/project/README.md)
   * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
-  * [Untitled](django-1/project/untitled.md)
   * [Video Subscription Membership](django-1/project/video-subscription-membership/README.md)
     * [프로젝트 개요](django-1/project/video-subscription-membership/untitled.md)
     * [Project Setup](django-1/project/video-subscription-membership/project-setup.md)
