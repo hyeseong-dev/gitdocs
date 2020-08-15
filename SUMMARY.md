@@ -2,6 +2,26 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## Django <a id="django-1"></a>
+
+* [Django 개념정리](django-1/django.md)
+* [Project](django-1/project/README.md)
+  * [Ecommerce](django-1/project/ecommerce/README.md)
+    * [1 \| Project Setup & Template](django-1/project/ecommerce/project-setup-and-template/README.md)
+      * [Part 1 \| 앱 설정](django-1/project/ecommerce/project-setup-and-template/step1-or.md)
+      * [Part 2 \| 템플릿](django-1/project/ecommerce/project-setup-and-template/part-2-or.md)
+      * [Part 3 \| 뷰&URLs](django-1/project/ecommerce/project-setup-and-template/part-3-or-and-urls.md)
+      * [Part 4 \| Static files](django-1/project/ecommerce/project-setup-and-template/part-4-or-static-files.md)
+      * [Part 5 \| Main Template](django-1/project/ecommerce/project-setup-and-template/part-5-or-main-template.md)
+      * [Part 6 \| Navbar](django-1/project/ecommerce/project-setup-and-template/part-6-or-navbar.md)
+      * [Part 7 \| store.html](django-1/project/ecommerce/project-setup-and-template/part-7-or-store.html.md)
+  * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
+    * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
+  * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
+  * [Video Subscription Membership](django-1/project/video-subscription-membership/README.md)
+    * [프로젝트 개요](django-1/project/video-subscription-membership/untitled.md)
+    * [Project Setup](django-1/project/video-subscription-membership/project-setup.md)
+
 ## PROJECT
 
 * [Dockerizing a Django App](project/dockerizing-a-django-app/README.md)
@@ -14,23 +34,6 @@
   * [API call/Adding the JSON response](javascript-and-html/search-and-filter/table-sorting.md)
   * [Search/Filter](javascript-and-html/search-and-filter/untitled.md)
   * [Sortable Table Columns](javascript-and-html/search-and-filter/untitled-1.md)
-
-## Django <a id="django-1"></a>
-
-* [Django 개념정리](django-1/django.md)
-* [Project](django-1/project/README.md)
-  * [Ecommerce](django-1/project/ecommerce/README.md)
-    * [1 \| Project Setup & Template](django-1/project/ecommerce/project-setup-and-template/README.md)
-      * [Part 1 \| 앱 설정](django-1/project/ecommerce/project-setup-and-template/step1-or.md)
-      * [Part 2 \| 템플릿](django-1/project/ecommerce/project-setup-and-template/part-2-or.md)
-      * [Part 3 \| 뷰&URLs](django-1/project/ecommerce/project-setup-and-template/part-3-or-and-urls.md)
-      * [Part 4 \| Static files](django-1/project/ecommerce/project-setup-and-template/part-4-or-static-files.md)
-  * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
-    * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
-  * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
-  * [Video Subscription Membership](django-1/project/video-subscription-membership/README.md)
-    * [프로젝트 개요](django-1/project/video-subscription-membership/untitled.md)
-    * [Project Setup](django-1/project/video-subscription-membership/project-setup.md)
 
 ## GIT
 
