@@ -1,2 +1,2 @@
-# Part 7 \| Store template
+# Part 7 \| Store.html
 
