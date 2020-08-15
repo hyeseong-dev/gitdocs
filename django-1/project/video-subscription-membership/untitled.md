@@ -8,12 +8,12 @@
 
 첫 메인 화면 페이지에는 각 과정별 리스트들이 세로로 나열됩니다. 
 
-![](../../../.gitbook/assets/image%20%28394%29.png)
+![](../../../.gitbook/assets/image%20%28395%29.png)
 
  만약 Django 101 링크를 클릭하면 아래와 같이 더 세분화된 내용들이 다시 열거되요.   
 
 
-![](../../../.gitbook/assets/image%20%28393%29.png)
+![](../../../.gitbook/assets/image%20%28394%29.png)
 
  그리고 이 Django 101 과정은 Free course이기 때문에 클릭하면 바로 접근하고 영상 시청이 가능하게 만들어져 있어요.
 
@@ -21,19 +21,19 @@
 
 현재 본인 계정의 Membsership 상태를 알아 보고 싶다면 Profile 페이지로 가서 확인할 수 있어요. 
 
-![](../../../.gitbook/assets/image%20%28404%29.png)
+![](../../../.gitbook/assets/image%20%28405%29.png)
 
 만약 다른 유료 컨텐츠를 보고자 한다면 아래와 같이 Upgrade membership을 진행해야 합니다. 
 
-![](../../../.gitbook/assets/image%20%28400%29.png)
+![](../../../.gitbook/assets/image%20%28401%29.png)
 
 Chek out memberships 버튼을 누르면 아래 화면으로 이동하게 됩니다.
 
-![](../../../.gitbook/assets/image%20%28391%29.png)
+![](../../../.gitbook/assets/image%20%28392%29.png)
 
 만약 Enterprise와 Professional를 선택하면 아래 화면으로 이동하게 됩니다. 
 
-![](../../../.gitbook/assets/image%20%28403%29.png)
+![](../../../.gitbook/assets/image%20%28404%29.png)
 
 ![](../../../.gitbook/assets/image%20%28382%29.png)
 
@@ -63,7 +63,7 @@ Chek out memberships 버튼을 누르면 아래 화면으로 이동하게 됩니
 
 실제 stripe 서비스를 통해 수익 창출이 가능하다는걸 다른 JustDjango 채널의 영상을 통해서 확인도 할 수 있었어요. 
 
-![](../../../.gitbook/assets/image%20%28406%29.png)
+![](../../../.gitbook/assets/image%20%28407%29.png)
 
 ## 결론 
 
