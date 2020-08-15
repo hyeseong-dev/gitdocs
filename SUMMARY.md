@@ -16,6 +16,7 @@
       * [Part 5 \| Main Template](django-1/project/ecommerce/project-setup-and-template/part-5-or-main-template.md)
       * [Part 6 \| Navbar](django-1/project/ecommerce/project-setup-and-template/part-6-or-navbar.md)
       * [Part 7 \| Store.html](django-1/project/ecommerce/project-setup-and-template/part-7-or-store-template.md)
+      * [Part 8 \| Cart.html](django-1/project/ecommerce/project-setup-and-template/part-8-or-cart.html.md)
   * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
     * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
   * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
