@@ -19,7 +19,8 @@
 
 * [Django 개념정리](django-1/django.md)
 * [Project](django-1/project/README.md)
-  * [Ecommerce](django-1/project/ecommerce.md)
+  * [Ecommerce](django-1/project/ecommerce/README.md)
+    * [Project Setup & Template](django-1/project/ecommerce/project-setup-and-template.md)
   * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
     * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
   * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)
