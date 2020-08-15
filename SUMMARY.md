@@ -6,6 +6,7 @@
 
 * [Django 개념정리](django-1/django.md)
 * [Project](django-1/project/README.md)
+  * [Untitled](django-1/project/untitled.md)
   * [Ecommerce](django-1/project/ecommerce/README.md)
     * [1 \| Project Setup & Template](django-1/project/ecommerce/project-setup-and-template/README.md)
       * [Part 1 \| 앱 설정](django-1/project/ecommerce/project-setup-and-template/step1-or.md)
