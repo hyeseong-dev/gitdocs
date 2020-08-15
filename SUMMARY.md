@@ -15,7 +15,7 @@
       * [Part 4 \| Static files](django-1/project/ecommerce/project-setup-and-template/part-4-or-static-files.md)
       * [Part 5 \| Main Template](django-1/project/ecommerce/project-setup-and-template/part-5-or-main-template.md)
       * [Part 6 \| Navbar](django-1/project/ecommerce/project-setup-and-template/part-6-or-navbar.md)
-      * [Part 7 \| store template](django-1/project/ecommerce/project-setup-and-template/part-7-or-store-template.md)
+      * [Part 7 \| Store template](django-1/project/ecommerce/project-setup-and-template/part-7-or-store-template.md)
   * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
     * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
   * [Stripe Payment with Django](django-1/project/stripe-payment-with-django.md)

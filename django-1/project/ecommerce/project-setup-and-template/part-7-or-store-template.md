@@ -1,2 +1,2 @@
-# Part 7 \| store template
+# Part 7 \| Store template
 
