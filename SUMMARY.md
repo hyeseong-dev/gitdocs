@@ -18,8 +18,6 @@
 ## Django <a id="django-1"></a>
 
 * [Django 개념정리](django-1/django.md)
-* [Creating Django App on Docker](django-1/creating-django-app-on-docker/README.md)
-  * [Untitled](django-1/creating-django-app-on-docker/untitled.md)
 
 ## GIT
 
