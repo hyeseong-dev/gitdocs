@@ -140,7 +140,7 @@ $ python manage.py createsuperuser
 
 관리자 페이지에서 제품 몇가지를 등록하도록 할게요. 
 
-![](../../../../.gitbook/assets/image%20%28422%29.png)
+![](../../../../.gitbook/assets/image%20%28427%29.png)
 
 * products \#1
   * Name : Headphones
