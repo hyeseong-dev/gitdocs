@@ -22,11 +22,11 @@ context 딕셔너리안에 products 변수와 그에 대응하는 문자열을 �
 {% endfor %}는 div column태그 바로 아래에 작성하도록 할게요.   
 둘다 row 태그 안에 작성되요. 
 
-![](../../../../.gitbook/assets/image%20%28464%29.png)
+![](../../../../.gitbook/assets/image%20%28466%29.png)
 
 3. 제품의 이름 가격에 {{product.name}}, {{product.price\|floatformat:2}}d을 작성할게요. 
 
-![](../../../../.gitbook/assets/image%20%28451%29.png)
+![](../../../../.gitbook/assets/image%20%28453%29.png)
 
 
 
