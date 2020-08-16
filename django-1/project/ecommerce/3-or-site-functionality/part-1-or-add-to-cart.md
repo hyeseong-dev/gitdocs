@@ -22,24 +22,24 @@ hompage에서 cart 기능은 기본적으로 상품을 더하거나 뺄수 있�
 js폴더와 파일을 아래와 같이 만들어 주세요.  
 
 
-![](../../../../.gitbook/assets/image%20%28416%29.png)
+![](../../../../.gitbook/assets/image%20%28420%29.png)
 
 ### Add JS script link to template
 
 main.html안의 가장 아래 Bootstrap link를 걸어뒀던 곳에 아래 그림과 같이 script tag를 걸어둬서 연동 할 수 있도록 할게요. 
 
-![](../../../../.gitbook/assets/image%20%28460%29.png)
+![](../../../../.gitbook/assets/image%20%28477%29.png)
 
 ### Confirm Link Connection
 
  제대로 연결 되었는지 확인하기 위해서 우선 cart.js 파일 안에 console.log\('Hello world!'\)를 입력하고 저장해주세요.   
 그리고 서버를 돌린다 크롬 개발자 도구를 열어서 아래 그림과 같이 모든 페이지가 동일하게 hello world가 나타나는지 확인해주세요.
 
-![](../../../../.gitbook/assets/image%20%28427%29.png)
+![](../../../../.gitbook/assets/image%20%28435%29.png)
 
 ## Step 2 \| Add Event Handlers
 
-![](../../../../.gitbook/assets/image%20%28459%29.png)
+![](../../../../.gitbook/assets/image%20%28476%29.png)
 
 store.html페이지에 Add to Cart 버튼에 event handler를 더해 볼게요. 
 
@@ -48,17 +48,17 @@ store.html페이지에 Add to Cart 버튼에 event handler를 더해 볼게요.
 "Add to Cart"가 있는 button태그의 class의 마지막에 update-cart를 추가해 줄게요.   
 
 
-![](../../../../.gitbook/assets/image%20%28437%29.png)
+![](../../../../.gitbook/assets/image%20%28450%29.png)
 
 ### Product ID & Action
 
-![](../../../../.gitbook/assets/image%20%28418%29.png)
+![](../../../../.gitbook/assets/image%20%28422%29.png)
 
 ### Add Event
 
 cart.js 파일을 아래오 같이 작성해주세요.
 
-![](../../../../.gitbook/assets/image%20%28436%29.png)
+![](../../../../.gitbook/assets/image%20%28449%29.png)
 
 ## Step 3 \| Use Type Logic
 
@@ -69,13 +69,13 @@ cart.js 파일을 아래오 같이 작성해주세요.
 
 먼저 쿼리를 통해서 로그인 상태를 확인 할거에요.  main.html header tag내에서 script tag를 이용해 "request.user"를  통해서 변수 user값을 만들건데요. 만약 로그인 되어 있지 않다면 "AnonymousUser"가 value값이 될거에요.
 
-![](../../../../.gitbook/assets/image%20%28467%29.png)
+![](../../../../.gitbook/assets/image%20%28487%29.png)
 
 ### Check user status on click \(cart.js\)
 
 cart.js 안에 if 조건문을 만들어 볼게요 그리고 유저의 로그 상태 유무에 따라 다른 두 가지 statements 역시 설정하도록 할게요.
 
-![](../../../../.gitbook/assets/image%20%28435%29.png)
+![](../../../../.gitbook/assets/image%20%28448%29.png)
 
 ## Step 4 \| UpdateItem View
 
@@ -87,13 +87,13 @@ cart.js 안에 if 조건문을 만들어 볼게요 그리고 유저의 로그 �
 
 먼저 views.py파일 안에 로직을 만들어 볼게요. 그리고 return은 JsonResopnse로 돌려주도록 할게요. 
 
-![](../../../../.gitbook/assets/image%20%28446%29.png)
+![](../../../../.gitbook/assets/image%20%28461%29.png)
 
 ### URL path
 
 urls.py 파일 안에 path를 만들고 view연결을 해보도록 할게요.
 
-![](../../../../.gitbook/assets/image%20%28448%29.png)
+![](../../../../.gitbook/assets/image%20%28464%29.png)
 
 ## Step 5 \| updateUserOrder\(\)
 
@@ -104,17 +104,17 @@ urls.py 파일 안에 path를 만들고 view연결을 해보도록 할게요.
 조건문 else updateUserOrder\(\)함수를 작성해주세요.  
 그리고 그 아래에 updateUserOrder\(\)함수를 정의하도록 할게요.
 
-![](../../../../.gitbook/assets/image%20%28462%29.png)
+![](../../../../.gitbook/assets/image%20%28479%29.png)
 
 ### Send POST request to View
 
 정의된 함수 내부를 보면 url 변수와 fetch api가 보이는데요. 이 fetch api는 requst POST 역할을 하게되요. 즉 backend로 data를 보내는 중요한 역할을 갖고 있어요.
 
-![](../../../../.gitbook/assets/image%20%28432%29.png)
+![](../../../../.gitbook/assets/image%20%28445%29.png)
 
 이 data를 보내기 전에 csrftoken을 먼저 처리해주어야해요. 그렇지 않으면 이렇게 아래 오류코드가 나타나요.
 
-![](../../../../.gitbook/assets/image%20%28439%29.png)
+![](../../../../.gitbook/assets/image%20%28454%29.png)
 
 ## Step 6 \| CSRF Token
 
@@ -127,7 +127,7 @@ urls.py 파일 안에 path를 만들고 view연결을 해보도록 할게요.
 
 아래 코드를 main.html파일의 script 태그의 user 변 코드에 아래 붙여 넣도록 할게요.
 
-![](../../../../.gitbook/assets/image%20%28449%29.png)
+![](../../../../.gitbook/assets/image%20%28465%29.png)
 
 
 
@@ -138,7 +138,7 @@ urls.py 파일 안에 path를 만들고 view연결을 해보도록 할게요.
 그리고 cart에 바로 즉각적인 변화가 나타날 거에요.   
 post data를 보낼때 cart 이미지 숫자가 변화되는게 정상적으로 나타나야해요.
 
-![](../../../../.gitbook/assets/image%20%28450%29.png)
+![](../../../../.gitbook/assets/image%20%28466%29.png)
 
 ## Step 7 \| UpdateItem view logic
 
@@ -147,16 +147,16 @@ data를 view에 보내게 될때 fetch call에 있는 productid와 action을 처
 json을 import해주세요.   
 아래 json정보를 불러온 다음 data 변수에 담아 python dictionary로 해당 data값에 접근하도록 할게요. 그리고 이상 유무 확인을 위해 print로 productId와 action 변수를 출력 하도록 할게요.
 
-![](../../../../.gitbook/assets/image%20%28456%29.png)
+![](../../../../.gitbook/assets/image%20%28473%29.png)
 
-![](../../../../.gitbook/assets/image%20%28424%29.png)
+![](../../../../.gitbook/assets/image%20%28431%29.png)
 
 ### Create OR Update Order & OrderItem
 
 requst.user.customer를 통해서 customer 변수에 담고 productId를 인자로 받아서 product 쿼리를 하고 get\_or\_create메서드를 이용해서 complete가 False인 경우 해당 제품이 db에 없다는 의미하는 만큼 order변수를 성하게 되요.   
 이후 orderItem, created 변수를 만들기 위해서 또 get\_or\_create\(\)함수를 사용하는데 이때 실제적인 로직이 마무리 되게 되요. 
 
-![](../../../../.gitbook/assets/image%20%28451%29.png)
+![](../../../../.gitbook/assets/image%20%28467%29.png)
 
 ### Action Logic
 
@@ -164,33 +164,33 @@ requst.user.customer를 통해서 customer 변수에 담고 productId를 인자�
 
 필수적으로 action에 근거하여 quantity update가 필수적인데요 만약 수량이 0아래로 떨어질경우 operitem을 cart에서 제거해야해요. 
 
-![](../../../../.gitbook/assets/image%20%28463%29.png)
+![](../../../../.gitbook/assets/image%20%28481%29.png)
 
 ## Step 8 \| Cart Total
 
 더하거나 뺄때 카트 icon에 cart total을 더해보도록 할게요. 
 
-![](../../../../.gitbook/assets/image%20%28445%29.png)
+![](../../../../.gitbook/assets/image%20%28460%29.png)
 
 ### User data in store view
 
 store view에 if 조건문을 더해서 쿼리 작업을 해보도록 할게요. 
 
-![](../../../../.gitbook/assets/image%20%28458%29.png)
+![](../../../../.gitbook/assets/image%20%28475%29.png)
 
 ///file: main.html 
 
 {{cartItems}}을 넣어주세요.
 
-![](../../../../.gitbook/assets/image%20%28413%29.png)
+![](../../../../.gitbook/assets/image%20%28415%29.png)
 
 이제 정상적으로 홈페이지로 가보면 cart 아이콘에 carttotal이 정상적으로 수량 표기가 나타날거에요.
 
 ### cart view 작성
 
-![](../../../../.gitbook/assets/image%20%28470%29.png)
+![](../../../../.gitbook/assets/image%20%28490%29.png)
 
 ### checkout view 작성
 
-![](../../../../.gitbook/assets/image%20%28430%29.png)
+![](../../../../.gitbook/assets/image%20%28439%29.png)
 
