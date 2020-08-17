@@ -68,6 +68,14 @@ views.py - processOrder\(\)에서 아래 5줄의 코드뿐만 아니라 if order
 
 ## Step 4 \| Clean up processOrder View
 
+### Import function\(views.py\)
+
+```text
+from .utils import cookieCart, cartData, guestOrder
+```
+
+### Clean up view
+
 기존 else에는 저렇게 빨간줄로 guestOrder\(requst, data\)를 이용해서 customer, order변수를 정의하는 한문장만 넣도록 할게요.
 
 ![](../../../../.gitbook/assets/image%20%28475%29.png)
