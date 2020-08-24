@@ -2,6 +2,16 @@
 
 * [osori-magu 기술 블로그](README.md)
 
+## Server <a id="webpage-webserver-search-engine"></a>
+
+* [Deep Dive To The Internet](webpage-webserver-search-engine/deep-dive-to-the-internet/README.md)
+  * [웹서버란](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined.md)
+  * [인터넷작동](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined-1.md)
+  * [웹작동원리](webpage-webserver-search-engine/deep-dive-to-the-internet/untitled.md)
+  * [웹페이지, 웹사이트, 웹서버, 서치엔진의 차이점](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined-3.md)
+  * [WSGI](webpage-webserver-search-engine/deep-dive-to-the-internet/wsgi.md)
+* [SSH와SSL의 차이](webpage-webserver-search-engine/ssh-ssl.md)
+
 ## Django <a id="django-1"></a>
 
 * [Django 개념정리](django-1/django.md)
@@ -201,7 +211,7 @@
   * [1\_ls\_cd\_pwd](linux-1/linux-command/1_ls_cd_pwd.md)
   * [2\_cd\_pwd명령어](linux-1/linux-command/2_cd_pwd.md)
   * [3. mkdir,rm,mv,cp,cat,nl](linux-1/linux-command/3_mkdir_rm_mv_cp_cat_nl.md)
-* [코두익](linux-1/unix/README.md)
+* [Codeit](linux-1/unix/README.md)
   * [1. CLI환경이란?](linux-1/unix/1.-cli.md)
   * [2. 유닉스와 유사 유닉스](linux-1/unix/2..md)
   * [3. GUI와 CLI](linux-1/unix/3.-gui-cli.md)
@@ -249,26 +259,14 @@
   * [API가 뭔가요?](undefined-1/no.1/api.md)
   * [온프레미스와 클라우드 차이점](undefined-1/no.1/undefined.md)
 
-## Internet <a id="webpage-webserver-search-engine"></a>
-
-* [Deep Dive To The Internet](webpage-webserver-search-engine/deep-dive-to-the-internet/README.md)
-  * [웹서버란](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined.md)
-  * [인터넷작동](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined-1.md)
-  * [웹작동원리](webpage-webserver-search-engine/deep-dive-to-the-internet/untitled.md)
-  * [웹페이지, 웹사이트, 웹서버, 서치엔진의 차이점](webpage-webserver-search-engine/deep-dive-to-the-internet/undefined-3.md)
-  * [WSGI](webpage-webserver-search-engine/deep-dive-to-the-internet/wsgi.md)
-
 ## etc
 
 * [아무거나](etc/undefined-1/README.md)
+  * [conda 명령어](etc/undefined-1/conda.md)
   * [cmd창 복사붙여 넣기 단축키](etc/undefined-1/cmd.md)
   * [모르는거 어떻게 해결하세요?](etc/undefined-1/undefined-2.md)
   * [크롬 단축키](etc/undefined-1/undefined.md)
   * [grub-pc 설정](etc/undefined-1/grub-pc.md)
-
-## 아나콘다
-
-* [conda 명령어](undefined/conda.md)
 
 ## Python
 
