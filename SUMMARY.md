@@ -277,6 +277,7 @@
   * [\[pip\] requirement.txt  일괄 설치](python/undefined/pip-requirement.txt.md)
   * [pip upgrade os별 방법](python/undefined/pip-upgrade-os.md)
   * [virtualenv, venv differnences](python/undefined/virtualenv-venv-differnences.md)
+  * [Remove all Python packages installed by pip](python/undefined/remove-all-python-packages-installed-by-pip.md)
 * [Library](python/library/README.md)
   * [Socket 모듈](python/library/socket.md)
 
