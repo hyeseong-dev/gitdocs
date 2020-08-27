@@ -14,6 +14,8 @@
 
 ## Django <a id="django-1"></a>
 
+* [Dive into](django-1/dive-into/README.md)
+  * [Validator 패키지](django-1/dive-into/validator.md)
 * [Django 개념정리](django-1/django/README.md)
   * [Model](django-1/django/model.md)
 * [Project](django-1/project/README.md)
