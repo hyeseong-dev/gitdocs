@@ -14,7 +14,8 @@
 
 ## Django <a id="django-1"></a>
 
-* [Django 개념정리](django-1/django.md)
+* [Django 개념정리](django-1/django/README.md)
+  * [Model](django-1/django/model.md)
 * [Project](django-1/project/README.md)
   * [Ecommerce](django-1/project/ecommerce/README.md)
     * [1 \| Project Setup & Template](django-1/project/ecommerce/project-setup-and-template/README.md)
