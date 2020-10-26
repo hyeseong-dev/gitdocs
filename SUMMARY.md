@@ -236,6 +236,7 @@
   * [가상머신 clipboard 활성화](linux-1/error/clipboard.md)
   * [Could not get lock /var/lib/dpkg/lock-frontend](linux-1/error/could-not-get-lock-var-lib-dpkg-lock-frontend.md)
 * [Appendix](linux-1/appendix/README.md)
+  * [Learn Linux Easily](linux-1/appendix/learn-linux-easily.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
