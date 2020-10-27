@@ -43,6 +43,7 @@
     * [02.Installation](linux-1/appendix/learn-linux-easily/02.installation.md)
     * [03.Shell](linux-1/appendix/learn-linux-easily/03.shell.md)
     * [04. Basic Command](linux-1/appendix/learn-linux-easily/04.-basic-command.md)
+    * [05. File Command](linux-1/appendix/learn-linux-easily/05.-file-command.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
