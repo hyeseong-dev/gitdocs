@@ -46,6 +46,8 @@
     * [05. File Command\(1\)](linux-1/appendix/learn-linux-easily/05.-file-command.md)
     * [06. File Command\(2\)](linux-1/appendix/learn-linux-easily/07.-other-command.md)
     * [07. Other Command](linux-1/appendix/learn-linux-easily/07.-other-command-1.md)
+    * [08. vi Editor](linux-1/appendix/learn-linux-easily/08.-vi-editor.md)
+    * [09. File System](linux-1/appendix/learn-linux-easily/09.-file-system.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
