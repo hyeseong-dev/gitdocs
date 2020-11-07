@@ -49,6 +49,7 @@
     * [08. vi Editor](linux-1/appendix/learn-linux-easily/08.-vi-editor.md)
     * [09. File System](linux-1/appendix/learn-linux-easily/09.-file-system.md)
     * [10. Process](linux-1/appendix/learn-linux-easily/10.-process.md)
+    * [11. user account & group managing](linux-1/appendix/learn-linux-easily/11.-user-account-and-group-managing.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
