@@ -4,7 +4,7 @@
 
 ## 되돌아 보며.. 
 
-![](../../../.gitbook/assets/image%20%28882%29.png)
+![](../../../.gitbook/assets/image%20%28886%29.png)
 
 
 
@@ -12,7 +12,7 @@
 
 ## X 윈도우 오피스 프로그램 
 
-![](../../../.gitbook/assets/image%20%28889%29.png)
+![](../../../.gitbook/assets/image%20%28894%29.png)
 
 ## X 윈도우 멀티미디어 프로그램 및 게임 
 
