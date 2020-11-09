@@ -8,13 +8,13 @@
 
 ![](../../../../.gitbook/assets/image%20%28869%29.png)
 
-![](../../../../.gitbook/assets/image%20%28884%29.png)
+![](../../../../.gitbook/assets/image%20%28885%29.png)
 
 ###  하드디스크 추가 
 
 #### fdisk로 하드디스크 분할 
 
-![](../../../../.gitbook/assets/image%20%28910%29.png)
+![](../../../../.gitbook/assets/image%20%28911%29.png)
 
 #### 하드 디스크 분할 영상 
 
@@ -22,11 +22,11 @@
 
 #### 파일 시스템 포맷
 
-![](../../../../.gitbook/assets/image%20%28905%29.png)
+![](../../../../.gitbook/assets/image%20%28906%29.png)
 
 #### mount하
 
-![](../../../../.gitbook/assets/image%20%28886%29.png)
+![](../../../../.gitbook/assets/image%20%28887%29.png)
 
 ####  /etc/fstab
 
@@ -34,7 +34,7 @@
 
 ### RAID 
 
-![](../../../../.gitbook/assets/image%20%28897%29.png)
+![](../../../../.gitbook/assets/image%20%28898%29.png)
 
 ```text
 김과장 : RAID가 뭐죠?
@@ -63,11 +63,11 @@
 
 
 
-![](../../../../.gitbook/assets/image%20%28881%29.png)
+![](../../../../.gitbook/assets/image%20%28882%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28876%29.png)
 
-![](../../../../.gitbook/assets/image%20%28904%29.png)
+![](../../../../.gitbook/assets/image%20%28905%29.png)
 
 
 
@@ -79,15 +79,15 @@ Level3과 4는 구조가 비슷합니다. 하나의 디스크에 패리티 정�
 
 Level 5는 3,4의 단점을 보완 한 것으로 패리티 정보를 모든 디스크에 분산하여 저장함으로써 병목현상을 방지하게 됩니다.
 
-![](../../../../.gitbook/assets/image%20%28895%29.png)
+![](../../../../.gitbook/assets/image%20%28896%29.png)
 
 ## 백업 
 
 ![](../../../../.gitbook/assets/image%20%28879%29.png)
 
-![](../../../../.gitbook/assets/image%20%28889%29.png)
+![](../../../../.gitbook/assets/image%20%28890%29.png)
 
-![](../../../../.gitbook/assets/image%20%28903%29.png)
+![](../../../../.gitbook/assets/image%20%28904%29.png)
 
 백업 방법으로는 크게 **Full Backup** 과 **Incremental Backup** 2가지로 나눌 수 있습니다.
 
@@ -101,23 +101,23 @@ Level 5는 3,4의 단점을 보완 한 것으로 패리티 정보를 모든 디�
 
 ![](../../../../.gitbook/assets/image%20%28872%29.png)
 
-![](../../../../.gitbook/assets/image%20%28892%29.png)
+![](../../../../.gitbook/assets/image%20%28893%29.png)
 
-![](../../../../.gitbook/assets/image%20%28888%29.png)
+![](../../../../.gitbook/assets/image%20%28889%29.png)
 
 
 
-![](../../../../.gitbook/assets/image%20%28894%29.png)
+![](../../../../.gitbook/assets/image%20%28895%29.png)
 
 ## 로그 파일 관리 
 
 ![](../../../../.gitbook/assets/image%20%28868%29.png)
 
-![](../../../../.gitbook/assets/image%20%28899%29.png)
+![](../../../../.gitbook/assets/image%20%28900%29.png)
 
 ###  로그파일 개
 
-![](../../../../.gitbook/assets/image%20%28891%29.png)
+![](../../../../.gitbook/assets/image%20%28892%29.png)
 
 ###  시스템 로그 파일의 이해 
 
@@ -156,35 +156,35 @@ FTP를 사용하여 파일을 주고 받았을 경우 그 기록이 남는 로�
 
 ```
 
-![](../../../../.gitbook/assets/image%20%28896%29.png)
+![](../../../../.gitbook/assets/image%20%28897%29.png)
 
-![](../../../../.gitbook/assets/image%20%28900%29.png)
+![](../../../../.gitbook/assets/image%20%28901%29.png)
 
-![](../../../../.gitbook/assets/image%20%28885%29.png)
+![](../../../../.gitbook/assets/image%20%28886%29.png)
 
-![](../../../../.gitbook/assets/image%20%28898%29.png)
-
-![](../../../../.gitbook/assets/image%20%28882%29.png)
-
-![](../../../../.gitbook/assets/image%20%28873%29.png)
+![](../../../../.gitbook/assets/image%20%28899%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28883%29.png)
 
-![](../../../../.gitbook/assets/image%20%28909%29.png)
+![](../../../../.gitbook/assets/image%20%28873%29.png)
+
+![](../../../../.gitbook/assets/image%20%28884%29.png)
+
+![](../../../../.gitbook/assets/image%20%28910%29.png)
 
 ### syslogd를 이용 로그제어 
 
-![](../../../../.gitbook/assets/image%20%28906%29.png)
+![](../../../../.gitbook/assets/image%20%28907%29.png)
 
-![](../../../../.gitbook/assets/image%20%28887%29.png)
+![](../../../../.gitbook/assets/image%20%28888%29.png)
 
 ## 지름길 보기 
 
-![](../../../../.gitbook/assets/image%20%28907%29.png)
+![](../../../../.gitbook/assets/image%20%28908%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28871%29.png)
 
-![](../../../../.gitbook/assets/image%20%28890%29.png)
+![](../../../../.gitbook/assets/image%20%28891%29.png)
 
 
 
@@ -194,9 +194,11 @@ FTP를 사용하여 파일을 주고 받았을 경우 그 기록이 남는 로�
 
 ![](../../../../.gitbook/assets/image%20%28875%29.png)
 
-![](../../../../.gitbook/assets/image%20%28901%29.png)
+![](../../../../.gitbook/assets/image%20%28902%29.png)
+
+![](../../../../.gitbook/assets/image%20%28881%29.png)
 
 ## 다음 목적지
 
-![](../../../../.gitbook/assets/image%20%28893%29.png)
+![](../../../../.gitbook/assets/image%20%28894%29.png)
 
