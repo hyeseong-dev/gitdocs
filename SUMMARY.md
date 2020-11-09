@@ -51,7 +51,7 @@
     * [10. Process](linux-1/appendix/learn-linux-easily/10.-process.md)
     * [11. user account & group managing](linux-1/appendix/learn-linux-easily/11.-user-account-and-group-managing.md)
     * [12. System Management](linux-1/appendix/learn-linux-easily/12.-system-management/README.md)
-      * [리눅스 tar 명령어 사용법. \(Linux tar command\) - 파일 압축 및 해제](linux-1/appendix/learn-linux-easily/12.-system-management/tar-.-linux-tar-command.md)
+      * [리눅스 tar 명령어 사용법 - 파일 압축 및 해제](linux-1/appendix/learn-linux-easily/12.-system-management/tar-.-linux-tar-command.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
