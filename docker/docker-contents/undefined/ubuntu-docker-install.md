@@ -66,8 +66,13 @@ $ sudo usermod -aG docker osori
 ```
 
 ```text
-sudo service docker restart
-
+(방법1)
+sudo systemctl reboot # 말그대로 시스템 다시 리부팅합니다.
+(방법2)
+sudo -su [현재사용자]
+(방법3)
+sudo service docker restart # 안될 확률이 높아요.
+(방법4)
 로그아웃(서버 나갔다가 다시 로그인 하세요.)
 이후 sudo 명령어 없이 docker images, docker ps, docker ps -a 명령어 입력후 확인
 ```
