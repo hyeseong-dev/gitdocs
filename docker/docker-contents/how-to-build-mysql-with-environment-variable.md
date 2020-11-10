@@ -62,7 +62,7 @@ $ printenv env_name
 
 ![&#xD2B9;&#xC815; &#xD658;&#xACBD;&#xBCC0;&#xC218; &#xCD9C;&#xB825;](../../.gitbook/assets/image%20%28164%29.png)
 
-## echo 명령어로 특정 환경수 출
+## echo 명령어로 특정 환경수 출력 
 
 ```text
 echo $env_name
