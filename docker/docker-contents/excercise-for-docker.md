@@ -35,7 +35,7 @@ description: 한큐에 실습하고 요약
 ```text
 >>> docker pull jenkins 
 >>> sudo docker inspect jenkins
->>> docker rnn -d -p 8080:8080 --name jk jenkins
+>>> docker run -d -p 8080:8080 --name jk jenkins
 ```
 
 **8080포트를 지정은 jenkins pull 명령어 사용후 -&gt; inspect명령어로 살펴보면 안에 port 정보가 나와있어요. 이를 바탕으로 넣어주세요.**

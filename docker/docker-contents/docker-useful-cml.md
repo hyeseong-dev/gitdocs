@@ -83,7 +83,9 @@ sudo docker cp <from container>:<path> <to container>:<path>
 
 > docker stop $\(docker ps -a -q\)
 
+> 옵션 설명: **-q, --quiet Only display numeric IDs**
 
+\*\*\*\*
 
 #### 컨테이너 모두 지우기 
 
