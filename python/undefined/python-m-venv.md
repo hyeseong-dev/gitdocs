@@ -170,6 +170,8 @@ C:\project>C:\Users\dojang\Anaconda3\Scripts\activate example
 * **conda remove 패키지**: 패키지 삭제
 * **conda list --export &gt; package-list.txt**: 패키지 목록 및 버전 정보 저장:
 * **conda install --file package-list.txt**: 패키지 목록으로 설치
+* conda update -n base conda: 아나콘다도 업데이트
+* conda update --all: 콘다 패키지 모두 업데이
 
 ###        가상 환경을 사용하는 IDLE 실행하기
 
