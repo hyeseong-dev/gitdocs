@@ -208,10 +208,25 @@ CPU or Memory와 같은 자원을 지정하여 컨테이너를 생성 및 실행
 * --memory, -m                                                                      :  사용할 메모리를 제한하여 실행 
 * --volume=호스트의디렉토리:컨테이너의디렉토리, -v : 호스트와 컨테이너의 디렉토리를 공유
 
-컨테이너를 시작 할 떄 CPU 
+컨테이너를 시작 할 떄 CPU \| MEMORY 자원을 제한할 수 있습니다.
 
 ```text
 $ docker container run --cpu-shares=512 --memory=1g centos
 WARNING: Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.
 ```
+
+####  디렉토리 공유
+
+호스트 OS와 컨테이너 안의 디렉토리를 공유하고 싶을 떄는 -v\(--volume\)옵션을 사용합니다.   
+예를들어 호스트의 /users/asa/webap 폴터들 컨테이의 /usr/share/nginx/html 디렉토리와 공유하고 싶을 떄는 아래와 같이 하면됩니다. 
+
+```text
+$ docker run -v /users/asa/webap:/usr/share/nginx/html nginx
+```
+
+##  컨테이너를 생성 및 시작하는 환경을 지정 
+
+> docker run 환결설정옵션     이미지명:태그명   인수
+
+### 환경벼
 
