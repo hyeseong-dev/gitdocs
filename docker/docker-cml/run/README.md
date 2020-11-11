@@ -416,7 +416,7 @@ a8f9e8edab4f        centos              "/bin/bash"         30 minutes ago      
 
 ### pause/unpause 명령어 
 
-![](../../../.gitbook/assets/image%20%28939%29.png)
+![](../../../.gitbook/assets/image%20%28940%29.png)
 
 
 
