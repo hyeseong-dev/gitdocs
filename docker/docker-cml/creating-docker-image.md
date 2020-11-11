@@ -1,0 +1,43 @@
+# Creating docker image
+
+ Docker Container &lt;----------&gt; Docker image 서로가 생성할 수 있는 관계임. 
+
+##  컨테이너로부터 이미지 생성
+
+####  문법
+
+> **docker container commit 옵션    컨테이너 식별자  이미지명:태그명**
+
+ **옵션** 
+
+* --author, -a       : 작성자를 지정한다.\(예. ASA SHIHO&lt;Shiho@asa.seoul&gt;\)
+* --message, -m : 메시지를 지정
+* change, -c    : 커밋 시 Dockerfile 명령을 지정
+* --pause, -p    : 컨테이너를 일시 정지하고 커밋한다.
+
+ 독자적으로 작성한 이미지는 DOcker HUB 등에서 공개할 것도 고려하여 작성자나 커밋 메시지를 붙여두는 것이 좋습니다. 
+
+###  컨테이너로부터 이미지 작성 
+
+![](../../.gitbook/assets/image%20%28947%29.png)
+
+ 설정한 작성자 정보는 docker image inspect 명령으로 확인 가능해요. 
+
+###  작성한 이미지 상세 정보 확인 
+
+![](../../.gitbook/assets/image%20%28944%29.png)
+
+##  컨테이너를 tar 파일로 출력
+
+가동 중인 컨테이너의 디렉토리/파일들을 모아서 tar 파일을 만들 수 있습니다.   
+이 tar 파일을 바탕으로 하여 다른 서버에서 컨테이너를 가동시킬 수 있습니다.   
+tar 파일의 작성에는 docker container export 명령을 사용합니다. 이 명령의 구문은 다음과 같아요. 
+
+####  문법 
+
+> **docker container export &lt;컨테이너 식별자&gt;**
+
+특정 컨테이너를 latest.tar라는 파일로 출력하는 경우는 아래와 같이 하면 되요. 
+
+
+
