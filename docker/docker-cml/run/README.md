@@ -233,13 +233,19 @@ $ docker run -v /users/asa/webap:/usr/share/nginx/html nginx
 
 
 ```text
-<INPUT>
+hyeseong-kisti-desck@ubuntu:~$ docker run -it -e foo=bar centos /bin/bash
 
-$ docker container run -it -e foo=bar centos /bin/bash
-
-<OUTPUT> 
-[r
+[root@b293ad62be6a /]# set
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extquote:force_fignore:histappend:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASHRCSOURCED=Y
+BASH_ALIASES=()
+...
+...
+foo=bar
+...
+...
 ```
 
-\`\`\`
+ 환경변수를 정의한 파일로부터 일괄적으로 등록하고 싶은 경우는 아래의 명령을 실행합니다. 이 예에서는 env\_list라는 이름의 파일 안에 환경
 
