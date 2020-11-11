@@ -236,7 +236,7 @@
   * [How To Build Mysql with Environment Variable](docker/docker-contents/how-to-build-mysql-with-environment-variable.md)
   * [Jupyter notebook with volume mounting](docker/docker-contents/jupyter-notebook-with-volume-mounting.md)
   * [Builing A Docker Image](docker/docker-contents/untitled.md)
-* [Docker CML](docker/docker-cml/README.md)
+* [Docker CLI](docker/docker-cml/README.md)
   * [Build](docker/docker-cml/build.md)
 * [Excercise](docker/ec2/README.md)
   * [EC2 서버구축하기](docker/ec2/ch1-ec2.md)

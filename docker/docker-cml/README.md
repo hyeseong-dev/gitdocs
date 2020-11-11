@@ -2,5 +2,5 @@
 description: 도커 명령어
 ---
 
-# Docker CML
+# Docker CLI
 
