@@ -91,11 +91,75 @@
 * -w, --workdir=””: 컨테이너 안의 프로세스가 실행될 디렉터리를 설정합니다.
   * _--workdir=”/var/www”_
 
-## 컨테이너 백그라운드 실행
+###  백그라운드 실행 -d 옵션 
 
 #### 예시
 
-> **docker container run -d centos /bin/ping localhost**
+> **docker run -d centos /bin/ping localhost**
 
-\*\*\*\*
+위 예시 설명:
+
+* docker run은 커넽이너를 생성 및 실행
+* -d 백그라운드에서 실행하는 옵션
+* centos\(혹은 이미지명\)
+* /bin/ping localhost는 컨테이너에서 실행할 명령어 
+
+백그라운드에서 실행되고 있는지 아닌지를 확인할 때는 docker logs명령을 사용합니다. docker container logs 명령은 컨테이너의 로그를 확인하는 명령입니다. 로그를 확인하고 싶은 컨테이너 식별자를 지정하여 실행합니다. 아래 예시를 확인해주세요.   
+참고로 -t 옵션은 타임스탬프를 표시하는 것입니다.
+
+![](../../.gitbook/assets/image%20%28935%29.png)
+
+명령을 실행한 후에도 컨테이너는 남습니다. 실행 후의 컨테이너를 자동으로 삭제하고 싶을 때는 --rm 옵션을 지저압니다.   
+  
+명령의 실행 결과에 따라 컨테이너를 재시작할 때는 --restart 옵션을 지정합니다. 
+
+### --restart 옵션 
+
+* no                                    : 재시작하지 않는다
+* on-failure                       : 종료 스테이터스가 0이 아닐 떄 재시작한다. 
+* on-failure:횟수 n          :   종료 스테이터스가 0이 아닐때 n번 재시작한다.
+* always                           :  항상 재시작 한다. 
+* unless-stopped            :  최근 컨테이너가 정지 상태가 아니라면 항상 재시작한다.
+
+ 아래에서 --restart옵션 always값을 사용하고여 exit 명령어로 나와도 계속 컨테이너가 실행한 모습을 확인 할 수 있습니다.
+
+![](../../.gitbook/assets/image%20%28934%29.png)
+
+> 참고! --rm 옵션과 --restart 옵션은 동시에 사용할 수 없으므로 주의하기 바랍니다.
+
+##  컨테이너의 네트워크 설정 
+
+> **docker run 네트워크옵션     이미지명:태그명     인수**
+
+**--add-host= 호스트명:ip주소                                     : 컨테이너의 /etc/hosts에 호스트명과 IP정의  
+--dns=IP주소                                                                : 컨테이너용 DNS 서버의 IP 주소 지  
+--expose                                                                        : 지정한 범위의 포트 번호를 할당  
+--mac-address=MAC주소                                          : 컨테이너의 MAC주소 지정  
+--net=\[bridge \| none \| container&lt;name \| id&gt; \|host \|NETWORK : 컨테이너의 네트워크를 지정   
+--hostname, -h                                                             : 컨테이너 자신의 호스트명을 지정  
+--publish, -p호스트의 포트번호: 컨테이너의 포트번호     : 호스트와 컨테이너의 포트 매핑  
+--publish-all, -P\(대문자\)                                                         : 호스트에 임의의 포트를 컨테이너에 지정** 
+
+ **컨테이너를 시작할 떄 네트워크에 관한 설정을 할 수 있습니다.   
+컨테이너의 포트 번호와 호스트 OS의 포트번호를 매핑할 떄느 아래와 같은 명령을 실행합니다.** 
+
+```text
+$ docker run -d -p 8080:80 nginx
+```
+
+
+
+DNS 서버를 설정 할때는 아래 명령을 실행합니다. 
+
+```text
+$ docker run -d --dns 192.168.1.1 nginx
+```
+
+MAC 주소를 지정할 때는 
+
+```text
+$ docker run -d --mac-address="92:d0:c6:0a:29:33" centos
+
+$ docker container inspect --format="{{ .Config.MacAddress }}"
+```
 
