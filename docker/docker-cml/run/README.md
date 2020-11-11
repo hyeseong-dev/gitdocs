@@ -247,5 +247,184 @@ foo=bar
 ...
 ```
 
- 환경변수를 정의한 파일로부터 일괄적으로 등록하고 싶은 경우는 아래의 명령을 실행합니다. 이 예에서는 env\_list라는 이름의 파일 안에 환경
+#### 환경변수 일괄 설정 
+
+ 환경변수를 정의한 파일로부터 일괄적으로 등록하고 싶은 경우는 아래의 명령을 실행합니다. 이 예에서는 env\_list라는 이름의 파일 안에 환경변수를 정해 놓고 있습니다. 
+
+```text
+hyeseong-kisti-desck@ubuntu:~/Documents$ docker container run -it --env-file=env_list centos /bin/bash
+
+[root@735edac1a7ec /]# set
+BASH=/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extquote:force_fignore:histappend:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASHRCSOURCED=Y
+...
+...
+foo=bar
+hoge=fuga
+...
+...
+{ 
+    [ -z "$AWKPATH" ] && AWKPATH=`gawk 'BEGIN {print ENVIRON["AWKPATH"]}'`;
+    export AWKPATH="$*:$AWKPATH"
+}
+
+```
+
+ 컨테이너의 작업 디렉토리를 지정하여 실행하고 싶은 경우에는 --workdir, -w 옵션을 사용합니다.
+
+```text
+hyeseong-kisti-desck@ubuntu:~/Documents$ docker run -it -w=/tensorflow centos /bin/bash
+[root@d69dc90dc1e5 tensorflow]# 
+```
+
+ 또한 컨테이너를 시작할 때 파일 시스템을 읽기 전용으로 하고 싶을 때는 --read-only 옵션을 설정합니다.
+
+### ps 명령어 옵션 
+
+####  컨테이너 목록 필터링 -f
+
+필터링 조건은 key=value로 지정합니다.
+
+ 
+
+![](../../../.gitbook/assets/image%20%28937%29.png)
+
+####  출력 형식 지정 
+
+* .ID
+* .Image
+* .COmmand
+* .CreatedAt
+* .RunningFor
+* .Ports
+* .Status
+* .Size
+* .Names
+* .Mounts
+* .Networks
+
+#### 
+
+ 컨테이너 ID와 가동중인지 아닌지의 상태르 콜론으로 구분하여 표시하려면 아래와 같이해보세요.
+
+#### 출력 형식 지정
+
+```text
+<INPUT>
+docker ps -a --format '{{.Names}}:{{.Status}}'
+
+<OUTPUT>
+dreamy_stonebraker:Exited (127) 6 minutes ago
+sad_borg:Exited (0) 10 minutes ago
+elated_northcutt:Exited (0) 14 minutes ago
+suspicious_kowalevski:Exited (0) 15 minutes ago
+upbeat_ellis:Exited (1) 16 minutes ago
+agitated_mendel:Exited (0) 38 minutes ago
+awesome_golick:Exited (0) 55 minutes ago
+exciting_hellman:Exited (0) 56 minutes ago
+youthful_archimedes:Exited (0) About an hour ago
+elated_sinoussi:Exited (0) About an hour ago
+modest_hellman:Up 40 minutes
+unruffled_gould:Exited (137) 40 minutes ago
+
+```
+
+
+
+####  테이블로 구분하여 출력
+
+```text
+<INPUT>
+$ docker ps -a --format 'table {{.Names}}\t{{.Status}}\t{{.Mounts}}'
+
+<OUTPUT>
+NAMES                   STATUS                         MOUNTS
+dreamy_stonebraker      Exited (127) 9 minutes ago     
+sad_borg                Exited (0) 13 minutes ago      
+elated_northcutt        Exited (0) 16 minutes ago      
+suspicious_kowalevski   Exited (0) 17 minutes ago      
+upbeat_ellis            Exited (1) 19 minutes ago      
+agitated_mendel         Exited (0) 41 minutes ago      
+awesome_golick          Exited (0) 58 minutes ago      
+exciting_hellman        Exited (0) 59 minutes ago      
+youthful_archimedes     Exited (0) About an hour ago   
+elated_sinoussi         Exited (0) About an hour ago   
+modest_hellman          Up 42 minutes                  
+unruffled_gould         Exited (137) 43 minutes ago
+```
+
+### stat 명령어 - 컨테이너 가동 확인
+
+```text
+<INPUT>
+$ docker stats modest_hellman(컨테이너이름)
+
+
+<OUTPUT>
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+0b10e29a88a9        modest_hellman      0.00%               2.395MiB / 1.914GiB   0.12%               11.3kB / 0B         6.01MB / 0B         1
+
+```
+
+####  프로세스 확인
+
+```text
+hyeseong-kisti-desck@ubuntu:~/Documents$ docker top modest_hellman 
+UID                 PID                 PPID                C                   STIME               TTY                 TIME                CMD
+root                1761                1727                0                   21:24               pts/0               00:00:00            /bin/bash
+```
+
+### stop 명령어 
+
+####  옵션 
+
+#### --time, -t : 컨테이너의 정지 시간을 지정\(기본값은 10초\)
+
+```text
+docker container stop -t 2 [컨테이너식별자]
+# 2초후에 컨테이너를 정지시킴
+```
+
+### restart 명령
+
+```text
+hyeseong-kisti-desck@ubuntu:~$ docker restart -t 5 sad_borg elated_northcutt suspicious_kowalevski 
+sad_borg
+elated_northcutt
+suspicious_kowalevski
+
+hyeseong-kisti-desck@ubuntu:~$ docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+735edac1a7ec        centos              "/bin/bash"         28 minutes ago      Up 4 seconds                            sad_borg
+0f56e70ad51f        centos              "/bin/bash"         29 minutes ago      Up 4 seconds                            elated_northcutt
+a8f9e8edab4f        centos              "/bin/bash"         30 minutes ago      Up 3 seconds                            suspicious_kowalevski
+0b10e29a88a9        centos              "/bin/bash"         4 hours ago         Up 54 minutes                           modest_hellman
+
+```
+
+### rm 명령어 
+
+#### 주요 옵션
+
+* --force, -f : 실행중인 컨테이너를 강제로 삭제
+* --volume, -v: 할당한 볼륨을 삭제
+
+####  정지중인 모든 컨테이너 삭제 
+
+![](../../../.gitbook/assets/image%20%28938%29.png)
+
+### pause/unpause 명령어 
+
+![](../../../.gitbook/assets/image%20%28939%29.png)
+
+
+
+####  잠깐! 그럼 stop과 pause의 차이는?
+
+ 컨테이너에서 **프로세스\(pause\)를 모두 중단 VS 컨테이너 그 자체를 중지\(stop\)**
+
+
+
+
 
