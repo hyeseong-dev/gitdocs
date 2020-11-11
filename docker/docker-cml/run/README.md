@@ -228,5 +228,18 @@ $ docker run -v /users/asa/webap:/usr/share/nginx/html nginx
 
 > docker run 환결설정옵션     이미지명:태그명   인수
 
-### 환경벼
+### 환경변수 설정 
+
+
+
+```text
+<INPUT>
+
+$ docker container run -it -e foo=bar centos /bin/bash
+
+<OUTPUT> 
+[r
+```
+
+\`\`\`
 
