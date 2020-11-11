@@ -12,7 +12,7 @@
 
 \*\*\*\*
 
-### run <a id="run"></a>
+## run 명령어 옵션
 
 옵션에 값을 설정할 때 =와 “는 생략해도 됩니다.
 
@@ -90,4 +90,12 @@
   * _--volumes-from=”hello:rw”_처럼 설정하면 데이터 볼륨에 읽기 쓰기 모두 할 수 있습니다.
 * -w, --workdir=””: 컨테이너 안의 프로세스가 실행될 디렉터리를 설정합니다.
   * _--workdir=”/var/www”_
+
+## 컨테이너 백그라운드 실행
+
+#### 예시
+
+> **docker container run -d centos /bin/ping localhost**
+
+\*\*\*\*
 
