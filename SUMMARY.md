@@ -163,6 +163,7 @@
   * [reset, checkout명령어](git/undefined/reset-checkout.md)
 * [Error](git/error/README.md)
   * [Push&Pull Error](git/error/push-and-pull-error.md)
+  * [SSL 인증서 오류](git/error/ssl.md)
 
 ## Flask
 
@@ -245,6 +246,9 @@
   * [Build](docker/docker-cml/build.md)
   * [other CLIs](docker/docker-cml/other-clis.md)
   * [Creating docker image](docker/docker-cml/creating-docker-image.md)
+  * [Building Server with Dockerfile](docker/docker-cml/building-server-with-dockerfile.md)
+  * [Untitled](docker/docker-cml/untitled-1.md)
+  * [Untitled](docker/docker-cml/untitled.md)
 * [Excercise](docker/ec2/README.md)
   * [EC2 서버구축하기](docker/ec2/ch1-ec2.md)
   * [EC2 Jupyter로  서버관리](docker/ec2/ch2-ec2-jupyter/README.md)
