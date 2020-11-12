@@ -28,7 +28,9 @@
 
 {% embed url="https://cdn.e-koreatech.ac.kr/Portal/Sources/Contents/2015/old/contents/service/1759/15/03L/15\_05\_01.htm" %}
 
+![](../../../.gitbook/assets/image%20%28961%29.png)
 
+![](../../../.gitbook/assets/image%20%28962%29.png)
 
 ## 리눅스에서 펄 사용하기 
 
