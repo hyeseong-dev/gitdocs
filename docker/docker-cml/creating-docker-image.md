@@ -78,5 +78,39 @@ docker image save 명령을 사용하면 image를 -&gt; tar파일로 저장 할 
 
 ###  이미지 저장 예시 
 
+![](../../.gitbook/assets/image%20%28959%29.png)
+
+## 이미지 읽어들이기
+
+ **문법**
+
+> docker image load &lt;option&gt;
+
+**예. export.tar 라는 이름의 이미지를 읽어 들이려면 아래의 명령을 실행하는데요. 읽어 들일 파일명은 -i 옵션으로 지정합니다.** 
+
+ ****
+
+![](../../.gitbook/assets/image%20%28960%29.png)
+
+##  불필요한 이미지/컨테이너 일괄 삭제 
+
+docker system prune 명령을 사용하면 사용하지 않는 이미지, 컨테이너, 볼륨, 네트워크를 일괄적으로 삭제해요.   
+
+
+####  문법
+
+> docker system prune \[option\]
+
+#### option
+
+* --all, -a : 사용하지 않는 리소스를 모두 삭제한다. 
+* --force, -f: 강제 삭제
+
+###  불필요한 리소스 삭제 
+
+![](../../.gitbook/assets/image%20%28958%29.png)
+
+![](../../.gitbook/assets/image%20%28957%29.png)
+
 
 
