@@ -2,17 +2,17 @@
 
 ## 되돌아 보며.. 
 
-![](../../../../.gitbook/assets/image%20%28995%29.png)
+![](../../../../.gitbook/assets/image%20%281007%29.png)
 
 ## 학습을 시작하기 전에 
 
-![](../../../../.gitbook/assets/image%20%28996%29.png)
+![](../../../../.gitbook/assets/image%20%281008%29.png)
 
 ## 리눅스 네트워킹 이해하기 
 
-![](../../../../.gitbook/assets/image%20%28974%29.png)
+![](../../../../.gitbook/assets/image%20%28981%29.png)
 
-![](../../../../.gitbook/assets/image%20%281000%29.png)
+![](../../../../.gitbook/assets/image%20%281015%29.png)
 
 ###  네트워크 구성 장비 
 
@@ -40,7 +40,7 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%28998%29.png)
+![](../../../../.gitbook/assets/image%20%281013%29.png)
 
 ### TCP/IP
 
@@ -58,7 +58,7 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%281009%29.png)
+![](../../../../.gitbook/assets/image%20%281028%29.png)
 
 ### IP
 
@@ -96,15 +96,15 @@
 
 ####  네트워크 주소 
 
-![](../../../../.gitbook/assets/image%20%281007%29.png)
+![](../../../../.gitbook/assets/image%20%281024%29.png)
 
 ####  브로드캐스트 주소
 
-![](../../../../.gitbook/assets/image%20%28977%29.png)
+![](../../../../.gitbook/assets/image%20%28986%29.png)
 
-![](../../../../.gitbook/assets/image%20%28984%29.png)
+![](../../../../.gitbook/assets/image%20%28994%29.png)
 
-![](../../../../.gitbook/assets/image%20%28968%29.png)
+![](../../../../.gitbook/assets/image%20%28970%29.png)
 
 ###  클래스별 IP 
 
@@ -130,13 +130,13 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%281012%29.png)
+![](../../../../.gitbook/assets/image%20%281033%29.png)
 
 ## 리눅스 네트워킹 설정하기 
 
-![](../../../../.gitbook/assets/image%20%28980%29.png)
+![](../../../../.gitbook/assets/image%20%28990%29.png)
 
-![](../../../../.gitbook/assets/image%20%281017%29.png)
+![](../../../../.gitbook/assets/image%20%281040%29.png)
 
 ###  호스트이름
 
@@ -174,13 +174,13 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%281014%29.png)
+![](../../../../.gitbook/assets/image%20%281037%29.png)
 
-![](../../../../.gitbook/assets/image%20%28976%29.png)
+![](../../../../.gitbook/assets/image%20%28985%29.png)
 
-![](../../../../.gitbook/assets/image%20%281008%29.png)
+![](../../../../.gitbook/assets/image%20%281025%29.png)
 
-![](../../../../.gitbook/assets/image%20%28992%29.png)
+![](../../../../.gitbook/assets/image%20%281003%29.png)
 
 ###  라우팅 설정 
 
@@ -202,7 +202,7 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%28970%29.png)
+![](../../../../.gitbook/assets/image%20%28975%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28964%29.png)
 
@@ -228,11 +228,11 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%281005%29.png)
+![](../../../../.gitbook/assets/image%20%281021%29.png)
 
-![](../../../../.gitbook/assets/image%20%28990%29.png)
+![](../../../../.gitbook/assets/image%20%281001%29.png)
 
-![](../../../../.gitbook/assets/image%20%28979%29.png)
+![](../../../../.gitbook/assets/image%20%28988%29.png)
 
 ### ping
 
@@ -251,27 +251,27 @@
 
 ```
 
-![](../../../../.gitbook/assets/image%20%28969%29.png)
+![](../../../../.gitbook/assets/image%20%28973%29.png)
 
-![](../../../../.gitbook/assets/image%20%28989%29.png)
+![](../../../../.gitbook/assets/image%20%281000%29.png)
 
 ## 지름길 보기 
 
-![](../../../../.gitbook/assets/image%20%28994%29.png)
+![](../../../../.gitbook/assets/image%20%281006%29.png)
 
 ## 탈출하기 
 
-![](../../../../.gitbook/assets/image%20%281006%29.png)
-
-![](../../../../.gitbook/assets/image%20%28975%29.png)
-
-![](../../../../.gitbook/assets/image%20%281018%29.png)
+![](../../../../.gitbook/assets/image%20%281023%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28982%29.png)
 
-![](../../../../.gitbook/assets/image%20%28988%29.png)
+![](../../../../.gitbook/assets/image%20%281043%29.png)
+
+![](../../../../.gitbook/assets/image%20%28992%29.png)
+
+![](../../../../.gitbook/assets/image%20%28999%29.png)
 
 ## 다음 목적지
 
-![](../../../../.gitbook/assets/image%20%281019%29.png)
+![](../../../../.gitbook/assets/image%20%281044%29.png)
 
