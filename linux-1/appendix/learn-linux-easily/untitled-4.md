@@ -32,9 +32,9 @@
 
 ![](../../../.gitbook/assets/image%20%28962%29.png)
 
-![](../../../.gitbook/assets/image%20%28982%29.png)
+![](../../../.gitbook/assets/image%20%28993%29.png)
 
-![](../../../.gitbook/assets/image%20%28991%29.png)
+![](../../../.gitbook/assets/image%20%281003%29.png)
 
 ###  라이브러리 만들기 
 
@@ -48,15 +48,15 @@
 
 나박사 : 생성된 라이브러리를 프로그래밍에 사용하려면 라이브러리 인덱스를 만들어야 합니다. 라이브러리 인덱스는 생성한 라이브러리를 다른 프로그래밍에서 사용 가능하도록 합니다. 라이브러리의 인덱스는 ranlib 명령어를 사용하여 만들 수 있습니다.
 
-![](../../../.gitbook/assets/image%20%28975%29.png)
-
-![](../../../.gitbook/assets/image%20%28980%29.png)
-
-![](../../../.gitbook/assets/image%20%28989%29.png)
-
 ![](../../../.gitbook/assets/image%20%28981%29.png)
 
-![](../../../.gitbook/assets/image%20%281000%29.png)
+![](../../../.gitbook/assets/image%20%28987%29.png)
+
+![](../../../.gitbook/assets/image%20%281001%29.png)
+
+![](../../../.gitbook/assets/image%20%28991%29.png)
+
+![](../../../.gitbook/assets/image%20%281015%29.png)
 
 ## 리눅스에서 펄 사용하기 
 
@@ -64,47 +64,47 @@
 
 ## 리눅스 쉘 프로그래밍 
 
-![](../../../.gitbook/assets/image%20%28979%29.png)
-
-![](../../../.gitbook/assets/image%20%28978%29.png)
-
-![](../../../.gitbook/assets/image%20%28966%29.png)
-
-![](../../../.gitbook/assets/image%20%28992%29.png)
-
-![](../../../.gitbook/assets/image%20%28990%29.png)
-
-![](../../../.gitbook/assets/image%20%28996%29.png)
+![](../../../.gitbook/assets/image%20%28986%29.png)
 
 ![](../../../.gitbook/assets/image%20%28985%29.png)
 
-![](../../../.gitbook/assets/image%20%28973%29.png)
+![](../../../.gitbook/assets/image%20%28967%29.png)
 
-![](../../../.gitbook/assets/image%20%28968%29.png)
+![](../../../.gitbook/assets/image%20%281004%29.png)
 
-![](../../../.gitbook/assets/image%20%28965%29.png)
+![](../../../.gitbook/assets/image%20%281002%29.png)
+
+![](../../../.gitbook/assets/image%20%281011%29.png)
+
+![](../../../.gitbook/assets/image%20%28997%29.png)
+
+![](../../../.gitbook/assets/image%20%28978%29.png)
+
+![](../../../.gitbook/assets/image%20%28972%29.png)
+
+![](../../../.gitbook/assets/image%20%28966%29.png)
 
 ## 과제 
 
 ## 지름길 보기 
 
-![](../../../.gitbook/assets/image%20%281001%29.png)
+![](../../../.gitbook/assets/image%20%281016%29.png)
 
-![](../../../.gitbook/assets/image%20%28987%29.png)
+![](../../../.gitbook/assets/image%20%28999%29.png)
 
-![](../../../.gitbook/assets/image%20%28969%29.png)
+![](../../../.gitbook/assets/image%20%28973%29.png)
 
 
 
 ## 탈출하기 
 
-![](../../../.gitbook/assets/image%20%28964%29.png)
+![](../../../.gitbook/assets/image%20%28965%29.png)
 
-![](../../../.gitbook/assets/image%20%28976%29.png)
+![](../../../.gitbook/assets/image%20%28983%29.png)
 
-![](../../../.gitbook/assets/image%20%28998%29.png)
+![](../../../.gitbook/assets/image%20%281013%29.png)
 
 ## 다음 목적지
 
-![](../../../.gitbook/assets/image%20%28995%29.png)
+![](../../../.gitbook/assets/image%20%281010%29.png)
 

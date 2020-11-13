@@ -58,7 +58,7 @@
     * [16.Linux Network](linux-1/appendix/learn-linux-easily/untitled-3/README.md)
       * [ubuntu network setting](linux-1/appendix/learn-linux-easily/untitled-3/ubuntu-network-setting.md)
       * [Change Hostname in ubuntu](linux-1/appendix/learn-linux-easily/untitled-3/change-hostname-in-ubuntu.md)
-    * [Untitled](linux-1/appendix/learn-linux-easily/untitled-2.md)
+    * [17. Samba](linux-1/appendix/learn-linux-easily/untitled-2.md)
     * [Untitled](linux-1/appendix/learn-linux-easily/untitled.md)
   * [Cygwin 프로그램](linux-1/appendix/untitled.md)
   * [how to ssh w/o pw](linux-1/appendix/how-to-ssh-w-o-pw/README.md)
