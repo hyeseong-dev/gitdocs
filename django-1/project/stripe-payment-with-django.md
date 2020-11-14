@@ -1,2 +1,0 @@
-# Stripe Payment with Django
-
