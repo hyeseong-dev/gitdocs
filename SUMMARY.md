@@ -68,6 +68,7 @@
     * [SCP사용법](linux-1/appendix/how-to-ssh-w-o-pw/scp.md)
     * [SSH 기본개념](linux-1/appendix/how-to-ssh-w-o-pw/ssh.md)
   * [PPA](linux-1/appendix/ppa.md)
+  * [우분투 방화벽\(UFW\) 설정](linux-1/appendix/ufw.md)
 
 ## Server <a id="webpage-webserver-search-engine"></a>
 
