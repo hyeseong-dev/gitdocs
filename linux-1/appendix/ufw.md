@@ -1,4 +1,4 @@
-# 우분투 방화벽\(UFW\) 설정
+# UFW Setting
 
 #### [\[Ubuntu\] 우분투 방화벽\(UFW\) 설정](https://webdir.tistory.com/206)
 
