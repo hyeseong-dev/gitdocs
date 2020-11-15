@@ -4,6 +4,12 @@
 
 # Table of Contents
 # 1. Django
+## 1.1 Django 개념정리 
+  ### - Model이란?
+## 1.2 Dive into
+  ### - DRF(Django Rest Framework)
+  ### - Validator Package
+
 # 2. Docker
 # 3. Linux
 # 4. Python
