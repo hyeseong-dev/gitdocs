@@ -121,8 +121,6 @@
       * [Part 1 \| Add Buttons](django-1/project/ecommerce/5-or-paypal-payment-integration/part-1-or-add-buttons.md)
       * [Part 2 \| Sandbox Account](django-1/project/ecommerce/5-or-paypal-payment-integration/part-2-or-sandbox-account.md)
       * [Part 3 \| Making Payments](django-1/project/ecommerce/5-or-paypal-payment-integration/part-3-or-making-payments.md)
-  * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
-    * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
 
 ## PROJECT
 
