@@ -1,6 +1,6 @@
 # Building Digital Shopping Cart
 
-## 개
+## 개요  
 
 인터넷 결제 시스템에서 필수적인 cart기능을 구현해 볼게요.
 

@@ -123,9 +123,6 @@
       * [Part 3 \| Making Payments](django-1/project/ecommerce/5-or-paypal-payment-integration/part-3-or-making-payments.md)
   * [Building Digital Shopping Cart](django-1/project/building-digital-shopping-cart/README.md)
     * [Session1](django-1/project/building-digital-shopping-cart/session1.md)
-  * [Video Subscription Membership](django-1/project/video-subscription-membership/README.md)
-    * [프로젝트 개요](django-1/project/video-subscription-membership/untitled.md)
-    * [Project Setup](django-1/project/video-subscription-membership/project-setup.md)
 
 ## PROJECT
 
