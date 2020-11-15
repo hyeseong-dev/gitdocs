@@ -4,7 +4,7 @@
 
 # Table of Contents
 # 1. Django
-## 1.1 Django 개념정리 
+## 1.1 [Django 개념정리](https://osori-magu.gitbook.io/main/django-1/django) 
   ### - Model이란?
 ## 1.2 Dive into
   ### - DRF(Django Rest Framework)
